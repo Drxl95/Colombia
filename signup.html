@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Step 3 | Secure Checkout</title>
+</head>
+<link rel="stylesheet" type="text/css" href="signup.css">
+<link href="img/colo.icon .png" rel="shortcut icon" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+<body>
+
+<main>
+
+<div class="blur">
+	<section class="signup-section">    
+		<h1 class="signup-title">We're Happy to help!</h1>
+
+	<form action="index.html" class="signup-form">
+		<div class="container1">
+		<label for="Email">Your Email</label>
+		<input type="Email" id="Email" required>
+		</div>
+
+		<div class="container2" >
+			<label for="Cardholder">Cardholder Name</label>
+			<input type="Cardholder" id="Cardholder" placeholder="name on card">
+		</div>
+
+		<div class="container3">
+			<label for="ccn">Card Number</label>
+			<input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+		</div>
+
+		<div class="container3.5">
+			<label id="title">Expiration Date</label>
+			<select for="title">
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			<select>
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>
+				<option value="2023">2023</option>
+				<option value="2024">2024</option>
+				<option value="2025">2025</option>
+				<option value="2026">2026</option>
+				<option value="2027">2027</option>
+				<option value="2028">2028</option>
+				<option value="2029">2029</option>
+				<option value="2030">2030</option>
+			</select>
+		</div>
+			
+
+		<label id="title">Country</label>
+		<select for="title">
+			<option value="us">United States</option>
+			<option value="uk">United Kingdom</option>
+			<option value="aus">Austrailia</option>
+			<option value="ca">Canada</option>
+			<option value="nz">New Zealand</option>
+			<option value="mx">Mexico</option>
+		</select>
+		<label for="zip">Zipcode</label>
+		<input type="text" id="zip">
+
+		<div class="container4">
+			<label id="terms">I agree to the terms and services.</label>
+			<input for="terms" type="checkbox" name="terms">
+		</div>
+	</form>
+		<button class="button">Submit Payment</button>
+	</section>
+
+</div>
+</main>
+
+		
+</body>
+</html>

@@ -1,0 +1,163 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: url(https://images.techhive.com/images/article/2016/08/clouds-100678070-large.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.align {
+	text-align: center;
+}
+.rec {
+	position: absolute;
+	top: 395px;
+	right: 70px;
+	z-index: 0;
+}
+
+.hr {
+    border: 0;
+    height: 2.25px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    width: 80%;
+    margin-top: 0;
+
+
+}
+.section-title {
+	text-align: center;
+	width: 50%;
+	padding: 16px 24px;
+	margin-left: 25%;
+	margin-top: 8%;
+	margin-bottom: 0;
+	color: black;
+	border: 12px solid red;
+	border-style: groove;
+	background-color: white;
+
+}
+.plan {
+	background-color: gray;
+	text-align: center;
+	padding-top: 85px;
+	padding-bottom: 100px;
+	margin: 8px;
+	display: inline-block;
+	width: 30%;
+	vertical-align: middle;
+	color: black;
+	
+}
+.plan1 {
+	background-color: gray;
+	text-align: center;
+	padding-top: 55px;
+	padding-bottom: 40px;
+	margin: 8px;
+	display: inline-block;
+	width: 30%;
+	vertical-align: middle;
+	color: black;
+}
+
+.container {
+	margin: 5%;
+}
+.plan-basic {
+	background-image: url(https://www.onlinefabricstore.net/images/product-images/xl/BELNAV_1.jpg);
+	margin-right: 12px;
+}
+.plan-plus {
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQicSZvoUpzpZ2BoiZMLfnxcA7jva1a9Ja7UA&usqp=CAU);
+	background-size: cover;
+	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.5);
+	margin-left: 20px;
+}
+.plan-premium {
+	background-image: url(https://ik.imagekit.io/pape6318/products/legacy/bright_gold_foil_cardstock-1.jpg/tr:w-480);
+	box-shadow: 9px 9px 9px 9px rgba(0,0,0,0.5);
+	margin-left: 60px;
+
+}
+.lists {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20%;
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+.lists li {
+	margin: 8px 0;
+}
+
+.prices {
+	background-color: green;
+	color:gold;
+	width: 50%;
+	padding: 20px;
+	margin-left: 25%;
+	border-radius: 8px;
+	font-size: 2rem;
+}
+
+
+.button {
+	padding: 16px 24px;
+	background-color: rgb(172, 93, 93);
+	border-radius: 8px;
+	font-size: 1.25rem;
+}
+.button:hover,
+.button:focus,
+.button:active {
+	background-color: white;
+	cursor: pointer;
+}
+.button:focus {
+	outline: none;
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+
+
+.footer_lists  { /*ul*/
+	text-align: center;
+	list-style: none;
+	margin: 0;
+
+}
+
+.footer_links  { /*li*/
+
+	display: inline-block;
+	margin: 0;
+	padding-top: 20px;
+	font-weight: bold;
+	
+}
+.footer_links a { /*li a*/
+	color: black;
+	text-decoration: none;
+	font-size: 1.1rem;
+	padding-right: 8px;
+	padding-left: 8px;
+
+
+}
+.footer_links:hover,
+.footer_links:focus {
+	text-decoration-line: underline;
+}
+
+
+
+

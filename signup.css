@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background:url(https://www.metrojourneys.com/wp-content/uploads/2019/07/guatape-antioquia-colombia.jpg);
+	margin: 0;
+	
+}
+/*.blur {
+	 filter: blur(8px);
+  	-webkit-filter: blur(8px);
+ }*/
+
+.signup-section {
+	/*border: 1px solid black;*/
+	width: auto;
+	position: absolute;
+	z-index: -1;
+	left: 33%;
+	top: 14%;
+	background: linear-gradient(rgba(77, 77, 77, 0.3), rgba(77, 77, 77, 0.5), rgba(77, 77, 77, 0.3));
+	-webkit-backdrop-filter: blur(10px);
+  	backdrop-filter: blur(10px);
+	
+}
+
+.signup-title {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: bolder;
+	text-align: center;
+	font-size: 3.5rem;
+	padding-top: 2rem;
+	color: black;
+	padding: 0;
+	margin-bottom: 0;
+	
+}
+.signup-form {
+
+}
+
+
+.signup-section,
+.signup-form,
+.signup-form input,
+.signup-form label {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 1rem .25rem;
+	border-radius: 6px;
+
+}
+
+
+.button {
+	
+	padding: 8px 18px;
+	color: black;
+	border-radius: 6px;
+	background-color: white;
+	cursor:pointer;
+	position: relative;
+	bottom: 20%;
+	
+	
+
+}
+
+/*.signup-section .container1 {
+	width: 70%;
+	margin: 0%;
+	
+}
+.signup-section .container2 {
+	width: 70%;
+	margin: 0%;
+	
+}
+.signup-section .container3 {
+	width: 90%;
+	margin: 0%;
+	
+}
+.signup-section .container4 {
+	width: 70%;
+	margin: 0%;
+
+}*/
+
+
+
+
+

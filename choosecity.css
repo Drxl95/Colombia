@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background:url(https://www.metrojourneys.com/wp-content/uploads/2019/07/guatape-antioquia-colombia.jpg);
+	margin: 0;
+}
+
+
+.title {
+    margin-top: 2.5%;
+    margin-left: 12.5%;
+    text-align: center;
+    border: 2px solid black;
+    width: 75%;
+    background: rgb(255, 106, 6);
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: larger;
+}
+
+.title__head {
+    width: 100%;
+    margin-top: 0;
+    background: white;
+    color:  rgb(255, 106, 6);
+}
+
+#cards {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    margin-top: 3rem;
+    
+}
+
+#cards:hover {
+    
+}
+
+.cards__med {
+    flex-direction: column;
+    flex-basis: 30rem;
+    flex-grow: .1;
+    border: 2px solid black;
+    background:  rgba(255, 236, 0, 0.8);
+    height: 35rem;
+}
+.cards__med:hover {
+    
+}
+
+.cards__med-title {
+    color: rgb(255, 106, 6);
+    background:white;
+    margin-top: 0;
+}
+.cards__medimage {
+    width: 412px;
+    height: 220px;
+    margin-bottom: 2rem;
+}
+.cards__med-btn {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background:  rgb(255, 106, 6);
+    color:white;
+    font-family: 'Heebo', sans-serif;
+    width: 70%;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin-top: 12%;
+    margin-left: 14%;
+    
+}
+.cards__bog {
+    border: 2px solid black;
+    background: rgba(0, 17, 223, 0.8);
+    flex-direction: column;
+    flex-grow: .1;
+    flex-basis: 30rem;
+}
+
+.cards__bog-title {
+    color: rgb(255, 106, 6);
+    background:white;
+    margin-top: 0;
+}
+.cards__bog-btn  {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background:  rgb(255, 106, 6);
+    color:white;
+    font-family: 'Heebo', sans-serif;
+    width: 70%;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin-top: 12%;
+    margin-left: 14%;
+}
+
+.cards__bogimage {
+    width: 412px;
+    height: 220px;
+    margin-bottom: 2rem;
+}
+
+.cards__san {
+    border: 2px solid black;
+    background: rgba(255, 0, 8, 0.8);
+    flex-direction: column;
+    flex-grow: .1;
+    flex-basis: 30rem;
+}
+
+.cards__san-title {
+    color: rgb(255, 106, 6);
+    background:white;
+    margin-top: 0;
+}
+
+.cards__santaimage {
+    width: 412px;
+    height: 220px;
+    margin-bottom: 2rem;
+}
+
+.cards__san-btn {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background:  rgb(255, 106, 6);
+    color:white;
+    font-family: 'Heebo', sans-serif;
+    width: 70%;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin-top: 12%;
+    margin-left: 14%;
+}
+
+.cards__med-btn:hover,
+.cards__med-btn:focus,
+.cards__bog-btn:hover,
+.cards__bog-btn:focus,
+.cards__san-btn:hover,
+.cards__san-btn:focus {
+    background:white;
+    color: rgb(255, 106, 6);
+}
