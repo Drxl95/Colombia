@@ -45,11 +45,11 @@ body {
     flex-basis: 30rem;
     flex-grow: .1;
     border: 2px solid black;
-    background:  rgba(255, 236, 0, 0.8);
+    background:  rgba(255, 236, 0, 0.65);
     height: 35rem;
 }
 .cards__med:hover {
-    
+    background:  rgba(255, 236, 0, 0.8);
 }
 
 .cards__med-title {
@@ -79,10 +79,13 @@ body {
 }
 .cards__bog {
     border: 2px solid black;
-    background: rgba(0, 17, 223, 0.8);
+    background: rgba(0, 17, 223, 0.65);
     flex-direction: column;
     flex-grow: .1;
     flex-basis: 30rem;
+}
+.cards__bog:hover {
+    background: rgba(0, 17, 223, 0.8);
 }
 
 .cards__bog-title {
@@ -113,12 +116,14 @@ body {
 
 .cards__san {
     border: 2px solid black;
-    background: rgba(255, 0, 8, 0.8);
+    background: rgba(255, 0, 8, 0.65);
     flex-direction: column;
     flex-grow: .1;
     flex-basis: 30rem;
 }
-
+.cards__san:hover {
+    background: rgba(255, 0, 8, 0.8);
+}
 .cards__san-title {
     color: rgb(255, 106, 6);
     background:white;
