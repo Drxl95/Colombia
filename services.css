@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 body {
 	background: url(https://images.techhive.com/images/article/2016/08/clouds-100678070-large.jpg);
@@ -19,6 +27,8 @@ body {
 .hr {
     border: 0;
     height: 2.25px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     width: 80%;
     margin-top: 0;
@@ -72,12 +82,14 @@ body {
 .plan-plus {
 	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQicSZvoUpzpZ2BoiZMLfnxcA7jva1a9Ja7UA&usqp=CAU);
 	background-size: cover;
-	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.5);
+	        box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.5);
 	margin-left: 20px;
 }
 .plan-premium {
 	background-image: url(https://ik.imagekit.io/pape6318/products/legacy/bright_gold_foil_cardstock-1.jpg/tr:w-480);
-	box-shadow: 9px 9px 9px 9px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 9px 9px 9px 9px rgba(0,0,0,0.5);
+	        box-shadow: 9px 9px 9px 9px rgba(0,0,0,0.5);
 	margin-left: 60px;
 
 }
@@ -155,7 +167,8 @@ body {
 }
 .footer_links:hover,
 .footer_links:focus {
-	text-decoration-line: underline;
+	-webkit-text-decoration-line: underline;
+	        text-decoration-line: underline;
 }
 
 

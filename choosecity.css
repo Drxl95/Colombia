@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -28,22 +36,29 @@ body {
 }
 
 #cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     text-align: center;
     font-family: 'Heebo', sans-serif;
     margin-top: 3rem;
     
 }
 
-#cards:hover {
-    
-}
 
 .cards__med {
-    flex-direction: column;
-    flex-basis: 30rem;
-    flex-grow: .1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 30rem;
+        flex-basis: 30rem;
+    -webkit-box-flex: .1;
+        -ms-flex-positive: .1;
+            flex-grow: .1;
     border: 2px solid black;
     background:  rgba(255, 236, 0, 0.65);
     height: 35rem;
@@ -63,8 +78,13 @@ body {
     margin-bottom: 2rem;
 }
 .cards__med-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 1rem;
     background:  rgb(255, 106, 6);
     color:white;
@@ -80,9 +100,15 @@ body {
 .cards__bog {
     border: 2px solid black;
     background: rgba(0, 17, 223, 0.65);
-    flex-direction: column;
-    flex-grow: .1;
-    flex-basis: 30rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: .1;
+        -ms-flex-positive: .1;
+            flex-grow: .1;
+    -ms-flex-preferred-size: 30rem;
+        flex-basis: 30rem;
 }
 .cards__bog:hover {
     background: rgba(0, 17, 223, 0.8);
@@ -94,8 +120,13 @@ body {
     margin-top: 0;
 }
 .cards__bog-btn  {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 1rem;
     background:  rgb(255, 106, 6);
     color:white;
@@ -117,9 +148,15 @@ body {
 .cards__san {
     border: 2px solid black;
     background: rgba(255, 0, 8, 0.65);
-    flex-direction: column;
-    flex-grow: .1;
-    flex-basis: 30rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: .1;
+        -ms-flex-positive: .1;
+            flex-grow: .1;
+    -ms-flex-preferred-size: 30rem;
+        flex-basis: 30rem;
 }
 .cards__san:hover {
     background: rgba(255, 0, 8, 0.8);
@@ -137,8 +174,13 @@ body {
 }
 
 .cards__san-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 1rem;
     background:  rgb(255, 106, 6);
     color:white;
