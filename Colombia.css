@@ -215,7 +215,7 @@ background-size: 100%;
 
 .nav_lists {
 	float: left;
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .nav_lists a {
 	display: block;
@@ -258,8 +258,8 @@ background-size: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 	text-align: center;
-	font-family: 'Heebo', sans-serif;
-	font-size: 1.25rem;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.35rem;
     /* padding-inline-start: 0; */
   }
 

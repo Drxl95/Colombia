@@ -24,7 +24,7 @@ body {
     width: 75%;
     background: rgb(255, 106, 6);
     color: white;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: larger;
 }
 
@@ -43,7 +43,7 @@ body {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     text-align: center;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-top: 3rem;
     
 }
@@ -88,7 +88,7 @@ body {
     padding: 1rem;
     background:  rgb(255, 106, 6);
     color:white;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: 70%;
     font-weight: 700;
     font-size: 1.25rem;
@@ -130,7 +130,7 @@ body {
     padding: 1rem;
     background:  rgb(255, 106, 6);
     color:white;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: 70%;
     font-weight: 700;
     font-size: 1.25rem;
@@ -184,7 +184,7 @@ body {
     padding: 1rem;
     background:  rgb(255, 106, 6);
     color:white;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: 70%;
     font-weight: 700;
     font-size: 1.25rem;

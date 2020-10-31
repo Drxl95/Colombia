@@ -28,7 +28,7 @@ span {
 
 .header {
 	text-align: center;
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: white;
 	font-size: 1.15rem;
 	margin-top: 24px;
@@ -58,7 +58,7 @@ span {
 }
 
 .medellin {
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	color: black;
 }
@@ -89,7 +89,7 @@ span {
 	color: #b80000;
 	border: 1px solid #8a0000;
 	text-align: center;
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.10rem;
 	padding-left: 6px;
 	padding-right:6px;
@@ -109,7 +109,7 @@ span {
 }
 
 .bogota {
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	color: black;
 }
@@ -136,7 +136,7 @@ span {
 	color: #b80000;
 	border: 1px solid #8a0000;
 	text-align: center;
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.10rem;
 	padding-left: 6px;
 	padding-right:6px;
@@ -157,7 +157,7 @@ span {
 	background-color: rgba(255, 0, 8, 0.83);
 }
 .santa {
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	color: black;
 }
@@ -183,12 +183,14 @@ span {
 	color: #b80000;
 	border: 1px solid #8a0000;
 	text-align: center;
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.10rem;
 	padding-left: 6px;
 	padding-right:6px;
 }
 
+
+/* FOOTER */
 
 .addresses {
     /* background-color: rgb(99, 99, 99); */
@@ -208,7 +210,8 @@ span {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 	text-align: center;
-	font-family: 'Heebo', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.15rem;
     /* padding-inline-start: 0; */
   }
 
@@ -245,7 +248,7 @@ span {
   .terms_footer {
     /* background-color:rgb(99, 99, 99); */
 	/* background-color: rgb(201, 83, 5); */
-    margin-top: 3.5rem;
+    margin-top: 4.10rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
