@@ -46,11 +46,33 @@ body {
 .title__head {
 	width: 100%;
 	margin-top: 0;
+	padding-top: 7px;
+	padding-bottom: 7px;
 	background: white;
 	color:  rgb(255, 106, 6);
 	font-family: 'Roboto', sans-serif;
 }
 
+.package-title {
+	width: 100%;
+	margin-top: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: white;
+	color:  rgb(255, 106, 6);
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	
+}
+
+.prices {
+	background: white;
+	color: rgb(255, 106, 6);
+	padding: 16px 24px;
+	border-radius: 8px;
+	width: 50%;
+	margin-left: 25%;
+}
 
 .grid1-basic {
 	grid-area: plan1;
@@ -58,7 +80,7 @@ body {
 	height: 37rem;
 	background-color:  rgb(255, 106, 6);
 	font-family: 'Roboto', sans-serif;
-	border: solid .85rem white;
+	border: solid 2px black;
 	color: white;
 }
 
@@ -68,7 +90,7 @@ body {
 	height: 37rem;
 	background-color:  rgb(255, 106, 6);
 	font-family: 'Roboto', sans-serif;
-	border: solid .85rem white;
+	border: 2px solid black;
 	color: white
 }
 
@@ -78,26 +100,36 @@ body {
 	height: 37rem;
 	background-color:  rgb(255, 106, 6);
 	font-family: 'Roboto', sans-serif;
-	border: solid .85rem white;
+	border: 2px solid black;
 	color: white
 }
 
 .lists {
 	list-style: none;
 }
-.button {
+
+.lists li {
+	font-weight: bolder;
+	
+}
+.button  {
+	width: 50%;
 	padding: 16px 24px;
 	background-color:white;
 	border-radius: 8px;
 	color: rgb(255, 106, 6);
 	font-size: 1.25rem;
 	font-family: inherit;
+	margin-left: 4;
+	text-decoration: none;
 }
 .button:hover,
 .button:focus,
 .button:active {
 	padding: 16px 24px;
-	color: black;
+	color: rgb(110, 110, 110);
+	opacity: .7;
+	transition: .45s;
 	border-radius: 8px;
 	font-size: 1.25rem;
 	font-family: inherit;

@@ -30,9 +30,12 @@ body {
 
 .title__head {
     width: 100%;
-    margin-top: 0;
-    background: white;
-    color:  rgb(255, 106, 6);
+	margin-top: 0;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	background: white;
+	color:  rgb(255, 106, 6);
+	font-family: 'Roboto', sans-serif;
 }
 
 #cards {
@@ -49,9 +52,14 @@ body {
 }
 
 .cards__texthead {
-    background: white;
-    color: rgb(255, 106, 6);
-    font-size: 1.5rem;
+    width: 100%;
+	margin-top: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: white;
+	color:  rgb(255, 106, 6);
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
 }
 
 .cards__med {
@@ -74,16 +82,25 @@ body {
 }
 
 .cards__med-title {
-    color: rgb(255, 106, 6);
-    background:white;
-    margin-top: 0;
-    font-size: 1.75rem;
+    width: 100%;
+	margin-top: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background: white;
+	color:  rgb(255, 106, 6);
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
 }
 .cards__medimage {
     width: 412px;
     height: 220px;
     margin-bottom: 2rem;
 }
+
+.cards__med:not(:hover) .choice {
+    display: none;
+}
+
 .cards__med-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -124,10 +141,14 @@ body {
 }
 
 .cards__bog-title {
-    color: rgb(255, 106, 6);
-    background:white;
-    margin-top: 0;
-    font-size: 1.75rem;
+    width: 100%;
+	margin-top: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background: white;
+	color:  rgb(255, 106, 6);
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
 }
 .cards__bog-btn  {
     display: -webkit-box;
@@ -155,6 +176,10 @@ body {
     margin-bottom: 2rem;
 }
 
+.cards__bog:not(:hover) .choice {
+    display: none;
+}
+
 .cards__san {
     border: 2px solid black;
     background: rgba(255, 0, 8, 0.65);
@@ -174,16 +199,24 @@ body {
     background: rgba(255, 0, 8, 0.8);
 }
 .cards__san-title {
-    color: rgb(255, 106, 6);
-    background:white;
-    margin-top: 0;
-    font-size: 1.75rem;
+    width: 100%;
+	margin-top: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background: white;
+	color:  rgb(255, 106, 6);
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
 }
 
 .cards__santaimage {
     width: 412px;
     height: 220px;
     margin-bottom: 2rem;
+}
+
+.cards__san:not(:hover) .choice {
+    display: none;
 }
 
 a {
