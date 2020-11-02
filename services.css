@@ -44,7 +44,7 @@ body {
 		font-family: 'Roboto', sans-serif;
 		font-size: larger;
 		margin-right: 5rem;
-		box-shadow: black 10px 10px 10px;
+		box-shadow: rgb(36, 36, 36) 10px 10px 10px;
 		
 }
 .title__head {
@@ -87,7 +87,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	border: solid 2px black;
 	color: white;
-	box-shadow: darkgray 8px 8px 8px;
+	box-shadow: rgb(43, 42, 42) 8px 8px 8px;
 }
 .grid2-plus {
 	text-align: center;
@@ -98,7 +98,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	border: 2px solid black;
 	color: white;
-	box-shadow: black 8px 8px 8px;
+	box-shadow: rgb(43, 42, 42) 8px 8px 8px;
 }
 
 .grid3-premium {
@@ -110,7 +110,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	border: 2px solid black;
 	color: white;
-	box-shadow: black 8px 8px 8px;
+	box-shadow: rgb(43, 42, 42) 8px 8px 8px;
 }
 
 .grid3__header {
