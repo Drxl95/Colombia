@@ -15,7 +15,9 @@ body {
 	background-repeat: no-repeat;
 }
 
-
+:root {
+    --main-color: rgb(226, 90, 0)
+}
 .grid-container {
 	display: grid;
 	row-gap: 4rem;
@@ -36,7 +38,7 @@ body {
 		text-align: center;
 		border: 2px solid black;
 		width: 75%;
-		background: rgb(255, 106, 6);
+		background: var(--main-color);
 		color: white;
 		font-family: 'Roboto', sans-serif;
 		font-size: larger;
@@ -49,7 +51,7 @@ body {
 	padding-top: 7px;
 	padding-bottom: 7px;
 	background: white;
-	color:  rgb(255, 106, 6);
+	color: var(--main-color);
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -59,7 +61,7 @@ body {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background: white;
-	color:  rgb(255, 106, 6);
+	color: var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.5rem;
 
@@ -68,7 +70,7 @@ body {
 
 .prices {
 	background: white;
-	color: rgb(255, 106, 6);
+	color: var(--main-color);
 	padding: 16px 24px;
 	width: 50%;
 	margin-left: 25%;
@@ -79,7 +81,7 @@ body {
 	grid-area: plan1;
 	width: 27rem;
 	height: 37rem;
-	background-color:  rgb(255, 106, 6);
+	background-color:  var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	border: solid 2px black;
 	color: white;
@@ -90,7 +92,7 @@ body {
 	grid-area: plan2;
 	width: 27rem;
 	height: 37rem;
-	background-color:  rgb(255, 106, 6);
+	background-color:  var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	border: 2px solid black;
 	color: white
@@ -101,7 +103,7 @@ body {
 	grid-area: plan3;
 	width: 27rem;
 	height: 37rem;
-	background-color:  rgb(255, 106, 6);
+	background-color:  var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	border: 2px solid black;
 	color: white
@@ -136,7 +138,7 @@ body {
 	padding: 16px 24px;
 	background-color:white;
 	border-radius: 3px;
-	color: rgb(255, 106, 6);
+	color: var(--main-color);
 	font-size: 1.25rem;
 	font-family: inherit;
 	margin-bottom: 3rem;
@@ -155,7 +157,7 @@ body {
 	cursor: pointer;
 }
 .button:focus {
-	outline: rgb(255, 106, 6);
+	outline: var(--main-color);
 }
 
 
@@ -169,7 +171,7 @@ body {
 
 .addresses {
 	/* background-color: rgb(99, 99, 99); */
-	background-color: rgb(255, 106, 6);
+	background-color: var(--main-color);
 	color: white;
 	/* margin-top: 2rem; */
 	width: 100%;
@@ -216,7 +218,7 @@ body {
   
   .terms_footer {
 	/* background-color:rgb(99, 99, 99); */
-	background-color:  rgb(255, 106, 6);
+	background-color: var(--main-color);
 	margin-top: 4.25rem;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;

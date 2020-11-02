@@ -15,6 +15,9 @@ body {
 	margin: 0;
 }
 
+:root {
+    --main-color: rgb(226, 90, 0)
+}
 
 .title {
     margin-top: 2.5%;
@@ -22,7 +25,7 @@ body {
     text-align: center;
     border: 2px solid black;
     width: 75%;
-    background: rgb(255, 106, 6);
+    background: var(--main-color);
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: larger;
@@ -34,7 +37,7 @@ body {
 	padding-top: 7px;
 	padding-bottom: 7px;
 	background: white;
-	color:  rgb(255, 106, 6);
+	color:  var(--main-color);
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -48,6 +51,8 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin-top: 3rem;
+    animation: slide 1s;
+    /* transform: translateY(10rem); */
     
 }
 
@@ -57,7 +62,7 @@ body {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background: white;
-	color:  rgb(255, 106, 6);
+	color:  var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.4rem;
 }
@@ -87,7 +92,7 @@ body {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	background: white;
-	color:  rgb(255, 106, 6);
+	color: var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
 }
@@ -105,7 +110,7 @@ body {
 
 .choice {
     color: white;
-    background: rgb(255, 106, 6);
+    background: var(--main-color);
     font-size: 2.25rem;
     margin-top: 4.25rem;
     width: 75%;
@@ -121,7 +126,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 1rem;
-    background:  rgb(255, 106, 6);
+    background:  var(--main-color);
     color:white;
     font-family: 'Roboto', sans-serif;
     width: 70%;
@@ -157,7 +162,7 @@ body {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	background: white;
-	color:  rgb(255, 106, 6);
+	color: var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
 }
@@ -170,7 +175,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 1rem;
-    background:  rgb(255, 106, 6);
+    background:  var(--main-color);
     color:white;
     font-family: 'Roboto', sans-serif;
     width: 70%;
@@ -215,7 +220,7 @@ body {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	background: white;
-	color:  rgb(255, 106, 6);
+	color:  var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
 }
@@ -234,6 +239,29 @@ a {
     text-decoration: none;
     color: black;
 }
+
+@keyframes slide {
+    from {
+        transform: translateY(-20rem);
+    }
+
+    to {
+        transform: translateY(2rem);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* .cards__san-btn {
     display: -webkit-box;
