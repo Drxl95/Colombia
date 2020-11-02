@@ -113,37 +113,50 @@ body {
 	box-shadow: rgb(43, 42, 42) 8px 8px 8px;
 }
 
-.grid3__header {
-	font-size: 2rem;
-	text-decoration: underline;
-	margin-bottom: 0;
-	margin: 0;
-}
 .list-title {
-	font-size: 1.35rem;
+	font-size: 1.5rem;
 	text-decoration: underline;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 }
 
 .lists {
 	list-style: none;
 	padding-inline-start: 0;
-	margin-top: 3rem;
+	/* margin-top: 3rem; */
 	margin-bottom: 6.5rem;
 	font-size: 17px;
 }
 
 .lists li {
 	font-weight: bolder;
-	margin: 1.25rem 0;
+	margin: 1.5rem 0;
+	color: var(--main-color);
+	background-color: white;
+	
+}
+.lists3 {
+	list-style: none;
+	padding-inline-start: 0;
+	/* margin-top: 3rem; */
+	margin-bottom: 7.5rem;
+	font-size: 17px;
+}
+
+.lists3 li {
+	font-weight: bolder;
+	margin: 1.75rem 0;
+	color: var(--main-color);
+	background-color: white;
 	
 }
 .button  {
-	width: 50%;
-	padding: 16px 24px;
+	padding: 20px 52px;
 	background-color:white;
 	border-radius: 3px;
 	color: var(--main-color);
 	font-size: 1.25rem;
+	font-weight: 800;
 	font-family: inherit;
 	margin-bottom: 3rem;
 	text-decoration: none;
@@ -154,7 +167,7 @@ body {
 	padding: 16px 24px;
 	color: rgb(110, 110, 110);
 	opacity: .7;
-	transition: .45s;
+	transition: .45s .08s;
 	border-radius: 3px;
 	font-size: 1.25rem;
 	font-family: inherit;
