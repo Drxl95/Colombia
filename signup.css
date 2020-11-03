@@ -15,18 +15,52 @@ body {
 	margin: 0;
 	
 }
+:root {
+    --main-color: rgb(226, 90, 0)
+}
 /*.blur {
 	 filter: blur(8px);
   	-webkit-filter: blur(8px);
  }*/
 
+ 
+.title {
+    margin-top: 2.5%;
+    margin-left: 12.5%;
+    text-align: center;
+    border: 2px solid black;
+    width: 75%;
+    background: var(--main-color);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+}
+
+.title__head {
+    width: 100%;
+	margin-top: 0;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	background: white;
+	color:  var(--main-color);
+	font-family: 'Roboto', sans-serif;
+}
+
+.signup-title {
+	margin-bottom: .625rem;
+}
+.cards {
+	margin-top: 0;
+	font-size: smaller;
+
+}
 .signup-section {
 	/*border: 1px solid black;*/
 	width: auto;
 	position: absolute;
 	z-index: -1;
 	left: 33%;
-	top: 14%;
+	top: 25%;
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 77, 77, 0.3)), color-stop(rgba(77, 77, 77, 0.5)), to(rgba(77, 77, 77, 0.3)));
 	background: -o-linear-gradient(rgba(77, 77, 77, 0.3), rgba(77, 77, 77, 0.5), rgba(77, 77, 77, 0.3));
 	background: linear-gradient(rgba(77, 77, 77, 0.3), rgba(77, 77, 77, 0.5), rgba(77, 77, 77, 0.3));
@@ -34,22 +68,6 @@ body {
   	backdrop-filter: blur(10px);
 	
 }
-
-.signup-title {
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-weight: bolder;
-	text-align: center;
-	font-size: 3.5rem;
-	padding-top: 2rem;
-	color: black;
-	padding: 0;
-	margin-bottom: 0;
-	
-}
-.signup-form {
-
-}
-
 
 .signup-section,
 .signup-form,
@@ -60,9 +78,7 @@ body {
 	text-align: center;
 	margin: 1rem .25rem;
 	border-radius: 6px;
-
 }
-
 
 .button {
 	
@@ -73,9 +89,6 @@ body {
 	cursor:pointer;
 	position: relative;
 	bottom: 20%;
-	
-	
-
 }
 
 /*.signup-section .container1 {
