@@ -77,7 +77,8 @@ body {
 
 .prices {
 	background: white;
-	color: rgb(107, 107, 107);
+	/* color: rgb(107, 107, 107); */
+	color: var(--main-color);
 	padding: 16px 24px;
 	width: 50%;
 	margin-left: 25%;
@@ -95,7 +96,11 @@ body {
 	box-shadow: rgb(43, 42, 42) 8px 8px 8px;
 	background:linear-gradient( rgba(255, 236, 0, 0.60), rgba(255, 236, 0, 0.60)), url("img/Lajas.jpg");
 	background-position: center right 27%;
-	
+}
+.grid1-basic:hover,
+.grid1-basic:focus {
+	background:linear-gradient( rgba(255, 236, 0, 0.25), rgba(255, 236, 0, 0.25)), url("img/Lajas.jpg");
+	 background-position: center right 27%;
 }
 .grid2-plus {
 	text-align: center;
@@ -108,6 +113,11 @@ body {
 	color: white;
 	box-shadow: rgb(43, 42, 42) 8px 8px 8px;
 	background:linear-gradient( rgba(0, 17, 223, 0.60), rgba(0, 17, 223, 0.60)), url("img/tatacoa.jpg");
+	background-position: center right 27%;
+}
+.grid2-plus:hover,
+.grid2-plus:focus {
+	background:linear-gradient( rgba(0, 17, 223, 0.25), rgba(0, 17, 223, 0.25)), url("img/tatacoa.jpg");
 	background-position: center right 27%;
 }
 
@@ -125,6 +135,13 @@ body {
 	background-position: center right 27%;
 	background-size: cover;
 }
+.grid3-premium:hover, 
+.grid3-premium:focus {
+	background:linear-gradient( rgba(255, 0, 8, 0.25), rgba(255, 0, 8, 0.25)), url("img/cocora.jpg");
+	background-position: center right 27%;
+	background-size: cover;
+}
+
 
 .list-title {
 	font-size: 1.75rem;
@@ -170,13 +187,17 @@ body {
 	padding: 20px 52px;
 	background-color:white;
 	border-radius: 3px;
-	color: rgb(107, 107, 107);
+	/* color: rgb(107, 107, 107); */
+	color: var(--main-color);
 	font-size: 1.25rem;
 	font-weight: 800;
 	font-family: inherit;
 	margin-bottom: 3rem;
 	text-decoration: none;
 }
+
+
+
 .button:hover,
 .button:focus,
 .button:active {
@@ -188,6 +209,7 @@ body {
 	font-size: 1.25rem;
 	font-family: inherit;
 	cursor: pointer;
+	
 }
 .button:focus {
 	outline: var(--main-color);
