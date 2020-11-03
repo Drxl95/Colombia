@@ -51,7 +51,7 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin-top: 3rem;
-    animation: slide 1s;
+    /* animation: slide 1s; */
     /* transform: translateY(10rem); */
     
 }
@@ -81,6 +81,7 @@ body {
     background:  rgba(255, 236, 0, 0.65);
     height: 35rem;
     width: 30rem;
+    animation: med_slide .85s;
 }
 .cards__med:hover {
     background:  rgba(255, 236, 0, 0.8);
@@ -151,6 +152,7 @@ body {
         flex-basis: 30rem;
         height: 35rem;
     width: 30rem;
+    animation: bog_slide 1.5s;
 }
 .cards__bog:hover {
     background: rgba(0, 17, 223, 0.8);
@@ -210,6 +212,7 @@ body {
         flex-basis: 30rem;
         height: 35rem;
     width: 30rem;
+    animation: san_slide 2s;
 }
 .cards__san:hover {
     background: rgba(255, 0, 8, 0.8);
@@ -240,16 +243,35 @@ a {
     color: black;
 }
 
-@keyframes slide {
+@keyframes med_slide {
     from {
         transform: translateY(-20rem);
     }
 
     to {
-        transform: translateY(2rem);
+        transform: translateY(1.55rem);
     }
 }
 
+@keyframes bog_slide {
+    from {
+        transform: translateY(-20rem);
+    }
+
+    to {
+        transform: translateY(1.5rem);
+    }
+}
+
+@keyframes san_slide {
+    from {
+        transform: translateY(-20rem);
+    }
+
+    to {
+        transform: translateY(1.5rem);
+    }
+}
 
 
 
