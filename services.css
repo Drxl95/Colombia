@@ -10,13 +10,14 @@
 	        box-sizing: border-box;
 }
 body {
-	background: url(https://images.techhive.com/images/article/2016/08/clouds-100678070-large.jpg);
+	/* background: url(https://images.techhive.com/images/article/2016/08/clouds-100678070-large.jpg); */
+	background:url(https://www.metrojourneys.com/wp-content/uploads/2019/07/guatape-antioquia-colombia.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 :root {
-    --main-color: rgb(226, 90, 0)
+    --main-color: rgba(255, 111, 15);
 }
 .grid-parent {
 	display: flex;
@@ -59,6 +60,7 @@ body {
 	padding-bottom: 7px;
 	background: white;
 	color: var(--main-color);
+	
 	font-family: 'Roboto', sans-serif;
 }
 
