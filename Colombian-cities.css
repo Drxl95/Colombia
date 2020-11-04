@@ -55,6 +55,9 @@ span {
     font-family: 'Roboto', sans-serif;
     font-size: larger;
 }
+.title p {
+	font-size: 1.5rem;
+}
 
 .title__head {
     width: 100%;
