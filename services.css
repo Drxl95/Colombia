@@ -69,8 +69,8 @@ body {
 	margin: 0;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background: white;
-	color: var(--main-color);
+	color: white;
+	background: var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.5rem;
 
@@ -78,12 +78,14 @@ body {
 }
 
 .prices {
-	background: white;
+	color: white;
 	/* color: rgb(107, 107, 107); */
-	color: var(--main-color);
+	background: var(--main-color);
 	padding: 16px 24px;
 	width: 50%;
 	margin-left: 25%;
+	margin-top: 2rem;
+	box-shadow: rgb(43, 42, 42) 4px 4px 4px;
 }
 
 .grid1-basic {
@@ -91,63 +93,64 @@ body {
 	grid-area: plan1;
 	width: 27rem;
 	height: 37rem;
-	background-color:  var(--main-color);
+	background-color:  rgb(255, 241, 227);
 	font-family: 'Roboto', sans-serif;
 	border: solid 2px black;
 	color: white;
 	box-shadow: rgb(43, 42, 42) 8px 8px 8px;
-	background:linear-gradient( rgba(255, 236, 0, 0.60), rgba(255, 236, 0, 0.60)), url("img/Lajas.jpg");
-	background-position: center right 27%;
+	/* background:linear-gradient( rgba(255, 236, 0, 0.60), rgba(255, 236, 0, 0.60)), url("img/Lajas.jpg");
+	background-position: center right 27%; */
 }
-.grid1-basic:hover,
-.grid1-basic:focus {
-	background:linear-gradient( rgba(255, 236, 0, 0.25), rgba(255, 236, 0, 0.25)), url("img/Lajas.jpg");
-	 background-position: center right 27%;
-}
+
 .grid2-plus {
 	text-align: center;
 	grid-area: plan2;
 	width: 27rem;
 	height: 37rem;
-	background-color:  var(--main-color);
+	color:  var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	border: 2px solid black;
-	color: white;
+	background: rgb(255, 241, 227);
 	box-shadow: rgb(43, 42, 42) 8px 8px 8px;
-	background:linear-gradient( rgba(0, 17, 223, 0.60), rgba(0, 17, 223, 0.60)), url("img/tatacoa.jpg");
-	background-position: center right 27%;
+	/* background:linear-gradient( rgba(0, 17, 223, 0.60), rgba(0, 17, 223, 0.60)), url("img/tatacoa.jpg");
+	background-position: center right 27%;  */
 }
-.grid2-plus:hover,
-.grid2-plus:focus {
-	background:linear-gradient( rgba(0, 17, 223, 0.25), rgba(0, 17, 223, 0.25)), url("img/tatacoa.jpg");
-	background-position: center right 27%;
-}
+
 
 .grid3-premium {
 	text-align: center;
 	grid-area: plan3;
 	width: 27rem;
 	height: 37rem;
-	background-color:  var(--main-color);
+	color:  var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	border: 2px solid black;
-	color: white;
+	background:  rgb(255, 241, 227);
 	box-shadow: rgb(43, 42, 42) 8px 8px 8px;
-	background:linear-gradient( rgba(255, 0, 8, 0.60), rgba(255, 0, 8, 0.60)), url("img/cocora.jpg");
+	/* background:linear-gradient( rgba(255, 0, 8, 0.60), rgba(255, 0, 8, 0.60)), url("img/cocora.jpg");
 	background-position: center right 27%;
-	background-size: cover;
-}
-.grid3-premium:hover, 
-.grid3-premium:focus {
-	background:linear-gradient( rgba(255, 0, 8, 0.25), rgba(255, 0, 8, 0.25)), url("img/cocora.jpg");
-	background-position: center right 27%;
-	background-size: cover;
+	background-size: cover; */
 }
 
+.lists1 {
+	list-style: none;
+	padding-inline-start: 0;
+	/* margin-top: 3rem; */
+	margin-bottom: 5rem;
+	font-size: 17px;
+}
+
+.lists1 li {
+	font-weight: bolder;
+	margin: 1.75rem 0;
+	color: rgb(107, 107, 107);
+	background-color: white;
+	margin-bottom: 2.9rem;
+}
 
 .list-title {
 	font-size: 1.75rem;
-	margin-top: 3rem;
+	margin-top: 2rem;
 	margin-bottom: 3rem;
 	color: white;
 	background: var(--main-color);
@@ -162,19 +165,29 @@ body {
 	margin-bottom: 5rem;
 	font-size: 17px;
 }
+.lists span,
+.lists3 span {
+	/* color: var(--main-color); */
+	color: rgb(0, 204, 0);
+}
+span i {
+	color: rgb(0, 204, 0);
+}
+i {
+	color: var(--main-color);
+}
 
 .lists li {
 	font-weight: bolder;
 	margin: 1.5rem 0;
 	color: rgb(107, 107, 107);
 	background-color: white;
-	
 }
 .lists3 {
 	list-style: none;
 	padding-inline-start: 0;
 	/* margin-top: 3rem; */
-	margin-bottom: 6rem;
+	margin-bottom: 5rem;
 	font-size: 17px;
 }
 
@@ -183,14 +196,15 @@ body {
 	margin: 1.75rem 0;
 	color: rgb(107, 107, 107);
 	background-color: white;
-	
+	margin-bottom: 2.3rem;
 }
+
 .button  {
 	padding: 20px 52px;
-	background-color:white;
+	color:white;
 	border-radius: 3px;
 	/* color: rgb(107, 107, 107); */
-	color: var(--main-color);
+	background-color: var(--main-color);
 	font-size: 1.25rem;
 	font-weight: 800;
 	font-family: inherit;
