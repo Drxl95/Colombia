@@ -59,13 +59,13 @@ body {
 	width: auto;
 	position: absolute;
 	z-index: -1;
-	left: 33%;
-	top: 25%;
+	left: 37%;
+	top: 35%;
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 77, 77, 0.3)), color-stop(rgba(77, 77, 77, 0.5)), to(rgba(77, 77, 77, 0.3)));
 	background: -o-linear-gradient(rgba(77, 77, 77, 0.3), rgba(77, 77, 77, 0.5), rgba(77, 77, 77, 0.3));
 	background: linear-gradient(rgba(77, 77, 77, 0.3), rgba(77, 77, 77, 0.5), rgba(77, 77, 77, 0.3));
-	-webkit-backdrop-filter: blur(10px);
-  	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(15px);
+  	backdrop-filter: blur(15px);
 	
 }
 
@@ -89,6 +89,10 @@ body {
 	cursor:pointer;
 	position: relative;
 	bottom: 20%;
+}
+.button:hover {
+	background: orange;
+	color:white;
 }
 
 /*.signup-section .container1 {
