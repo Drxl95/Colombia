@@ -50,14 +50,16 @@ span {
     text-align: center;
     border: 2px solid black;
     width: 75%;
-    background:  rgba(255, 111, 15,0.8);
+    background:  rgba(255, 111, 15,0.93);
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: larger;
 }
+
 .title p {
 	font-size: 1.5rem;
 }
+
 
 .title__head {
     width: 100%;
