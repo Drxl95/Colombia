@@ -79,7 +79,6 @@ body {
 
 .prices {
 	color: white;
-	/* color: rgb(107, 107, 107); */
 	background: var(--main-color);
 	padding: 16px 24px;
 	width: 50%;

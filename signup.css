@@ -89,10 +89,12 @@ body {
 	cursor:pointer;
 	position: relative;
 	bottom: 20%;
+	font-size: 2rem;
 }
 .button:hover {
 	background: orange;
 	color:white;
+	border: black 2px solid;
 }
 
 /*.signup-section .container1 {
