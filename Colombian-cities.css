@@ -262,7 +262,7 @@ span {
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
-  
+
   .addresses__info2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -273,11 +273,14 @@ span {
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
-  
+  .addresses__info2 p {
+	margin-top: 23.5px;
+}
+
   .terms_footer {
     /* background-color:rgb(99, 99, 99); */
 	/* background-color: rgb(201, 83, 5); */
-    margin-top: 4.10rem;
+    margin-top: 4.30rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

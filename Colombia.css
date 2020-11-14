@@ -278,6 +278,10 @@ background-size: 100%;
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
+
+.addresses__info1 p {
+	margin-top: 28.5px;
+}
   
   .addresses__info2 {
     -webkit-box-orient: vertical;

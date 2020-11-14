@@ -157,7 +157,9 @@ textarea {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-
+.addresses__info2 p {
+  margin-top: 23.5px;
+}
 .terms_footer {
   /* background-color:rgb(99, 99, 99); */
   background-color: rgb(201, 83, 5);
