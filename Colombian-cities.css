@@ -48,7 +48,7 @@ span {
     margin-top: 2.5%;
     margin-left: 12.5%;
     text-align: center;
-    border: 2px solid black;
+    border: 4px solid black;
     width: 75%;
     background:  rgba(255, 111, 15,0.93);
     color: white;
@@ -73,7 +73,7 @@ span {
 
 .medellin_border {
 	width: 97.5%;
-	border: 3px solid black;
+	border: 4px solid black;
 	margin-top: 2.5%;
 	margin-bottom: 6%;
 	background-color: rgba(255, 236, 0, 0.7);
@@ -101,10 +101,10 @@ span {
 .med_img {
 	vertical-align: top;
 	margin-bottom: 10%;
-	margin-left: 10px;
 	width: 512px;
 	height: 270px;
-	
+	margin-left: 5rem;
+	border: 4px solid #8a0000;
 }
 
 .med_info {
@@ -116,16 +116,16 @@ span {
 	margin-bottom: 4.5%;
 	background-color: #ffffe6;
 	color: #b80000;
-	border: 1px solid #8a0000;
+	border: 4px solid #8a0000;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.10rem;
+	font-size: 1.3rem;
 	padding-left: 6px;
 	padding-right:6px;
 }
 
 .bogota_border {
-	border: 3px solid black;
+	border: 4px solid black;
 	margin-top: 2.5%;
 	margin-bottom: 6%;
 	background-color: rgba(0, 17, 223, 0.7);
@@ -153,6 +153,8 @@ span {
 	margin-left: 10px;
 	width: 512px;
 	height: 270px;
+	border: 4px solid #8a0000;
+	margin-left: 5rem;
 }
 .bog_info {
 	display: inline-block;
@@ -160,20 +162,20 @@ span {
 	width: 55%;
 	height: 25%;
 	margin-left: 2.3%;
-	margin-bottom: 4.5%;
+	margin-bottom: 3.75%;
 	background-color: #ffffe6;
 	color: #b80000;
-	border: 1px solid #8a0000;
+	border: 4px solid #8a0000;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.10rem;
+	font-size: 1.3rem;
 	padding-left: 6px;
 	padding-right:6px;
 }
 
 
 .santa_border {
-	border: 3px solid black;
+	border: 4px solid black;
 	margin-top: 2.5%;
 	margin-bottom: 6%;
 	background-color: rgba(255, 0, 8, 0.7);
@@ -200,6 +202,8 @@ span {
 	margin-left: 10px;
 	width: 512px;
 	height: 270px;
+	border: 3px solid #8a0000;
+	margin-left: 5rem;
 }
 .santa_info {
 	display: inline-block;
@@ -207,13 +211,13 @@ span {
 	width: 55%;
 	height: 25%;
 	margin-left: 2.3%;
-	margin-bottom: 4.5%;
+	margin-bottom: 3.75%;
 	background-color: #ffffe6;
 	color: #b80000;
-	border: 1px solid #8a0000;
+	border: 4px solid #8a0000;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.10rem;
+	font-size: 1.3rem;
 	padding-left: 6px;
 	padding-right:6px;
 }

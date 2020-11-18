@@ -61,25 +61,57 @@ body {
 label {
   display: none;
 }
-
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}
 .contact input,
 .contact textarea {
   margin: .5rem;
   font-weight: 1000;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
 }
 
 .contact textarea {
   margin-right: 1.25rem;
 }
 
+.email-form {
+  margin-right: .80rem;
+  
+}
+
+input[type="text"],
+[type="email"],
+textarea {
+  background-color: rgb(223, 198, 182);
+  border-color: rgb(201, 83, 5);
+  width: 500px;
+  height: 35px;
+  margin-right: 1.45rem;
+}
+
+.contact__txtarea label,
+.textarea {
+  width: 500px;
+  height: 250px;
+  vertical-align: top;
+
+}
+
 .contact-section__btn {
-  padding: 12px 26px;
+  padding: 12px 42px;
   border-radius: 7px;
   background:  rgb(201, 83, 5);
   border: none;
   color: white;
   font-size: 1.05rem;
   margin-right: 200rem;
+  margin-top: 2rem;
 }
 
 .contact-section__btn:hover,
@@ -89,31 +121,11 @@ label {
   cursor: pointer;
 }
 
-input[type="text"],
-[type="email"],
-textarea {
-  background-color: rgb(223, 198, 182);
-  border-color: rgb(201, 83, 5);
-  width: 400px;
-  height: 35px;
-  margin-right: 1.45rem;
-}
-
-.contact__txtarea label,
-.textarea {
-  width: 400px;
-  height: 200px;
-  vertical-align: top;
-}
-
-.email-form {
-  margin-right: .80rem;
-}
-
 
 /*FOOTER*/
+
+
 .addresses {
-  /* background-color: rgb(99, 99, 99); */
   background-color: rgb(201, 83, 5);
   color: white;
   width: 100%;
@@ -129,7 +141,6 @@ textarea {
       flex-wrap: wrap;
   text-align: center;
   font-size: 1.15rem;
-  /* padding-inline-start: 0; */
 }
 
 .addresses a {
@@ -160,7 +171,6 @@ textarea {
   margin-top: 23.5px;
 }
 .terms_footer {
-  /* background-color:rgb(99, 99, 99); */
   background-color: rgb(201, 83, 5);
   margin-top: 4.25rem;
   -webkit-box-orient: vertical;
