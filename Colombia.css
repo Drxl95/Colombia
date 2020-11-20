@@ -23,12 +23,7 @@ background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255
 background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0)); 
 }
 
-/*main {
-background-image: linear-gradient(rgba(162, 162, 163, 0.25), rgba(162, 162, 163, 0.25)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
-background position: center;
-background-repeat: no-repeat;
-background-size: 100%;
-}*/
+
 
 .details {
 	color: white;
@@ -206,24 +201,24 @@ background-size: 100%;
 /*NAVBAR*/
 
 .nav_list {
+	display: flex;
 	list-style-type: none;
 	width: 100%;
-	/* position: fixed; */
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color:   rgb(255, 111, 15);
-	z-index: 9999;
+}
+.nav_lists {
+	display: flex;
 }
 
 .nav_lists {
-	float: left;
 	font-family: 'Roboto', sans-serif;
 }
 .nav_lists a {
-	display: block;
-	color: white;
 	padding: 14px 16px;
+	color: white;
 	text-decoration: none;
 }
 .nav_lists a:hover,

@@ -29,21 +29,6 @@ span {
 }
 
 
-/* .header {
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	color: white;
-	font-size: 1.15rem;
-	margin-top: 24px;
-}
-
-.border {
-	border: 3px solid black;
-	background-color: rgba(85,85,85,0.9);
-	width: 80%;
-	margin-left: 10%;
-	padding: 0.375rem;
-} */
 .title {
     margin-top: 2.5%;
     margin-left: 12.5%;
@@ -226,11 +211,8 @@ span {
 /* FOOTER */
 
 .addresses {
-    /* background-color: rgb(99, 99, 99); */
 	background-color: rgba(255, 111, 15, 0.9);
-	/* background-color: rgba(85,85,85,0.9); */
     color: white;
-    /* margin-top: 2rem; */
     width: 100%;
     height: 100%;
     display: -webkit-box;
@@ -245,7 +227,7 @@ span {
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.15rem;
-    /* padding-inline-start: 0; */
+   
   }
 
   .addresses:hover,
@@ -282,8 +264,7 @@ span {
 }
 
   .terms_footer {
-    /* background-color:rgb(99, 99, 99); */
-	/* background-color: rgb(201, 83, 5); */
+
     margin-top: 4.30rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
