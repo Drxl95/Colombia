@@ -109,8 +109,7 @@ body {
 
 .cards__med:not(:hover) .choice {
     display: none;
-    /* color: white;
-    background: rgb(255, 106, 6); */
+  
 }
 
 .choice {
@@ -279,42 +278,96 @@ a {
 
 
 
+@media screen and (max-width: 1024px) {
 
+    .bg {
+    background:url(https://www.metrojourneys.com/wp-content/uploads/2019/07/guatape-antioquia-colombia.jpg);
+    width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+    }
+    
 
+    .title {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        width: 21.5rem;
+    }
 
+    #cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .cards__medimage,
+    .cards__bogimage,
+    .cards__santaimage {
+        width: 310px;
+        height: 200px;
+    }
 
+    .cards__med,
+    .cards__bog,
+    .cards__san {
+        height: 32rem;
+        width: 21.5rem;
+        margin-bottom: 4rem;
+        border: 4px black solid;
+        margin-left: 1rem;
+    }
 
+    .cards__med:not(:hover) .choice,
+    .cards__bog:not(:hover) .choice,
+    .cards__san:not(:hover) .choice {
+        display: inherit;
+    }
 
+    .choice {
+        margin-top: 0;
+        margin-left: 2.75rem;
+    }
+    
+    
+    @keyframes med_slide {
+        from {
+            transform: translateY(-20rem);
+        }
+    
+        to {
+            transform: translateY(1.55rem);
+        }
+    }
+    
+    @keyframes bog_slide {
+        from {
+            transform: translateY(-80rem);
+        }
+    
+        to {
+            transform: translateY(1.5rem);
+        }
+    }
+    
+    @keyframes san_slide {
+        from {
+            transform: translateY(-110rem);
+        }
+    
+        to {
+            transform: translateY(1.5rem);
+        }
+    
+    }
 
+    .cards__san {
+        animation-duration: 3s;
+    }
+    .cards__bog {
+        animation-duration: 3s;
+    }
+    .cards__med {
+        animation-duration: 1.5s;
+    }
 
-
-
-/* .cards__san-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 1rem;
-    background:  rgb(255, 106, 6);
-    color:white;
-    font-family: 'Roboto', sans-serif;
-    width: 70%;
-    font-weight: 700;
-    font-size: 1.25rem;
-    text-decoration: none;
-    margin-top: 12%;
-    margin-left: 14%;
 }
 
-.cards__med-btn:hover,
-.cards__med-btn:focus,
-.cards__bog-btn:hover,
-.cards__bog-btn:focus,
-.cards__san-btn:hover,
-.cards__san-btn:focus {
-    background:white;
-    color: rgb(255, 106, 6);
-} */
