@@ -16,6 +16,51 @@
 main {
 	padding-top: 32px;
 }
+body {
+	margin: 0;
+}
+
+/*NAVBAR*/
+
+
+.nav_list {
+	display: flex;
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:   rgb(255, 111, 15);
+	flex-shrink: 1;
+}
+.nav_lists {
+	display: flex;
+	
+}
+
+.nav_lists {
+	font-family: 'Roboto', sans-serif;
+}
+.nav_lists a {
+	padding: 14px 16px;
+	color: white;
+	text-decoration: none;
+}
+.nav_lists a:hover,
+.nav_lists a:focus {
+	-webkit-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.65), 0 17px 50px 0 rgba(0,0,0,0.75);
+	        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.65), 0 17px 50px 0 rgba(0,0,0,0.75);
+	color: lightgray;
+	-webkit-transition: .75s;
+	-o-transition: .75s;
+	transition: .75s;
+}
+.nav_lists a:active {
+	text-decoration: underline;
+}
+
+
+
 .background {
 	background: url(https://miro.medium.com/max/13378/0*TtZttV6PeaCOIpSb.) center/cover;
 	width: 100%;
@@ -302,3 +347,46 @@ span {
             text-decoration-line: underline;
   }
 
+  @media screen and (max-width: 1024px) {
+	img {
+		max-width: 300px;
+		max-height: 200px;
+	}
+	.med_img,
+	.bog_img,
+	.santa_img {
+		margin-left: 2rem;
+	}
+	.med_info,
+	.bog_info,
+	.santa_info {
+		font-size: 1.05rem;
+		width: 85%;
+		margin-left: 1.8rem;
+	}
+	
+	.addresses {
+		font-size: .95rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.addresses__info1 {
+		width: 15rem;
+	}
+
+	.addresses__info2 {
+		width: 15rem;
+	}
+
+
+	.terms_links a {
+		font-size:.95rem ;
+	}
+
+	.terms_footer {
+		width: 15rem;
+		margin-top: 2rem;
+	}
+  }
