@@ -208,3 +208,49 @@ textarea {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
+
+@media screen and (max-width: 1024px) {
+  .contact-section__text {
+    font-size: 1.25rem;
+  }
+  input[type="text"],
+  [type="email"],
+  textarea {
+    width: 250px;
+  }
+  .contact__txtarea label,
+  .textarea {
+    width: 250px;
+    height: 200px;
+  }
+
+  .contact input,
+.contact textarea {
+  font-size: 1.05rem;
+}
+
+.addresses {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addresses__info1 {
+  width: 15rem;
+}
+
+.addresses__info2 {
+  width: 15rem;
+}
+
+
+.terms_links a {
+  font-size: 1rem ;
+}
+
+.terms_footer {
+  width: 15rem;
+  margin-top: 2rem;
+}
+}
