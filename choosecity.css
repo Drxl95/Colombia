@@ -85,7 +85,7 @@ body {
     background:  rgba(255, 236, 0, 0.65);
     height: 35rem;
     width: 30rem;
-    animation: med_slide .85s;
+    animation: med_slide 1.25s;
 }
 .cards__med:hover {
     background:  rgba(255, 236, 0, 0.8);
@@ -248,7 +248,7 @@ a {
 
 @keyframes med_slide {
     from {
-        transform: translateY(-20rem);
+        transform: translateY(-100rem);
     }
 
     to {
@@ -258,7 +258,7 @@ a {
 
 @keyframes bog_slide {
     from {
-        transform: translateY(-20rem);
+        transform: translateY(-80rem);
     }
 
     to {
@@ -268,7 +268,7 @@ a {
 
 @keyframes san_slide {
     from {
-        transform: translateY(-20rem);
+        transform: translateY(-60rem);
     }
 
     to {
