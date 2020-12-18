@@ -27,7 +27,7 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 
 .details {
 	color: white;
-	font-size: 5rem;
+	font-size: 4rem;
 	text-align: center; font-family: 'Kalam', cursive;
 	margin-top: 5.5%;
 	margin-bottom: 0;
@@ -63,14 +63,14 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	text-align: center;
 	color: white;
 	margin: 0;
-	font-size: 7rem; 
+	font-size: 5rem; 
 }
 
 .top-portion__voted {
 	color: white;
 	text-align: center;
 	font-family: 'Eagle Lake', cursive;
-	font-size: 2rem;
+	font-size: 1.25em;
 	-webkit-filter: brightness(100000%);
 	        filter: brightness(100000%);
 }
@@ -80,8 +80,8 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	width: 90%;
 	padding-left: 10rem;
 	line-height: 3.5rem;
-	text-align: left;
-	font-size: 2.5rem;
+	text-align: center;
+	font-size: 1.75em;
 	font-family: 'Kalam', cursive;
 	margin: 1.5rem; -webkit-filter: brightness(100000%); filter: brightness(100000%);
 }
@@ -103,7 +103,7 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	color: black;
 	font-family: 'Kalam', cursive;
 	font-weight: bolder;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 .bottom__container li {
 	list-style: none;
@@ -116,13 +116,13 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
     margin:0;
 }
 .btm-container__depends {
-    font-size: 1.1rem;
+    font-size: small;
     text-align: right;
     font-family: initial;
 }
 .circle {
-	width: 160px;
-    height: 160px;
+	width: 128px;
+    height: 128px;
     border: 2px solid #424242;
     border-radius: 50%;
     margin: auto;
@@ -142,7 +142,6 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 
 .pic_container p {
 	margin: 0.5rem;
-	font-size: 1.5rem;
 }
 
 .pic_container hr {
@@ -151,7 +150,7 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 .btm-container2__header {
 	color: white;
 	text-align: center;
-	font-size: 2.5rem;
+	font-size: 2.25em;
 	font-family: 'Kalam', cursive;
 	margin: 0;
 	padding-top:.5rem;
@@ -159,7 +158,7 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 
 .btm-container2__mymove {
 	font-family: 'Indie Flower', cursive;
-	font-size: 1.75rem;
+	font-size: 1.3rem;
 }
 
 .review_list {
@@ -184,17 +183,17 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 }
 
 .review {
-	font-size: 1.75rem;
+	font-size: 1.3rem;
 	font-family: 'Sedgwick Ave', cursive;
 }
 .review2 {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-family: 'Rock Salt', cursive;
 }
 .pic_container img {
 	border-radius: 50%;
-	width: 220px;
-	height: 220px;
+	width: 135px;
+	height: 135px;
 }
 
 
@@ -221,7 +220,6 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	padding: 14px 16px;
 	color: white;
 	text-decoration: none;
-	font-size: 1.25rem;
 }
 .nav_lists a:hover,
 .nav_lists a:focus {
@@ -259,7 +257,7 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
         flex-wrap: wrap;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.75rem;
+	font-size: 1.35rem;
     /* padding-inline-start: 0; */
   }
 
@@ -282,11 +280,6 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 .addresses__info1 p {
 	margin-top: 28.5px;
 }
-
-.addresses__info1 img {
-	width: 50px;
-	height: auto;
-}
   
   .addresses__info2 {
     -webkit-box-orient: vertical;
@@ -300,7 +293,7 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
   }
   
   .terms_footer {
-    margin-top: 8.5rem;
+    margin-top: 6.7rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -330,7 +323,7 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
     /*li a*/
     color: white;
     text-decoration: none;
-	font-size: 1.75rem;
+	font-size: 1.25rem;
   }
   
   .terms_links :hover {

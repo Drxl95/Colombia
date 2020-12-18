@@ -340,11 +340,6 @@ span {
     text-decoration: none;
     font-size: 1.5rem;
   }
-
-  .addresses__info1 img {
-	width: 50px;
-	height: auto;
-}
   
   .terms_links :hover {
     -webkit-text-decoration-line: underline;
