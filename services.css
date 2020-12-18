@@ -42,6 +42,7 @@ body {
 	padding: 14px 16px;
 	color: white;
 	text-decoration: none;
+	font-size: 1.25rem;
 }
 .nav_lists a:hover,
 .nav_lists a:focus {
@@ -98,8 +99,8 @@ body {
 	padding-bottom: 7px;
 	background: white;
 	color: var(--main-color);
-	
 	font-family: 'Roboto', sans-serif;
+	font-size: 2.5rem;
 }
 
 .package-title {
@@ -110,7 +111,7 @@ body {
 	color: white;
 	background: var(--main-color);
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.5rem;
+	font-size: 2rem;
 
 	
 }
@@ -123,13 +124,14 @@ body {
 	margin-left: 25%;
 	margin-top: 2rem;
 	box-shadow: rgb(43, 42, 42) 4px 4px 4px;
+	font-size:1.75rem
 }
 
 .grid1-basic {
   	text-align: center;
 	grid-area: plan1;
-	width: 27rem;
-	height: 37rem;
+	width: 32rem;
+	height: 42rem;
 	background-color:  rgb(255, 241, 227);
 	font-family: 'Roboto', sans-serif;
 	border: solid 2px black;
@@ -142,8 +144,8 @@ body {
 .grid2-plus {
 	text-align: center;
 	grid-area: plan2;
-	width: 27rem;
-	height: 37rem;
+	width: 32rem;
+	height: 42rem;
 	color:  var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	border: 2px solid black;
@@ -157,8 +159,8 @@ body {
 .grid3-premium {
 	text-align: center;
 	grid-area: plan3;
-	width: 27rem;
-	height: 37rem;
+	width: 32rem;
+	height: 42rem;
 	color:  var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	border: 2px solid black;
@@ -174,7 +176,7 @@ body {
 	padding-inline-start: 0;
 	/* margin-top: 3rem; */
 	margin-bottom: 5rem;
-	font-size: 17px;
+	font-size: 1.25rem;
 }
 
 .lists1 li {
@@ -200,7 +202,7 @@ body {
 	padding-inline-start: 0;
 	/* margin-top: 3rem; */
 	margin-bottom: 5rem;
-	font-size: 17px;
+	font-size: 1.25rem;
 }
 .lists span,
 .lists3 span {
@@ -225,7 +227,7 @@ i {
 	padding-inline-start: 0;
 	/* margin-top: 3rem; */
 	margin-bottom: 5rem;
-	font-size: 17px;
+	font-size: 1.25rem;
 }
 
 .lists3 li {
@@ -242,7 +244,7 @@ i {
 	border-radius: 3px;
 	/* color: rgb(107, 107, 107); */
 	background-color: var(--main-color);
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	font-weight: 800;
 	font-family: inherit;
 	margin-bottom: 3rem;
@@ -293,7 +295,7 @@ i {
 	-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	text-align: center;
-	font-size: 1.15rem;
+	font-size: 1.5rem;
 	font-family: 'Roboto', sans-serif;
 	/* padding-inline-start: 0; */
   }
@@ -329,7 +331,7 @@ i {
   .terms_footer {
 	background-color:rgb(59, 59, 59);
 	/* background-color: var(--main-color); */
-	margin-top: 4.25rem;
+	margin-top: 6rem;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 		-ms-flex-direction: column;
@@ -359,9 +361,13 @@ i {
 	/*li a*/
 	color: white;
 	text-decoration: none;
-	font-size: 1.1rem;
+	font-size: 1.5rem;
   }
   
+  .addresses__info1 img {
+	width: 50px;
+	height: auto;
+}
   .terms_links :hover {
 	-webkit-text-decoration-line: underline;
 			text-decoration-line: underline;
