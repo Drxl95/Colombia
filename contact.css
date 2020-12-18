@@ -34,7 +34,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 .nav_lists a {
-  font-size: 1.25rem;
+  font-size: 1rem;
 	padding: 14px 16px;
 	color: white;
 	text-decoration: none;
@@ -72,7 +72,7 @@ body {
 .contact-section {
   text-align: center;
   width: 100%;
-  min-height: 90vh;
+  min-height: 95vh;
   background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(img/colo.png);
   background: -o-linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(img/colo.png);
   background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(img/colo.png);
@@ -80,7 +80,7 @@ body {
   background-position: center;
   color: white;
   padding: 4rem;
-  padding-bottom: 9rem;
+  padding-bottom: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +95,7 @@ body {
 
 .contact-section__text {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 label {
@@ -114,7 +114,7 @@ input:-webkit-autofill:active {
   margin: .5rem;
   font-weight: 1000;
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .contact textarea {
@@ -131,15 +131,15 @@ input[type="text"],
 textarea {
   background-color: rgb(223, 198, 182);
   border-color: rgb(201, 83, 5);
-  width: 700px;
+  width: 550px;
   height: 40px;
   margin-right: 1.45rem;
 }
 
 .contact__txtarea label,
 .textarea {
-  width: 700px;
-  height: 350px;
+  width: 550px;
+  height: 300px;
   vertical-align: top;
 
 }
@@ -150,7 +150,7 @@ textarea {
   background:  rgb(201, 83, 5);
   border: none;
   color: white;
-  font-size: 1.05rem;
+  font-size: 1rem;
   margin-right: 200rem;
   margin-top: 2rem;
 }
@@ -181,7 +181,7 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .addresses a {
@@ -213,7 +213,7 @@ textarea {
 }
 .terms_footer {
   background-color: rgb(201, 83, 5);
-  margin-top: 6rem;
+  margin-top: 5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -242,7 +242,7 @@ textarea {
   /*li a*/
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 
 }
 
@@ -303,6 +303,9 @@ textarea {
 }
 
 @media only screen and (min-width: 660px) and (max-width: 1024px) {
+  .contact-section__text {
+    font-size: 1.5rem;
+  }
   .name-form {
     margin-left: .34rem;
   }
@@ -322,12 +325,16 @@ textarea {
     flex-direction: row;
     align-items: center;
   }
+  .addresses__info1 {
+    margin-left: 1rem;
+  }
 }
+
 
 @media only screen and (min-width: 1024px) and (max-width:1366px) and (min-height:1024px) and (max-height:1366px) {
   .contact-section {
     height: 85vh;
-    padding-bottom: 9rem;
+    padding-bottom: 15rem;
   }
   .nav_lists a {
     font-size: 1.5rem
@@ -354,6 +361,9 @@ textarea {
 
   .addresses {
     font-size: 1.5rem;
+  }
+  .addresses__info1 {
+    margin-left: 4rem;
   }
   .terms_links a {
     font-size: 1.5rem;
