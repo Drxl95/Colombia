@@ -11,11 +11,20 @@
 }
 
 body {
+    margin: 0;
+}
+.bg {
     background:url(https://www.metrojourneys.com/wp-content/uploads/2019/07/guatape-antioquia-colombia.jpg);
     margin: 0;
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    height: 95vh;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    
 }
 
 :root {
@@ -24,7 +33,7 @@ body {
 }
 
 .title {
-    margin-top: 2.5%;
+    /* margin-top: 2.5%; */;
     margin-left: 12.5%;
     text-align: center;
     border: 2px solid black;
@@ -280,12 +289,9 @@ a {
 
 @media screen and (max-width: 1024px) {
 
-    .bg {
-    background:url(https://www.metrojourneys.com/wp-content/uploads/2019/07/guatape-antioquia-colombia.jpg);
-    width: 100vw;
-	height: 100vh;
-	position: fixed;
-	z-index: -1;
+    body {
+        background-attachment: scroll;
+    
     }
     
 

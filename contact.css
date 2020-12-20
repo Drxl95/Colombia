@@ -257,6 +257,9 @@ textarea {
   .nav_lists a {
     font-size: 1rem
   }
+  .contact-section {
+    padding-left: 3rem;
+  }
   .contact-section__text {
     font-size: 1.25rem;
   }
@@ -270,38 +273,73 @@ textarea {
     width: 250px;
     height: 200px;
   }
-
   .contact input,
   .contact textarea {
     font-size: 1.05rem;
   }
-
   .addresses {
     font-size: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
 .addresses__info1 {
   width: 15rem;
 }
-
 .addresses__info2 {
   width: 15rem;
 }
-
-
 .terms_links a {
   font-size: 1rem ;
 }
-
 .terms_footer {
   width: 15rem;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 }
 
+@media only screen /*Galaxy Fold*/
+and (min-device-width: 280px) 
+and (max-device-width: 280px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 2) {
+  .nav_lists a {
+    font-size: .75rem;
+  }
+  #flex-container {
+    padding-left: 0;
+  }
+  .contact-section {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    margin-left: ;
+  }
+  .contact-section__text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-left: 1.85rem;
+  }
+  input[type="text"],
+  [type="email"],
+  textarea {
+    width: 200px;
+  }
+  .contact__txtarea label,
+  .textarea {
+    width: 200px;
+    height: 150px;
+  }
+  .contact input,
+.contact textarea {
+  font-size: .85rem;
+}
+  .contact-section__btn {
+    padding: 10px 32px;
+    margin-left: 2rem;
+    
+}
+}
 @media only screen and (min-width: 660px) and (max-width: 1024px) {
   .contact-section__text {
     font-size: 1.5rem;
@@ -330,17 +368,98 @@ textarea {
   }
 }
 
-
-@media only screen and (min-width: 1024px) and (max-width:1366px) and (min-height:1024px) and (max-height:1366px) {
+@media only screen  /*IPAD*/
+	and (min-device-width: 768px)
+	and (max-device-width: 768px)
+	and (orientation: portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {
+    .contact-section {
+      height: 85vh;
+      padding-bottom: 15rem;
+      padding-left: 5rem;
+    }
+    .nav_lists a {
+      font-size: 1.25rem
+    }
+    .contact-section__text {
+      font-size: 1.75rem;
+    }
+    input[type="text"],
+    [type="email"],
+    textarea {
+      width: 500px;
+      height: 50px;
+    }
+    .contact__txtarea label,
+    .textarea {
+      width: 500px;
+      height: 350px;
+    }
+    .contact input,
+    .contact textarea {
+      font-size: 1.8rem;
+    }
+    .addresses {
+      font-size: 1.5rem;
+    }
+    .addresses__info1 {
+      margin-left: 4rem;
+    }
+    .terms_links a {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media only screen  /*IPAD PRO*/
+	and (min-device-width: 1024px)
+	and (max-device-width: 1024px)
+	and (orientation: portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {
+    .contact-section {
+      height: 85vh;
+      padding-bottom: 15rem;
+    }
+    .nav_lists a {
+      font-size: 1.5rem
+    }
+    .contact-section__text {
+      font-size: 2.5rem;
+    }
+    input[type="text"],
+    [type="email"],
+    textarea {
+      width: 650px;
+      height: 50px;
+    }
+    .contact__txtarea label,
+    .textarea {
+      width: 650px;
+      height: 350px;
+    }
+    .contact input,
+    .contact textarea {
+      font-size: 2rem;
+    }
+    .addresses {
+      font-size: 1.5rem;
+    }
+    .addresses__info1 {
+      margin-left: 4rem;
+    }
+    .terms_links a {
+      font-size: 1.5rem;
+    }
+  }
+/* @media only screen and (min-width: 1024px) and (max-width:1366px) and (min-height:1024px) and (max-height:1366px) {
   .contact-section {
     height: 85vh;
     padding-bottom: 15rem;
   }
   .nav_lists a {
-    font-size: 1.5rem
+    font-size: 1.25rem
   }
   .contact-section__text {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   input[type="text"],
   [type="email"],
@@ -357,8 +476,6 @@ textarea {
   .contact textarea {
     font-size: 1.8rem;
   }
- 
-
   .addresses {
     font-size: 1.5rem;
   }
@@ -368,7 +485,7 @@ textarea {
   .terms_links a {
     font-size: 1.5rem;
   }
-}
+} */
 
 
 

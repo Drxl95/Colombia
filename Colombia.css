@@ -25,24 +25,6 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 
 
 
-.details {
-	color: white;
-	font-size: 4rem;
-	text-align: center; font-family: 'Kalam', cursive;
-	margin-top: 5.5%;
-	margin-bottom: 0;
-
-}
-.details_scroll {
-	color: white;
-}
-
-.details_scroll:hover,
-.details_scroll:focus {
-
-	text-shadow: 5px 5px 50px rgb(230, 103, 0);;
-	color: rgb(230, 103, 0);
-}
 
 #top-portion {
 	padding-top: 4.5rem;
@@ -86,15 +68,33 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	margin: 1.5rem; -webkit-filter: brightness(100000%); filter: brightness(100000%);
 }
 
-.btm-containers {
-	background-image: url(img/tejo2.jpg);
-	/* background-size: cover; */
-	background-repeat: no-repeat;
-	background-size: cover;
+
+.details {
+	color: white;
+	font-size: 4rem;
+	text-align: center; font-family: 'Kalam', cursive;
+	margin-top: 5.5%;
+	margin-bottom: 0;
+
+}
+.details_scroll {
+	color: white;
+}
+
+.details_scroll:hover,
+.details_scroll:focus {
+
+	text-shadow: 5px 5px 50px rgb(230, 103, 0);;
+	color: rgb(230, 103, 0);
 }
 
 
-/* GOOD CODE */
+/*Yellow Section*/
+.btm-containers {
+	background-image: url(img/tejo2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .bottom__container {
 	background-color:rgba(255, 236, 0, 0.75);
 	text-align: center;
@@ -192,8 +192,8 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 }
 .pic_container img {
 	border-radius: 50%;
-	width: 135px;
-	height: 135px;
+	width: 165px;
+	height: 165px;
 }
 
 
@@ -331,5 +331,413 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
             text-decoration-line: underline;
   }
 
+
+@media screen and (max-width: 1024px) {
+	#top-portion {
+		padding-top: 2rem;
+		background-image: linear-gradient( rgba(80, 80, 80, 0.55), rgba(75, 75, 75, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+		background-position: right;
+	}
+	.top-portion__colombia {
+		font-size: 3rem;
+	}
+	.top-portion__voted {
+		font-size: 1.15rem;
+	}
+	.top-portion__desc {
+		line-height: 1.45rem;
+		text-align: left;
+		font-size: 1.25rem;
+		padding-left: 0;
+	}
+
+	.review_list {
+		flex-direction: column;
+	}
+	.details {
+		display: none;
+	}
+	.btm-containers {
+		background-image: url(img/abstract.jpg);
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+	.btm-container__why {
+		font-size: 1.8rem;
+		margin-top: 1.25rem;
+	}
+	.bottom__container ul {
+		padding-inline-start: 0;
+	}
+	.lists {
+		padding-bottom: 0px!important;
+	}
+	 .lists p {
+		margin-block-start: .45em;
+		margin-block-end: 1.5em;
+		line-height:2rem;
+	}
+	.btm-container2__header {
+		font-size: 1.65rem;
+		padding-top: 2rem;
+	}
+	.pic_container {
+		padding-top: 4rem;
+	}
+	.pic_container img {
+		width: 150px;
+		height: 150px;
+	}
+	.addresses {
+		font-size: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.addresses__info1 {
+		width: 15rem;
+	}
+	.addresses__info1 img {
+		width: 36px;
+		height: 36px;
+	}
+	.addresses__info2 {
+		width: 15rem;
+	}
+	.terms_links a {
+		font-size:1rem ;
+	}
+	.terms_footer {
+		width: 15rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+}
+
+
+@media screen and (max-width:425px) and (min-height:730px) {
+	.top-portion__desc {
+		line-height: 1.5rem;
+		text-align: left;
+		font-size: 1.5rem;
+		padding-left: 0;
+	}
+	.pic_container img {
+		width: 150px;
+		height: 150px;
+	}
+}
+@media only screen 
+  and (min-device-width: 640px) 
+  and (max-device-width: 670px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.top-portion__desc {
+		line-height: 1.5rem;
+		text-align: left;
+		font-size: 1.1rem;
+		padding-left: 0;
+	}
+	.top-portion__voted {
+		font-size: 1rem;
+	}
+	.pic_container img {
+		width: 150px;
+		height: 150px;
+	}
+}
+@media only screen /*Galaxy Fold*/
+and (min-device-width: 280px) 
+and (max-device-width: 280px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 2) {
+	.nav_lists a {
+		font-size: .75rem;
+	}
+.top-portion__colombia {
+	font-size: 2.25rem;
+}
+.top-portion__voted {
+	font-size: 1rem;
+}
+.top-portion__desc {
+	line-height: 1.25rem;
+	text-align: left;
+	font-size: 1.15rem;
+	padding-left: 0;
+}
+.btm-container2__header {
+	font-size: 1.5rem;
+	padding-top: 2rem;
+}
+.pic_container img {
+	width: 150px;
+	height: 150px;
+}
+.btm-container2__mymove {
+	font-size: 1.25rem;
+}
+.review {
+	font-size: 1.5rem;
+}
+.review2 {
+	font-size: 1rem;
+}
+.pic_container {
+	font-size: 1.1rem;
+}
+}
+
+@media only screen /*Galaxy Fold*/
+and (min-device-width: 653px) 
+and (max-device-width: 653px) 
+and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 2) {
+	.top-portion__colombia {
+		font-size: 1.75rem;
+	}
+	.top-portion__voted {
+		font-size: .75rem;
+	}
+	.top-portion__desc {
+		line-height: 1.10rem;
+		text-align: left;
+		font-size: 1.1rem;
+		padding-left: 0;
+	}
+	.pic_container img {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@media only screen  /*SURFACE DUO*/
+	and (min-device-width: 540px)
+	and (max-device-width: 540px)
+	and (orientation: portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		.top-portion__desc {
+			line-height: 1.75rem;
+			text-align: left;
+			font-size: 1.7rem;
+			padding-left: 0;
+		}
+	
+	
+	}
+@media screen and (min-width:720px) {
+	.addresses {
+		flex-direction: row;
+	}
+	.addresses__info2  {
+		margin-top: 2rem;
+	}
+}
+
+@media only screen  /*IPAD*/
+	and (min-device-width: 768px)
+	and (max-device-width: 768px)
+	and (orientation: portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		.top-portion__colombia {
+			font-size: 4.35rem;
+			margin-top: 1.5rem;
+		}
+		.top-portion__voted {
+			font-size: 1.65rem;
+		}
+		.top-portion__desc {
+			line-height: 2.25rem;
+			text-align: left;
+			font-size: 2.25rem;
+			padding-left: 0;
+		}
+		.btm-container__why {
+			font-size: 3rem;
+			margin-top: 1.25rem;
+		}
+		.lists p {
+			font-size: 1.7rem;
+		}
+		.btm-container2__header {
+			font-size: 3rem;
+			padding-top: 2rem;
+		}
+		.btm-container2__mymove {
+			font-size: 2rem;
+		}
+		.review {
+			font-size: 1.75rem;
+		}
+		.review2 {
+			font-size: 1.5rem;
+		}
+		.pic_container {
+			font-size: 1.5rem;
+		}
+		.pic_container img {
+			width: 200px;
+			height: 200px;
+		}
+		.addresses {
+			font-size: 1.15rem;
+		}
+		.terms_links {
+			font-size: 1.15rem;
+		}
+		.addresses__info1 {
+			margin-left: 3rem;
+		}
+		.addresses__info2  {
+			margin-top: 2rem;
+		}
+	}
+
+	@media only screen  /*IPAD*/
+	and (min-device-width: 1024px)
+	and (max-device-width: 1024px)
+	and (orientation: landscape)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		.top-portion__colombia {
+			font-size: 4.35rem;
+			margin-top: 1.5rem;
+		}
+		.top-portion__voted {
+			font-size: 1.65rem;
+		}
+		.top-portion__desc {
+			line-height: 2rem;
+			text-align: left;
+			font-size: 2rem;
+			padding-left: 0;
+	}
+	.btm-container__why {
+		font-size: 2.75rem;
+		margin-top: 1.25rem;
+	}
+	.lists p {
+		font-size: 2rem;
+	}
+	.btm-container2__header {
+		font-size: 2.75rem;
+		padding-top: 2rem;
+	}
+	.btm-container2__mymove {
+		font-size: 2rem;
+	}
+	.review {
+		font-size: 2rem;
+	}
+	.review2 {
+		font-size: 1.75rem;
+	}
+	.pic_container {
+		font-size: 1.25rem;
+	}
+	.pic_container img {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+@media only screen  /*IPAD PRO*/
+	and (min-device-width: 1024px)
+	and (max-device-width: 1024px)
+	and (orientation: portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		.nav_lists a {
+			font-size: 1.75rem;
+		}
+		.top-portion__colombia {
+			font-size: 5.5rem;
+			margin-top: 1.5rem;
+		}
+		.top-portion__voted {
+			font-size: 1.75rem;
+		}
+		.top-portion__desc {
+			line-height: 3.25rem;
+			text-align: left;
+			font-size: 3.25rem;
+			padding-left: 0;
+		}
+		.btm-container__why {
+			font-size: 3.25rem;
+			margin-top: 1.25rem;
+		}
+		.lists p {
+			font-size: 2.25rem;
+		}
+		.btm-container__depends {
+			font-size: 1.25rem;
+		}
+		.btm-container2__header {
+			font-size: 3.25rem;
+			padding-top: 2rem;
+		}
+		.btm-container2__mymove {
+			font-size: 2.5rem;
+		}
+		.review {
+			font-size: 2.25rem;
+		}
+		.review2 {
+			font-size: 2.25rem;
+		}
+		.pic_container {
+			font-size: 1.85rem;
+		}
+		.pic_container img {
+			width: 220px;
+			height: 220px;
+		}
+		.addresses {
+			font-size: 1.5rem;
+		}
+		.addresses__info1 {
+			margin-left: 3.75rem;
+		}
+		.addresses__info2  {
+			margin-top: 1.75rem;
+		}
+		.terms_links a {
+			font-size: 1.5rem;
+		}
+	}
+
+	@media only screen  /*IPAD PRO*/
+	and (min-device-width: 1366px)
+	and (max-device-width: 1366px)
+	and (orientation: landscape)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		#top-portion {
+			padding-top: 2rem;
+			background-image: linear-gradient( rgba(80, 80, 80, 0.55), rgba(75, 75, 75, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+			background-position: right;
+		}
+		.top-portion__colombia {
+			font-size: 5.5rem;
+			margin-top: 1rem;
+		}
+		.top-portion__voted {
+			font-size: 1.75rem;
+		}
+		.top-portion__desc {
+			line-height: 2.75rem;
+			text-align: left;
+			font-size: 2.5rem;
+			padding-left: 0;
+			margin-top: 3.75rem;
+		}
+		.details {
+			display: none;
+		}
+		.addresses__info1 {
+			margin-left: 6rem;
+		}
+		.addresses__info2  {
+			margin-top: 1rem;
+		}
+	}
 
 
