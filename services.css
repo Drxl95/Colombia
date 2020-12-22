@@ -71,6 +71,7 @@ body {
 	/* grid-template-rows: 2rem 5rem;  */
 	grid-template-areas: "header header header"
 						 "plan1 plan2 plan3";
+						  
 	margin-bottom: 4rem;
 	text-align: center;
 	
@@ -418,7 +419,6 @@ i {
 		.button {
 			font-size: 1rem;
 		}
-
 		.addresses {
 			font-size: 1rem;
 			display: flex;
@@ -440,7 +440,150 @@ i {
 			margin-bottom: 1rem;
 		}
 	}
-  @media screen and (min-width: 360px) and (max-width: 375px) {
+	@media only screen  /*iphoneSE*/
+	and (min-device-width: 320px)
+	and (max-device-width: 320px)
+	and (orientation: portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		.nav_lists a {
+			font-size: .9rem;
+		}
+		.grid-header {
+			font-size: 1rem;
+			margin-right: 0;
+		}
+		.grid-container {
+			grid-template-areas:"header"
+								"plan1"
+								"plan2"
+								"plan3";
+		}
+		.grid1-basic {
+			width: 18rem;
+			height: 37rem;
+			margin-left: .85rem;
+		}
+		.grid2-plus {
+			width: 18rem;
+			height: 37rem;
+			margin-left: .85rem;
+		}
+		.grid3-premium {
+			width: 18rem;
+			height: 37rem;
+			margin-left: .85rem;
+		}
+		.package-title {
+			font-size: 1rem;
+		}
+		.prices {
+			font-size: 1rem;
+		}
+		.list-title {
+			font-size: 1rem;
+		}
+		.lists1 li {
+			font-size: .9rem;
+		}
+		.lists {
+			font-size: .9rem;
+		}
+		.lists3 {
+			font-size: .9rem;
+		}
+		.button {
+			font-size: 1rem;
+		}
+		.addresses {
+			font-size: 1rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.addresses__info1 {
+			width: 15rem;
+		}
+		.addresses__info2 {
+			width: 15rem;
+		}
+		.terms_links a {
+			font-size: 1rem ;
+		}
+		.terms_footer {
+			width: 15rem;
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+		}
+	}
+	@media only screen  /*iphoneSE*/
+	and (min-device-width: 568px)
+	and (max-device-width: 568px)
+	and (orientation: landscape)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		.grid-container {
+			grid-template-areas:"header""header"
+								"plan1" "plan2"
+								"plan3""plan3";
+		}
+		.grid-header {
+			font-size: .95rem;
+			margin-right: 0;
+		}
+		.grid1-basic {
+			width: 25rem;
+			height: 37rem;
+			margin-left: 5.25rem;
+		}
+		.grid2-plus {
+			width: 25rem;
+			height: 37rem;
+			margin-left: 5.25rem;
+		}
+		.grid3-premium {
+			width: 25rem;
+			height: 37rem;
+			margin-left: 5.25rem;
+		}
+		.package-title {
+			font-size: 1rem;
+		}
+		.prices {
+			font-size: 1rem;
+		}
+		.list-title {
+			font-size: 1rem;
+		}
+		.lists1 li {
+			font-size: .9rem;
+		}
+		.lists {
+			font-size: .9rem;
+		}
+		.lists3 {
+			font-size: .9rem;
+		}
+		.addresses {
+			font-size: 1rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.addresses__info1 {
+			width: 15rem;
+		}
+		.addresses__info2 {
+			width: 15rem;
+		}
+		.terms_links a {
+			font-size: 1rem ;
+		}
+		.terms_footer {
+			width: 15rem;
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+		}
+	}
+  @media screen and (min-width: 360px) and (max-width: 384px) {
 	.grid-container {
 		grid-template-areas:"header"
 							"plan1"
@@ -545,11 +688,12 @@ i {
 		margin-bottom: 1rem;
 	}
 }
-@media screen and (min-width: 540px) and (max-width: 640px)  {
+
+@media screen and (min-width: 540px) and (max-width: 540px)  {
 	.grid-container {
-		grid-template-areas:	"header"
+		grid-template-areas:"header""header"
 							"plan1" "plan2"
-								"plan3";
+							"plan3""plan3";
 	}
 	.grid1-basic {
 		width: 25rem;
@@ -596,26 +740,163 @@ i {
 		margin-bottom: 1rem;
 	}
 }
-@media screen and (min-width: 720px) and (max-width:736px) { /*SURFACE DUO PIXEL2 IPHONEpLUS */
+@media only screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 600px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.grid-container {
+		grid-template-areas:"header"
+							"plan1" 
+							"plan2"
+							"plan3";
+	}
+	.grid-header {
+		font-size: 1.1rem;
+		margin-right: 0;
+	}
+	.grid1-basic {
+		width: 30rem;
+		height: 37rem;
+		margin-left: 3.5rem;
+	}
+	.grid2-plus {
+		width: 30rem;
+		height: 37rem;
+		margin-left: 3.5rem;
+	}
+	.grid3-premium {
+		width: 30rem;
+		height: 37rem;
+		margin-left: 3.5rem;
+	}
+	.package-title {
+		font-size: 1.25rem;
+	}
+	.prices {
+		font-size: 1.25rem;
+	}
+	.list-title {
+		font-size: 1.25rem;
+	}
+	.lists1 li {
+		font-size: 1.1rem;
+	}
+	.lists {
+		font-size: 1.1rem;
+	}
+	.lists3 {
+		font-size: 1.1rem;
+	}
+	.addresses {
+		font-size: 1rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.addresses__info1 {
+		width: 15rem;
+		margin-left: 1rem;
+	}
+	.addresses__info2 {
+		width: 15rem;
+	}
+	.terms_links a {
+		font-size: 1rem ;
+	}
+	.terms_footer {
+		width: 15rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+  }
+@media screen and (min-width: 640px) and (max-width:653px) { 
 	.grid-container {
 		grid-template-areas:"header""header"
 							"plan1" "plan2"
 							"plan3""plan3";
 	}
+	.grid-header {
+		font-size: .95rem;
+		margin-right: 0;
+	}
 	.grid1-basic {
-		width: 15rem;
+		width: 30rem;
 		height: 37rem;
-		/* margin-left: 9.75rem; */
+		margin-left: 2.75rem;
 	}
 	.grid2-plus {
-		width: 15rem;
+		width: 30rem;
 		height: 37rem;
-		/* margin-left: 9.75rem; */
+		margin-left: 2.75rem;
 	}
 	.grid3-premium {
-		width: 25rem;
+		width: 30rem;
 		height: 37rem;
-		margin-left: 9.75rem;
+		margin-left: 2.75rem;
+	}
+	.package-title {
+		font-size: 1rem;
+	}
+	.prices {
+		font-size: 1rem;
+	}
+	.list-title {
+		font-size: 1rem;
+	}
+	.lists1 li {
+		font-size: .9rem;
+	}
+	.lists {
+		font-size: .9rem;
+	}
+	.lists3 {
+		font-size: .9rem;
+	}
+	.addresses {
+		font-size: 1rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.addresses__info1 {
+		width: 15rem;
+		margin-left: 1rem;
+	}
+	.addresses__info2 {
+		width: 15rem;
+	}
+	.terms_links a {
+		font-size: 1rem ;
+	}
+	.terms_footer {
+		width: 15rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+} 
+
+@media screen and (min-width: 720px) and (max-width:736px) { /*SURFACE DUO PIXEL2 IPHONEpLUS */
+	.grid-container {
+		grid-template-areas:"header"
+							"plan1"
+							"plan2"
+							"plan3";
+	}
+	.grid1-basic {
+		width: 35rem;
+		height: 37rem;
+		margin-left: 5.25rem;
+	}
+	.grid2-plus {
+		width: 35rem;
+		height: 37rem;
+		margin-left: 5.25rem;
+	}
+	.grid3-premium {
+		width: 35rem;
+		height: 37rem;
+		margin-left: 5.25rem;
 	}
 	.package-title {
 		font-size: 1.25rem;
@@ -649,23 +930,7 @@ i {
 	}
 }
 
-@media screen and (min-width: 640px) and (max-width:640px) { /*G$ and Galaxy*/
-	.grid1-basic {
-		width: 25rem;
-		height: 37rem;
-		margin-left: 7.25rem;
-	}
-	.grid2-plus {
-		width: 25rem;
-		height: 37rem;
-		margin-left: 7.25rem;
-	}
-	.grid3-premium {
-		width: 25rem;
-		height: 37rem;
-		margin-left: 7.25rem;
-	}
-}
+
 @media screen and (min-width: 667px) and (max-width:667px) { /*IPHONE 6s*/
 .grid-container {
 	grid-template-areas:	"header"
@@ -673,19 +938,19 @@ i {
 							"plan3";
 }
 .grid1-basic {
-	width: 25rem;
+	width: 30rem;
 	height: 37rem;
-	margin-left: 8.25rem;
+	margin-left: 5.5rem;
 }
 .grid2-plus {
-	width: 25rem;
+	width: 30rem;
 	height: 37rem;
-	margin-left: 8.25rem;
+	margin-left: 5.5rem;
 }
 .grid3-premium {
-	width: 25rem;
+	width: 30rem;
 	height: 37rem;
-	margin-left: 8.25rem;
+	margin-left: 5.5rem;
 }
 .package-title {
 	font-size: 1.25rem;
@@ -719,7 +984,7 @@ i {
 }
 
 
-@media screen and (min-width: 810px) and (max-width:836px) { /*PIXEL2XL IPHONEX*/
+@media screen and (min-width: 810px) and (max-width:960px) { /*PIXEL2XL IPHONEX*/
 	.grid-container {
 		column-gap: 2rem;
 	}
@@ -787,10 +1052,10 @@ i {
 }
 
 @media only screen  /*IPAD*/
-	and (min-device-width: 768px)
-	and (max-device-width: 768px)
-	and (orientation: portrait)
-	and (-webkit-min-device-pixel-ratio: 2) {
+and (min-device-width: 768px)
+and (max-device-width: 834px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
 		.grid-container {
 			column-gap: 1rem;
 		}
@@ -803,19 +1068,19 @@ i {
 		.grid1-basic {
 			grid-area: plan1;
 			width: 15rem;
-			height: 37rem;
+			height: 38rem;
 			
 		}
 		.grid2-plus {
 			grid-area: plan2;
 			width: 15rem;
-			height: 37rem;
+			height: 38rem;
 			
 		}
 		.grid3-premium {
 			grid-area: plan3;
 			width: 15rem;
-			height: 37rem;
+			height: 38rem;
 			
 		}
 		.package-title {
@@ -856,10 +1121,37 @@ i {
 			margin-bottom: 1rem;
 		}
 	}
-
+	@media only screen  /*IPAD*/
+	and (min-device-width: 800px)
+	and (max-device-width: 800px)
+	and (orientation: portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		.grid-container {
+			row-gap: 7rem;
+			margin-bottom: 7rem;
+		}
+		.grid1-basic {
+			grid-area: plan1;
+			width: 15rem;
+			height: 42rem;
+			
+		}
+		.grid2-plus {
+			grid-area: plan2;
+			width: 15rem;
+			height: 42rem;
+			
+		}
+		.grid3-premium {
+			grid-area: plan3;
+			width: 15rem;
+			height: 42rem;
+			
+		}
+	}
 	@media only screen  /*IPAD*/
 	and (min-device-width: 1024px)
-	and (max-device-width: 1024px)
+	and (max-device-width: 1280px)
 	and (orientation: landscape)
 	and (-webkit-min-device-pixel-ratio: 2) {
 		.grid-container {

@@ -396,9 +396,71 @@ a {
     }
 
     .title {
-        margin-left: 0rem;
+        margin-left: 1rem;
         margin-top: 2rem;
-        width: 21.5rem;
+        width: 15rem;
+        font-size: .95rem;
+    }
+    
+    .title h1 {
+        font-size: 1rem;
+    }
+
+    #cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .cards__med-title,
+    .cards__bog-title,
+    .cards__san-title {
+        font-size: 1.15rem;
+    }
+    .cards__medimage,
+    .cards__bogimage,
+    .cards__santaimage {
+        width: 200px;
+        height: 120px;
+    }
+    .cards__texthead {
+        font-size: 1rem;
+    }
+    .cards__med,
+    .cards__bog,
+    .cards__san {
+        height: 22rem;
+        width: 14.5rem;
+        margin-bottom: 2rem;
+        border: 3px black solid;
+        margin-left: 1.5rem;
+    }
+
+    .cards__med:not(:hover) .choice,
+    .cards__bog:not(:hover) .choice,
+    .cards__san:not(:hover) .choice {
+        display: inherit;
+    }
+
+    .choice {
+        margin-top: 0;
+        font-size: 1.1rem;
+        margin-left: .9rem;
+        margin-top: 2rem;
+        width: 90%;
+    }
+  }
+  @media only screen  /*IphoneSE*/
+  and (min-device-width: 320px) 
+  and (max-device-width: 320px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .title {
+        margin-left: 1.25rem;
+        margin-top: 2rem;
+        width: 17.5rem;
         font-size: .95rem;
     }
     
@@ -418,8 +480,8 @@ a {
     .cards__medimage,
     .cards__bogimage,
     .cards__santaimage {
-        width: 280px;
-        height: 170px;
+        width: 220px;
+        height: 110px;
     }
     .cards__texthead {
         font-size: 1.25rem;
@@ -427,11 +489,11 @@ a {
     .cards__med,
     .cards__bog,
     .cards__san {
-        height: 28rem;
-        width: 18.5rem;
+        height: 22rem;
+        width: 16.5rem;
         margin-bottom: 2rem;
         border: 3px black solid;
-        margin-left: 1.5rem;
+        margin-left: 1.75rem;
     }
 
     .cards__med:not(:hover) .choice,
@@ -442,13 +504,12 @@ a {
 
     .choice {
         margin-top: 0;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin-left: .9rem;
         margin-top: 2rem;
         width: 90%;
     }
   }
-
  @media only screen  /*MotoG4 and GalaxtS5*/
   and (min-device-width: 360px) 
   and (max-device-width: 360px) 
