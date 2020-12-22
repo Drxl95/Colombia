@@ -876,7 +876,7 @@ i {
 	}
 } 
 
-@media screen and (min-width: 720px) and (max-width:736px) { /*SURFACE DUO PIXEL2 IPHONEpLUS */
+@media screen and (min-width: 720px) and (max-width:740px) { /*SURFACE DUO PIXEL2 IPHONEpLUS */
 	.grid-container {
 		grid-template-areas:"header"
 							"plan1"
@@ -1048,6 +1048,57 @@ i {
 		width: 15rem;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
+	}
+}
+@media only screen 
+and (min-device-width:900px)
+and (max-device-width:950px)
+ {
+	.grid-container {
+		column-gap: 2rem;
+		row-gap: 6rem;
+		margin-bottom: 6rem;
+	}
+	.grid-header {
+		grid-area: header;
+		width: 90%;
+		margin-left: 2.5rem;
+		font-size: .95rem;
+	}
+	.grid1-basic {
+		grid-area: plan1;
+		width: 15rem;
+		height: 45rem;
+		
+	}
+	.grid2-plus {
+		grid-area: plan2;
+		width: 15rem;
+		height: 45rem;
+		
+	}
+	.grid3-premium {
+		grid-area: plan3;
+		width: 15rem;
+		height: 45rem;
+		
+	}
+	.package-title {
+		font-size: 1.25rem;
+	}
+	.prices {
+		font-size: 1.25rem;
+	}
+	.list-title {
+		font-size: 1rem;
+	}
+	.lists3 li {
+		margin-top: 2.85rem;
+	}
+	.button {
+		padding: 15px 38px;
+		font-size: 1rem;
+		
 	}
 }
 
@@ -1310,15 +1361,88 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		}
 	}
 
-	@media only screen  /*IPAD PRO*/
-	and (min-device-width: 1366px)
-	and (max-device-width: 1366px)
+	@media only screen   
+	and (min-width: 1280px)   
+	and (max-width: 1366px)  {
+		.grid-container {
+			column-gap: 2rem;
+		}
+		.grid-header {
+			grid-area: header;
+			width: 90%;
+			margin-left: 2.5rem;
+			font-size: .95rem;
+		}
+		.grid1-basic {
+			grid-area: plan1;
+			width: 22rem;
+			height: 37rem;
+			
+		}
+		.grid2-plus {
+			grid-area: plan2;
+			width: 22rem;
+			height: 37rem;
+			
+		}
+		.grid3-premium {
+			grid-area: plan3;
+			width: 22rem;
+			height: 37rem;
+			
+		}
+		.package-title {
+			font-size: 1.25rem;
+		}
+		.prices {
+			font-size: 1.25rem;
+		}
+		.list-title {
+			font-size: 1rem;
+		}
+		.lists1 li {
+			margin-top: 3rem;
+			margin-bottom: 3.5rem;
+		}
+		.lists3 li {
+			margin-top: 2.85rem;
+		}
+		.button {
+			padding: 15px 38px;
+			font-size: 1rem;
+		}
+		.addresses {
+			font-size: 1rem;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+		.addresses__info1 {
+			width: 15rem;
+			margin-left: 5.5rem;
+		}
+		.addresses__info2 {
+			width: 15rem;
+		}
+		.terms_links a {
+			font-size: 1rem ;
+		}
+		.terms_footer {
+			width: 15rem;
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+		}
+	}
+	@media only screen  
+	and (min-device-width: 1367px)
+	and (max-device-width: 1500px)
 	and (orientation: landscape)
 	and (-webkit-min-device-pixel-ratio: 2) {
 		.grid-container {
-			column-gap: 1rem;
+			column-gap: 1.25rem;
 	}
 	}
+
 
 
 

@@ -127,7 +127,6 @@ span {
 .medellin_img_container {
 	display: inline-block;
 	vertical-align: middle;
-
 }
 
 .med_img {
@@ -455,6 +454,103 @@ span {
 		font-size: 1.15rem;
 	}
 }
+@media only screen and (min-width: 568px) and (max-width: 568px) {  /*Mobile*/
+	.medellin,
+	.bogota,
+	.santa {
+		font-size: 1.5rem;
+	}
+	.med_img,
+	.bog_img,
+	.santa_img {
+		margin-left: 5.25rem;
+		width: 70%;
+		height: auto;
+		margin-bottom: 5%;
+	}
+	.med_info,
+	.bog_info,
+	.santa_info {
+		margin-left: 2.5rem;
+		font-size: 1rem;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 600px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.medellin,
+	.bogota,
+	.santa {
+		font-size: 2rem;
+	}
+	.med_img,
+	.bog_img,
+	.santa_img {
+		margin-left: 4.5rem;
+		width: 75%;
+		height: auto;
+		margin-bottom: 5%;
+	}
+	.med_info,
+	.bog_info,
+	.santa_info {
+		margin-left: 2.75rem;
+		font-size: 1.25rem;
+	}
+	.addresses {
+		font-size: 1.15rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.addresses__info1 {
+		margin-left: 3rem;
+	}
+}
+@media only screen 
+  and (min-device-width: 640px) 
+  and (max-device-width: 640px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.med_img,
+	.bog_img,
+	.santa_img {
+		margin-left: 7.65rem;
+		width: 60%;
+		height: auto;
+		margin-bottom: 5%;
+	}
+	.med_info,
+	.bog_info,
+	.santa_info {
+		margin-left: 3rem;
+		font-size: 1.15rem;
+	}
+  }
+
+@media only screen 
+  and (min-device-width: 960px) 
+  and (max-device-width: 960px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.med_img,
+	.bog_img,
+	.santa_img {
+		margin-left: 10rem;
+		width: 65%;
+		height: auto;
+		margin-bottom: 5%;
+	}
+	.med_info,
+	.bog_info,
+	.santa_info {
+		margin-left: 4.25rem;
+		font-size: 1.25rem;
+	}
+  }
 
 @media only screen 
   and (min-device-width: 1024px) 
@@ -462,7 +558,7 @@ span {
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
 	.nav_lists a {
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 	.title__head {
 		font-size: 2.25rem;
@@ -488,6 +584,8 @@ span {
 	.santa_info {
 		margin-left: 4.75rem;
 		font-size: 1.75rem;
+		display: inline-block;
+		vertical-align: middle;
 	}
 	.addresses {
 		font-size: 1.5rem;
@@ -495,11 +593,112 @@ span {
 	.terms_links a {
 		font-size: 1.5rem;
 	}
-
   }
 
+  @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.med_img,
+	.bog_img,
+	.santa_img {
+		margin-left: 13.25rem;
+		width: 55%;
+		height: auto;
+	}
+	
+	.med_info,
+	.bog_info,
+	.santa_info {
+		font-size: 1.15rem;
+		width: 85%;
+		margin-left: 4.5rem;
+	}
+  }
+  @media only screen 
+  and (min-device-width: 1112px) 
+  and (max-device-width: 1112px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.med_img,
+	.bog_img,
+	.santa_img {
+		margin-left: 13.25rem;
+		width: 60%;
+		height: auto;
+	}
+	.med_info,
+	.bog_info,
+	.santa_info {
+		font-size: 1.25rem;
+		width: 85%;
+		margin-left: 4.75rem;
+	}
+  }
+  /* @media only screen 
+  and (min-device-width: 1280px) 
+  and (max-device-width: 1280px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.nav_lists a {
+		font-size: 1rem;
+	}
 
-@media only screen 
+	.medellin_border {
+		height: 27rem;
+	}
+	.med_img,
+	.bog_img,
+	.santa_img {
+		margin-left: 2.25rem;
+	}
+	.medellin_img_container {
+		width: 55%;
+	}
+	.med_info {
+		position: relative;
+		bottom: 16rem;
+		left: 35.5rem;
+		font-size: 1.05rem;
+		padding-bottom: 7rem;
+		width: 50%;
+	}
+	.bog_info,
+	.santa_info {
+		position: relative;
+	
+		left: 1rem;
+		font-size: 1rem;
+		width: 50%;
+	}
+	.medellin,
+	.bogota,
+	.santa {
+		font-size: 2rem;
+	}
+	.addresses {
+		font-size: 1.5rem;
+	}
+	.terms_links a {
+		font-size: 1.5rem;
+	}
+	.addresses__info1 {
+		margin-left: 5rem;
+	}
+	.addresses__info2 {
+		margin-top: 1.5rem;
+	}
+	.terms_footer {
+		margin-top: 6rem;
+	}
+} */
+  
+
+
+
+
+/* @media only screen 
   and (min-device-width: 1366px) 
   and (max-device-width: 1366px) 
   and (orientation: landscape) 
@@ -508,25 +707,88 @@ span {
 	.nav_lists a {
 		font-size: 1.25rem;
 	}
-	.med_img,
-	.bog_img,
-	.santa_img {
-		margin-left: 14.5rem;
-		width: 65%;
-		height: auto;
-		margin-bottom: 5%;
+
+	.medellin_border {
+		height: 27rem;
 	}
-	.med_info,
+	.medellin_img_container {
+		width: 55%;
+	}
+	.med_info {
+		position: relative;
+		bottom: 16rem;
+		left: 38rem;
+		font-size: 1.05rem;
+		padding-bottom: 7rem;
+		width: 50%;
+	}
 	.bog_info,
 	.santa_info {
-		margin-left: 10.5rem;
-		font-size: 1.75rem;
-		width: 75%;
+		position: relative;
+		left: 1rem;
+		font-size: 1rem;
+		width: 50%;
 	}
 	.medellin,
 	.bogota,
 	.santa {
-		font-size: 2.5rem;
+		font-size: 2rem;
+	}
+	.addresses {
+		font-size: 1.5rem;
+	}
+	.terms_links a {
+		font-size: 1.5rem;
+	}
+	.addresses__info1 {
+		margin-left: 5rem;
+	}
+	.addresses__info2 {
+		margin-top: 1.5rem;
+	}
+	.terms_footer {
+		margin-top: 6rem;
+	}
+} */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+	.nav_lists a {
+		font-size: 1rem;
+	}
+
+	.medellin_border {
+		height: 27rem;
+	}
+	.med_img,
+	.bog_img,
+	.santa_img {
+		margin-left: 2.25rem;
+	}
+	.medellin_img_container {
+		width: 55%;
+	}
+	.med_info {
+		position: relative;
+		bottom: 16rem;
+		left: 35.5rem;
+		font-size: 1.05rem;
+		padding-bottom: 8rem;
+		width: 50%;
+	}
+	.bog_info,
+	.santa_info {
+		position: relative;
+	
+		left: 1rem;
+		font-size: 1rem;
+		width: 50%;
+	}
+	.medellin,
+	.bogota,
+	.santa {
+		font-size: 2rem;
 	}
 	.addresses {
 		font-size: 1.5rem;
@@ -545,94 +807,101 @@ span {
 	}
 }
 
-/* 
- @media only screen and (min-width:1024px) and (min-height: 1366px) {  
-	.nav_list a {
-		font-size: 1.8rem;
-	}
-	.title__head {
-		font-size: 2.25rem;
-	}
-	.title p {
-		font-size: 1.75rem;
-	}
-	.medellin,
-	.bogota,
-	.santa {
-		font-size: 2.5rem;
+@media screen 
+  and (min-device-width: 1370px) 
+  and (max-device-width: 1605px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+	.medellin_border {
+		height: 27rem;
 	}
 	.med_img,
 	.bog_img,
 	.santa_img {
-		margin-left: 3rem;
+		margin-left: 2.25rem;
 	}
-
-	.med_info,
+	.medellin_img_container {
+		width: 55%;
+	}
+	.med_info {
+		position: relative;
+		bottom: 17rem;
+		left: 35.5rem;
+		font-size: 1.05rem;
+		padding-bottom: 8rem;
+		width: 50%;
+	}
 	.bog_info,
 	.santa_info {
-		font-size: 1.85rem;
-		margin-left: 4.5rem;
+		position: relative;
+	
+		left: 1rem;
+		font-size: 1rem;
+		width: 50%;
 	}
-	.addresses {
-		font-size: 1.75rem;
-	}
-	.terms_links a {
-		font-size: 1.75rem ;
-	}
-	.addresses__info2 {
-		margin-left: 6rem;
-	}
-} */
-
-/* @media only screen and (min-width:1366px) and (max-height:1024px) {
-	.nav_list {
-		font-size: 1.25rem;
-	}
-
 	.medellin,
 	.bogota,
 	.santa {
-		font-size: 1.75rem;
-
+		font-size: 2rem;
 	}
-
-	.med_img {
-		margin-left: 11.5rem;
-		width: 80%;
-		height: auto;
-		margin-bottom: 5%;
-	}
-
-	.bog_img,
-	.santa_img {
-		margin-left: 8rem;
-		width: 80%;
-		height: auto;
-		margin-bottom: 5%;
-	}
-	.med_info,
-	.bog_info,
-	.santa_info {
-		font-size: 1.75rem;
-		margin-left: 4rem;
-		width: 90%;
-	}
-
 	.addresses {
-		font-size: 1.45rem;
+		font-size: 1.5rem;
 	}
 	.terms_links a {
-		font-size: 1.45rem ;
+		font-size: 1.5rem;
+	}
+	.addresses__info1 {
+		margin-left: 5rem;
+		margin-top: 1rem;
+	}
+	.addresses__info2 {
+		margin-top: 1.5rem;
 	}
 	.terms_footer {
 		margin-top: 6rem;
 	}
-	.addresses__info1 {
-		margin-left: 5rem;
-	}
-	.addresses__info2 {
-		margin-top: 1.2rem;
-	}
-} */
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

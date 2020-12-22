@@ -513,7 +513,47 @@ and (-webkit-min-device-pixel-ratio: 2) {
       font-size: 1.25rem;
     }
   }
-  
+
+@media only screen 
+and (min-device-width:900px)
+and (max-device-width:950px){
+  .contact-section {
+    height: 85vh;
+    padding-bottom: 20rem;
+    padding-left: 5rem;
+  }
+  .nav_lists a {
+    font-size: 1rem
+  }
+  .contact-section__text {
+    font-size: 2rem;
+  }
+  input[type="text"],
+  [type="email"],
+  textarea {
+    width: 500px;
+    height: 50px;
+  }
+  .contact__txtarea label,
+  .textarea {
+    width: 500px;
+    height: 350px;
+  }
+  .contact input,
+  .contact textarea {
+    font-size: 1.25rem;
+  }
+  .addresses {
+    font-size: 1.25rem;
+  }
+  .addresses__info1 {
+    margin-left: 4rem;
+  }
+  .terms_links a {
+    font-size: 1.25rem;
+  }
+}
+
   @media only screen  /*IPAD PRO*/
 	and (min-device-width: 1024px)
 	and (max-device-width: 1024px)

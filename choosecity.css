@@ -790,7 +790,7 @@ a {
         }
     }
 
-@media screen and (min-width:720px) and (max-width:736px) {
+@media screen and (min-width:720px) and (max-width:740px) {
     .title {
         margin-top: 2rem;
         margin-left: 4.45rem;
@@ -993,10 +993,189 @@ a {
         }
     }
 
-    @media screen and (min-width:810px) and (max-width:830px) { /*IphoneX and PixelXL*/
+    @media screen and (min-width:800px) and (max-width:834px) { /*IphoneX and PixelXL*/
         .title {
             margin-top: 2rem;
             margin-left: 4.4rem;
+            width: 42rem;
+        }
+        
+        .title h1 {
+            font-size: 1.5rem;
+        }
+    
+        #cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .cards__med-title,
+        .cards__bog-title,
+        .cards__san-title {
+            font-size: 1.5rem;
+        }
+        .cards__medimage,
+        .cards__bogimage,
+        .cards__santaimage {
+            width: 310px;
+            height: 200px;
+        }
+        #texthead_media640 {
+            margin-top: .85rem;
+        }
+        .cards__texthead {
+            font-size: 1.5rem;
+        }
+        .cards__med,
+        .cards__bog,
+        .cards__san {
+            height: 32rem;
+            width: 22rem;
+            margin-bottom: 2rem;
+            border: 3px black solid;
+            margin-left: 0;
+        }
+    
+        .cards__med:not(:hover) .choice,
+        .cards__bog:not(:hover) .choice,
+        .cards__san:not(:hover) .choice {
+            display: inherit;
+        }
+    
+        .choice {
+            margin-top: 0;
+            font-size: 1.75rem;
+            margin-left: .9rem;
+            margin-top: 2rem;
+            width: 90%;
+        }
+        #choice-media640 {
+            margin-top: 2.7rem;
+        }
+    } 
+    @media screen and (min-width:840px) and (max-width:860px) {
+        .title {
+            margin-top: 2rem;
+            margin-left: 5.5rem;
+            width: 42rem;
+        }
+        .title h1 {
+            font-size: 1.5rem;
+        }
+    
+        #cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .cards__med-title,
+        .cards__bog-title,
+        .cards__san-title {
+            font-size: 1.5rem;
+        }
+        .cards__medimage,
+        .cards__bogimage,
+        .cards__santaimage {
+            width: 310px;
+            height: 200px;
+        }
+        #texthead_media640 {
+            margin-top: .85rem;
+        }
+        .cards__texthead {
+            font-size: 1.5rem;
+        }
+        .cards__med,
+        .cards__bog,
+        .cards__san {
+            height: 32rem;
+            width: 22rem;
+            margin-bottom: 2rem;
+            border: 3px black solid;
+            margin-left: 0;
+        }
+    
+        .cards__med:not(:hover) .choice,
+        .cards__bog:not(:hover) .choice,
+        .cards__san:not(:hover) .choice {
+            display: inherit;
+        }
+    
+        .choice {
+            margin-top: 0;
+            font-size: 1.75rem;
+            margin-left: .9rem;
+            margin-top: 2rem;
+            width: 90%;
+        }
+        #choice-media640 {
+            margin-top: 2.7rem;
+        }
+    }
+    @media screen and (min-width:896px) and (max-width:900px) { 
+        .title {
+            margin-top: 2rem;
+            margin-left: 7rem;
+            width: 42rem;
+        }
+        
+        .title h1 {
+            font-size: 1.5rem;
+        }
+    
+        #cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .cards__med-title,
+        .cards__bog-title,
+        .cards__san-title {
+            font-size: 1.5rem;
+        }
+        .cards__medimage,
+        .cards__bogimage,
+        .cards__santaimage {
+            width: 310px;
+            height: 200px;
+        }
+        #texthead_media640 {
+            margin-top: .85rem;
+        }
+        .cards__texthead {
+            font-size: 1.5rem;
+        }
+        .cards__med,
+        .cards__bog,
+        .cards__san {
+            height: 32rem;
+            width: 22rem;
+            margin-bottom: 2rem;
+            border: 3px black solid;
+            margin-left: 0;
+        }
+    
+        .cards__med:not(:hover) .choice,
+        .cards__bog:not(:hover) .choice,
+        .cards__san:not(:hover) .choice {
+            display: inherit;
+        }
+    
+        .choice {
+            margin-top: 0;
+            font-size: 1.75rem;
+            margin-left: .9rem;
+            margin-top: 2rem;
+            width: 90%;
+        }
+        #choice-media640 {
+            margin-top: 2.7rem;
+        }
+    } 
+    @media screen and (min-width:920px) and (max-width:950px) { 
+        .title {
+            margin-top: 2rem;
+            margin-left: 8.5rem;
             width: 42rem;
         }
         
@@ -1122,7 +1301,7 @@ a {
     }  
 
     @media only screen  /*IPAD PRO*/
-	and (min-device-width: 1366px)
+	and (min-device-width: 1280px)
 	and (max-device-width: 1366px)
 	and (orientation: landscape)
 	and (-webkit-min-device-pixel-ratio: 2) {
@@ -1194,6 +1373,152 @@ a {
             margin-top: 3rem;
         }
     }
+
+    @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1300px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .body {
+        background-size: 100vh;
+    }
+    .title {
+        margin-top: 2rem;
+        margin-left: 5rem;
+        width: 70rem;
+    }
+    
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    #cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .cards__med-title,
+    .cards__bog-title,
+    .cards__san-title {
+        font-size: 1.75rem;
+    }
+    .cards__medimage,
+    .cards__bogimage,
+    .cards__santaimage {
+        width: 380px;
+        height: 260px;
+    }
+    #texthead_media640 {  /*Medellin*/
+        margin-top: 1.15rem;
+    }
+    .cards__texthead {
+        font-size: 1.75rem;
+    }
+    .cards__med,
+    .cards__bog,
+    .cards__san {
+        height: 37rem;
+        width: 26rem;
+        border: 3px black solid;
+        margin-left: 0;
+        
+    }
+
+    .cards__med:not(:hover) .choice,
+    .cards__bog:not(:hover) .choice,
+    .cards__san:not(:hover) .choice {
+        display: inherit;
+    }
+
+    .choice {
+        margin-top: 0;
+        font-size: 2rem;
+        margin-left: .9rem;
+        margin-top: 2rem;
+        width: 90%;
+    }
+    #choice-media640 { /*Medellin*/
+        margin-top: 3rem;
+    }
+    #texthead__media1024 { /*Santa*/
+        margin-top: 1.1rem;
+    }
+    #choice_media1024 {
+        margin-top: 3rem;
+    }
+}
+@media screen 
+  and (min-device-width: 1300px) 
+  and (max-device-width: 1500px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .body {
+        background-size: 100vh;
+    }
+    .title {
+        margin-top: 2rem;
+        margin-left: 9.5rem;
+        width: 70rem;
+    }
+    
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    #cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .cards__med-title,
+    .cards__bog-title,
+    .cards__san-title {
+        font-size: 1.75rem;
+    }
+    .cards__medimage,
+    .cards__bogimage,
+    .cards__santaimage {
+        width: 380px;
+        height: 260px;
+    }
+    #texthead_media640 {  /*Medellin*/
+        margin-top: 1.15rem;
+    }
+    .cards__texthead {
+        font-size: 1.75rem;
+    }
+    .cards__med,
+    .cards__bog,
+    .cards__san {
+        height: 37rem;
+        width: 26rem;
+        border: 3px black solid;
+        margin-left: 0;
+        
+    }
+
+    .cards__med:not(:hover) .choice,
+    .cards__bog:not(:hover) .choice,
+    .cards__san:not(:hover) .choice {
+        display: inherit;
+    }
+
+    .choice {
+        margin-top: 0;
+        font-size: 2rem;
+        margin-left: .9rem;
+        margin-top: 2rem;
+        width: 90%;
+    }
+    #choice-media640 { /*Medellin*/
+        margin-top: 3rem;
+    }
+    #texthead__media1024 { /*Santa*/
+        margin-top: 1.1rem;
+    }
+    #choice_media1024 {
+        margin-top: 3rem;
+    }
+}
+  }
     
 
 

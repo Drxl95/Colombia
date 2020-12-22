@@ -609,6 +609,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
 			font-size: 2.25rem;
 			padding-left: 0;
 		}
+		.details {
+			visibility: hidden;;
+		}
 		.btm-container__why {
 			font-size: 3rem;
 			margin-top: 1.25rem;
@@ -649,8 +652,68 @@ and (-webkit-min-device-pixel-ratio: 2) {
 			margin-top: 2rem;
 		}
 	}
+	@media only screen  
+	and (min-device-width: 800px)
+	and (max-device-width: 900px)
+	and (orientation: portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		#top-portion {
+			padding-top: 2rem;
+			background-image: linear-gradient( rgba(80, 80, 80, 0.65), rgba(75, 75, 75, 0.65)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+			background-position: right;
+		}
+		.top-portion__colombia {
+			font-size: 4.5rem;
+			margin-top: 1.5rem;
+		}
+		.top-portion__voted {
+			font-size: 1.75rem;
+			margin-top: 2rem;
+		}
+		.top-portion__desc {
+			line-height: 2.75rem;
+			text-align: left;
+			font-size: 2.75rem;
+			padding-left: 0;
+			margin-top: 1rem;		
+		}
+		.details {
+			display: inherit;
+			font-size: 3rem;
+		}
+	}
+	@media only screen  
+	and (min-device-width: 950px)
+	and (max-device-width: 950px) {
+		#top-portion {
+			padding-top: 2rem;
+			background-image: linear-gradient( rgba(80, 80, 80, 0.65), rgba(75, 75, 75, 0.65)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+			background-position: right;
+		}
+		.top-portion__colombia {
+			font-size: 4.75rem;
+			margin-top: 1.5rem;
+		}
+		.top-portion__voted {
+			font-size: 1.75rem;
+			margin-top: 2rem;
+		}
+		.top-portion__desc {
+			line-height: 2.25rem;
+			text-align: left;
+			font-size: 2.25rem;
+			padding-left: 0;
+			margin-top: 1rem;		
+		}
+		.details {
+			display: inherit;
+			font-size: 3.5rem;
+			margin-top: 10rem;
+		}
+	}
+	
 
-	@media only screen  /*IPAD*/
+	@media only screen  
 	and (min-device-width: 960px)
 	and (max-device-width: 1280px)
 	and (orientation: landscape)
@@ -771,8 +834,64 @@ and (-webkit-min-device-pixel-ratio: 2) {
 			font-size: 1.5rem;
 		}
 	}
+	@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	#top-portion {
+		padding-top: 2rem;
+		background-image: linear-gradient( rgba(80, 80, 80, 0.55), rgba(75, 75, 75, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+		background-position: right;
+	}
+	
+	.top-portion__colombia {
+		font-size: 4.5rem;
+		margin-top: 1.5rem;
+	}
+	.top-portion__voted {
+		font-size: 1.5rem;
+	}
+	.top-portion__desc {
+		line-height: 2rem;
+		text-align: left;
+		font-size: 2rem;
+		padding-left: 0;
+}
+.details {
+	display: inherit;
+	font-size: 3rem;
+}
+.btm-container__why {
+	font-size: 2.75rem;
+	margin-top: 1.25rem;
+}
+.lists p {
+	font-size: 2rem;
+}
+.btm-container2__header {
+	font-size: 2.75rem;
+	padding-top: 2rem;
+}
+.btm-container2__mymove {
+	font-size: 2rem;
+}
+.review {
+	font-size: 2rem;
+}
+.review2 {
+	font-size: 1.75rem;
+}
+.pic_container {
+	font-size: 1.25rem;
+}
+.pic_container img {
+	width: 200px;
+	height: 200px;
+}
+}
+  
 
-	@media only screen  /*IPAD PRO*/
+	@media only screen  
 	and (min-device-width: 1366px)
 	and (max-device-width: 1366px)
 	and (orientation: landscape)
@@ -806,5 +925,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
 			margin-top: 1rem;
 		}
 	}
-
+	@media only screen  
+	and (min-device-width: 1300px) 
+	and (max-device-width: 1500px) 
+	and (-webkit-min-device-pixel-ratio: 1) {
+		.top-portion__desc {
+			line-height: 2rem;
+			text-align: left;
+			font-size: 2rem;
+			padding-left: 0;
+			margin-top: 3.75rem;
+		}
+	}
 
