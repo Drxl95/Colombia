@@ -299,6 +299,7 @@ textarea {
 }
 }
 
+
 @media only screen /*Galaxy Fold*/
 and (min-device-width: 280px) 
 and (max-device-width: 280px) 
@@ -340,12 +341,17 @@ and (-webkit-min-device-pixel-ratio: 2) {
     
 }
 }
-@media only screen and (min-width: 660px) and (max-width: 1024px) {
-  .contact-section__text {
-    font-size: 1.5rem;
+
+@media only screen 
+and (min-device-width: 640px) 
+and (max-device-width: 640px) 
+and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 2) {
+  .contact-section {
+    padding-left: 4.5rem ;
   }
   .name-form {
-    margin-left: .34rem;
+    margin-left: .35rem;
   }
   input[type="text"],
   [type="email"],
@@ -355,6 +361,27 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .contact__txtarea label,
   .textarea {
     width: 350px;
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 660px) and (max-width: 1024px) {
+  .contact-section {
+    padding-left: 4.5rem ;
+  }
+  .contact-section__text {
+    font-size: 1.5rem;
+  }
+  .name-form {
+    margin-left: .15rem;
+  }
+  input[type="text"],
+  [type="email"],
+  textarea {
+    width: 400px;
+  }
+  .contact__txtarea label,
+  .textarea {
+    width: 400px;
     height: 200px;
   }
   .addresses {

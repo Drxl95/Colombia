@@ -12,20 +12,16 @@
 
 body {
     margin: 0;
-}
-.bg {
+    padding: 0;
     background:url(https://www.metrojourneys.com/wp-content/uploads/2019/07/guatape-antioquia-colombia.jpg);
-    margin: 0;
     background-repeat: no-repeat;
-    background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: -1;
-    
+    background-position:center;
+    background-attachment : fixed
 }
+
+
+
 
 :root {
     --main-color: rgba(255, 111, 15, 0.8)
@@ -33,10 +29,10 @@ body {
 }
 
 .title {
-    /* margin-top: 2.5%; */;
+    margin-top: 2.5%;;
     margin-left: 12.5%;
     text-align: center;
-    border: 2px solid black;
+    border: 3px solid black;
     width: 75%;
     background: var(--main-color);
     color: white;
@@ -90,7 +86,7 @@ body {
     -webkit-box-flex: .1;
         -ms-flex-positive: .1;
             flex-grow: .1;
-    border: 2px solid black;
+    border: 4px solid black;
     background:  rgba(255, 236, 0, 0.65);
     height: 35rem;
     width: 30rem;
@@ -151,7 +147,7 @@ body {
     
 }
 .cards__bog {
-    border: 2px solid black;
+    border: 4px solid black;
     background: rgba(0, 17, 223, 0.65);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -211,7 +207,7 @@ body {
 }
 
 .cards__san {
-    border: 2px solid black;
+    border: 4px solid black;
     background: rgba(255, 0, 8, 0.65);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -291,14 +287,13 @@ a {
 
     body {
         background-attachment: scroll;
-    
     }
     
-
     .title {
         margin-top: 2rem;
         margin-left: 1rem;
         width: 21.5rem;
+        border: 2px black solid;
     }
 
     #cards {
@@ -318,7 +313,7 @@ a {
         height: 32rem;
         width: 21.5rem;
         margin-bottom: 4rem;
-        border: 4px black solid;
+        border: 3px black solid;
         margin-left: 1rem;
     }
 
@@ -332,18 +327,829 @@ a {
         margin-top: 0;
         margin-left: 2.75rem;
     }
+}
+@media screen and (min-width:375px) and (max-width:375px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .title {
+        margin-left: 1rem;
+        margin-top: 2rem;
+        width: 21.5rem;
+        font-size: .95rem;
+    }
     
+    .title h1 {
+        font-size: 1rem;
+    }
+
+    #cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .cards__med-title,
+    .cards__bog-title,
+    .cards__san-title {
+        font-size: 1.35rem;
+    }
+    .cards__medimage,
+    .cards__bogimage,
+    .cards__santaimage {
+        width: 280px;
+        height: 170px;
+    }
+    .cards__texthead {
+        font-size: 1.25rem;
+    }
+    .cards__med,
+    .cards__bog,
+    .cards__san {
+        height: 28rem;
+        width: 18.5rem;
+        margin-bottom: 2rem;
+        border: 3px black solid;
+        margin-left: 2.5rem;
+    }
+
+    .cards__med:not(:hover) .choice,
+    .cards__bog:not(:hover) .choice,
+    .cards__san:not(:hover) .choice {
+        display: inherit;
+    }
+
+    .choice {
+        margin-top: 0;
+        font-size: 1.5rem;
+        margin-left: .9rem;
+        margin-top: 2rem;
+        width: 90%;
+    }
+}
+@media only screen  /*GalaxyFold*/
+  and (min-device-width: 280px) 
+  and (max-device-width: 280px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .title {
+        margin-left: 0rem;
+        margin-top: 2rem;
+        width: 21.5rem;
+        font-size: .95rem;
+    }
+    
+    .title h1 {
+        font-size: 1rem;
+    }
+
+    #cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .cards__med-title,
+    .cards__bog-title,
+    .cards__san-title {
+        font-size: 1.35rem;
+    }
+    .cards__medimage,
+    .cards__bogimage,
+    .cards__santaimage {
+        width: 280px;
+        height: 170px;
+    }
+    .cards__texthead {
+        font-size: 1.25rem;
+    }
+    .cards__med,
+    .cards__bog,
+    .cards__san {
+        height: 28rem;
+        width: 18.5rem;
+        margin-bottom: 2rem;
+        border: 3px black solid;
+        margin-left: 1.5rem;
+    }
+
+    .cards__med:not(:hover) .choice,
+    .cards__bog:not(:hover) .choice,
+    .cards__san:not(:hover) .choice {
+        display: inherit;
+    }
+
+    .choice {
+        margin-top: 0;
+        font-size: 1.5rem;
+        margin-left: .9rem;
+        margin-top: 2rem;
+        width: 90%;
+    }
+  }
+
+ @media only screen  /*MotoG4 and GalaxtS5*/
+  and (min-device-width: 360px) 
+  and (max-device-width: 360px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-attachment: scroll;
+    }
+
+    .title {
+        margin-left: .5rem;
+        margin-top: 2rem;
+        width: 21.5rem;
+        font-size: .95rem;
+    }
+    
+    .title h1 {
+        font-size: 1rem;
+    }
+
+    #cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .cards__med-title,
+    .cards__bog-title,
+    .cards__san-title {
+        font-size: 1.35rem;
+    }
+    .cards__medimage,
+    .cards__bogimage,
+    .cards__santaimage {
+        width: 280px;
+        height: 170px;
+    }
+    .cards__texthead {
+        font-size: 1.25rem;
+    }
+    .cards__med,
+    .cards__bog,
+    .cards__san {
+        height: 28rem;
+        width: 18.5rem;
+        margin-bottom: 2rem;
+        border: 3px black solid;
+        margin-left: 2rem;
+    }
+
+    .cards__med:not(:hover) .choice,
+    .cards__bog:not(:hover) .choice,
+    .cards__san:not(:hover) .choice {
+        display: inherit;
+    }
+
+    .choice {
+        margin-top: 0;
+        font-size: 1.5rem;
+        margin-left: .9rem;
+        margin-top: 2rem;
+        width: 90%;
+    }
+}
+
+  
+  @media screen and (min-width: 410px) and (max-width: 415px) { 
+    body {
+        background-attachment: scroll;
+    }
+    .title {
+        margin-left: 2rem;
+    }
+
+    #cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .cards__medimage,
+    .cards__bogimage,
+    .cards__santaimage {
+        width: 310px;
+        height: 200px;
+    }
+
+    .cards__med,
+    .cards__bog,
+    .cards__san {
+        height: 32rem;
+        width: 21.5rem;
+        margin-bottom: 4rem;
+        border: 3px black solid;
+        margin-left: 2rem;
+    }
+
+    .cards__med:not(:hover) .choice,
+    .cards__bog:not(:hover) .choice,
+    .cards__san:not(:hover) .choice {
+        display: inherit;
+    }
+
+    .choice {
+        margin-top: 0;
+        margin-left: 2.75rem;
+        font-size: 1.75rem;
+    }
+  }
+    @media screen and (min-width:540px) and (max-width:590px) {
+        .title {
+            margin-top: 2rem;
+            margin-left: 3rem;
+            width: 27.5rem;
+        }
+        
+        #cards {
+            display: flex;
+            flex-direction: column;
+        }
+        .cards__medimage,
+        .cards__bogimage,
+        .cards__santaimage {
+            width: 310px;
+            height: 200px;
+        }
+    
+        .cards__med,
+        .cards__bog,
+        .cards__san {
+            height: 32rem;
+            width: 21.5rem;
+            margin-bottom: 4rem;
+            border: 3px black solid;
+            margin-left: 6rem;
+        }
+    
+        .cards__med:not(:hover) .choice,
+        .cards__bog:not(:hover) .choice,
+        .cards__san:not(:hover) .choice {
+            display: inherit;
+        }
+    
+        .choice {
+            margin-top: 0;
+            margin-left: 2.75rem;
+            font-size: 1.75rem;
+        }
+    } 
+     @media only screen  /*MotoG4 and GalaxyS5 GalaxyFold*/
+    and (min-device-width: 640px) 
+    and (max-device-width: 653px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+      body {
+          background-attachment: scroll;
+      }
+  
+      .title {
+          margin-left: 2rem;
+          margin-top: 2rem;
+          width: 36rem;
+          font-size: 1rem;
+      }
+      
+      .title h1 {
+          font-size: 1.15rem;
+      }
+  
+      #cards {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
+      .cards__med-title,
+      .cards__bog-title,
+      .cards__san-title {
+          font-size: 1.35rem;
+      }
+      .cards__medimage,
+      .cards__bogimage,
+      .cards__santaimage {
+          width: 280px;
+          height: 170px;
+      }
+    #texthead_media640 {
+        margin-top: .85rem;
+    }
+      .cards__texthead {
+          font-size: 1.25rem;
+      }
+      .cards__med,
+      .cards__bog,
+      .cards__san {
+          height: 28rem;
+          width: 18.5rem;
+          margin-bottom: 2rem;
+          border: 3px black solid;
+          margin-left: 0;
+      }
+  
+      .cards__med:not(:hover) .choice,
+      .cards__bog:not(:hover) .choice,
+      .cards__san:not(:hover) .choice {
+          display: inherit;
+      }
+  
+      .choice {
+          margin-top: 0;
+          font-size: 1.5rem;
+          margin-left: .9rem;
+          margin-top: 2rem;
+          width: 90%;
+      }
+      #choice-media640 {
+          margin-top: 2.7rem;
+      }
+    }
+    @media screen and (min-width:667px) and (max-width:700px) {
+        body {
+            background-attachment: scroll;
+        }
+    
+        .title {
+            margin-left: 2.76rem;
+            margin-top: 2rem;
+            width: 36rem;
+            font-size: 1.10rem;
+        }
+        
+        .title h1 {
+            font-size: 1.2rem;
+        }
+    
+        #cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .cards__med-title,
+        .cards__bog-title,
+        .cards__san-title {
+            font-size: 1.35rem;
+        }
+        .cards__medimage,
+        .cards__bogimage,
+        .cards__santaimage {
+            width: 280px;
+            height: 170px;
+        }
+        #texthead_media640 {
+            margin-top: .85rem;
+        }
+        .cards__texthead {
+            font-size: 1.25rem;
+        }
+        .cards__med,
+        .cards__bog,
+        .cards__san {
+            height: 28rem;
+            width: 18.5rem;
+            margin-bottom: 2rem;
+            border: 3px black solid;
+            margin-left: 0;
+        }
+    
+        .cards__med:not(:hover) .choice,
+        .cards__bog:not(:hover) .choice,
+        .cards__san:not(:hover) .choice {
+            display: inherit;
+        }
+    
+        .choice {
+            margin-top: 0;
+            font-size: 1.5rem;
+            margin-left: .9rem;
+            margin-top: 2rem;
+            width: 90%;
+        }
+        #choice-media640 {
+            margin-top: 2.7rem;
+        }
+    }
+
+@media screen and (min-width:720px) and (max-width:736px) {
+    .title {
+        margin-top: 2rem;
+        margin-left: 4.45rem;
+        width: 36rem;
+    }
+    
+    .title h1 {
+        font-size: 1.2rem;
+    }
+
+    #cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .cards__med-title,
+    .cards__bog-title,
+    .cards__san-title {
+        font-size: 1.35rem;
+    }
+    .cards__medimage,
+    .cards__bogimage,
+    .cards__santaimage {
+        width: 280px;
+        height: 170px;
+    }
+    #texthead_media640 {
+        margin-top: .85rem;
+    }
+    .cards__texthead {
+        font-size: 1.25rem;
+    }
+    .cards__med,
+    .cards__bog,
+    .cards__san {
+        height: 28rem;
+        width: 18.5rem;
+        margin-bottom: 2rem;
+        border: 3px black solid;
+        margin-left: 0;
+    }
+
+    .cards__med:not(:hover) .choice,
+    .cards__bog:not(:hover) .choice,
+    .cards__san:not(:hover) .choice {
+        display: inherit;
+    }
+
+    .choice {
+        margin-top: 0;
+        font-size: 1.5rem;
+        margin-left: .9rem;
+        margin-top: 2rem;
+        width: 90%;
+    }
+    #choice-media640 {
+        margin-top: 2.7rem;
+    }
+} 
+
+@media screen and (min-width:730px) and (max-width:750px) {
+    .title {
+        margin-left: 4.8rem;
+    }
+}
+
+
+@media only screen  /*IPAD*/
+	and (min-device-width: 768px)
+	and (max-device-width: 768px)
+	and (orientation: portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {
+        .title {
+            margin-top: 2rem;
+            margin-left: 5.5rem;
+            width: 36rem;
+            font-size: 1.2rem;
+        }
+        
+        .title h1 {
+            font-size: 1.325rem;
+        }
+    
+        #cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .cards__med-title,
+        .cards__bog-title,
+        .cards__san-title {
+            font-size: 1.45rem;
+        }
+        .cards__medimage,
+        .cards__bogimage,
+        .cards__santaimage {
+            width: 280px;
+            height: 170px;
+        }
+        #texthead_media640 {
+            margin-top: .85rem;
+        }
+        .cards__texthead {
+            font-size: 1.35rem;
+        }
+        .cards__med,
+        .cards__bog,
+        .cards__san {
+            height: 29.5rem;
+            width: 20rem;
+            margin-bottom: 2rem;
+            border: 3px black solid;
+            margin-left: 0;
+        }
+    
+        .cards__med:not(:hover) .choice,
+        .cards__bog:not(:hover) .choice,
+        .cards__san:not(:hover) .choice {
+            display: inherit;
+        }
+    
+        .choice {
+            margin-top: 0;
+            font-size: 1.5rem;
+            margin-left: .9rem;
+            margin-top: 2rem;
+            width: 90%;
+        }
+        #choice-media640 {
+            margin-top: 2.7rem;
+        }
+    }  
+
+    @media only screen  /*IPAD*/
+	and (min-device-width: 1024px)
+	and (max-device-width: 1024px)
+	and (orientation: landscape)
+	and (-webkit-min-device-pixel-ratio: 2) {
+        .body {
+            background-size: 100vh;
+        }
+        .title {
+            margin-top: 2rem;
+            margin-left: 4rem;
+            width: 56rem;
+        }
+        
+        .title h1 {
+            font-size: 1.5rem;
+        }
+    
+        #cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .cards__med-title,
+        .cards__bog-title,
+        .cards__san-title {
+            font-size: 1.5rem;
+        }
+        .cards__medimage,
+        .cards__bogimage,
+        .cards__santaimage {
+            width: 280px;
+            height: 170px;
+        }
+        #texthead_media640 {  /*Medellin*/
+            margin-top: .85rem;
+        }
+        .cards__texthead {
+            font-size: 1.45rem;
+        }
+        .cards__med,
+        .cards__bog,
+        .cards__san {
+            height: 29rem;
+            width: 19.5rem;
+            margin-bottom: 3.25rem;
+            border: 3px black solid;
+            margin-left: 0;
+            
+        }
+    
+        .cards__med:not(:hover) .choice,
+        .cards__bog:not(:hover) .choice,
+        .cards__san:not(:hover) .choice {
+            display: inherit;
+        }
+    
+        .choice {
+            margin-top: 0;
+            font-size: 1.5rem;
+            margin-left: .9rem;
+            margin-top: 2rem;
+            width: 90%;
+        }
+        #choice-media640 {
+            margin-top: 2.7rem;
+        }
+    }
+
+    @media screen and (min-width:810px) and (max-width:830px) { /*IphoneX and PixelXL*/
+        .title {
+            margin-top: 2rem;
+            margin-left: 4.4rem;
+            width: 42rem;
+        }
+        
+        .title h1 {
+            font-size: 1.5rem;
+        }
+    
+        #cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .cards__med-title,
+        .cards__bog-title,
+        .cards__san-title {
+            font-size: 1.5rem;
+        }
+        .cards__medimage,
+        .cards__bogimage,
+        .cards__santaimage {
+            width: 310px;
+            height: 200px;
+        }
+        #texthead_media640 {
+            margin-top: .85rem;
+        }
+        .cards__texthead {
+            font-size: 1.5rem;
+        }
+        .cards__med,
+        .cards__bog,
+        .cards__san {
+            height: 32rem;
+            width: 22rem;
+            margin-bottom: 2rem;
+            border: 3px black solid;
+            margin-left: 0;
+        }
+    
+        .cards__med:not(:hover) .choice,
+        .cards__bog:not(:hover) .choice,
+        .cards__san:not(:hover) .choice {
+            display: inherit;
+        }
+    
+        .choice {
+            margin-top: 0;
+            font-size: 1.75rem;
+            margin-left: .9rem;
+            margin-top: 2rem;
+            width: 90%;
+        }
+        #choice-media640 {
+            margin-top: 2.7rem;
+        }
+    } 
+
+    @media only screen  /*IPAD PRO*/
+	and (min-device-width: 1024px)
+	and (max-device-width: 1024px)
+	and (orientation: portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {
+        .title {
+            margin-top: 2rem;
+            margin-left: 4.25rem;
+            width: 55rem;
+            font-size: 1.75rem;
+        }
+        
+        .title h1 {
+            font-size: 2.25rem;
+        }
+    
+        #cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .cards__med-title,
+        .cards__bog-title,
+        .cards__san-title {
+            font-size: 2.25rem;
+        }
+        .cards__medimage,
+        .cards__bogimage,
+        .cards__santaimage {
+            width: 380px;
+            height: 260px;
+        }
+        #texthead_media640 {  /*Medellin*/
+            margin-top: 1.15rem;
+        }
+        .cards__texthead {
+            font-size: 2rem;
+        }
+        .cards__med,
+        .cards__bog,
+        .cards__san {
+            height: 42rem;
+            width: 29rem;
+            margin-bottom: 3.25rem;
+            border: 3px black solid;
+            margin-left: 0;
+            
+        }
+    
+        .cards__med:not(:hover) .choice,
+        .cards__bog:not(:hover) .choice,
+        .cards__san:not(:hover) .choice {
+            display: inherit;
+        }
+    
+        .choice {
+            margin-top: 0;
+            font-size: 2.25rem;
+            margin-left: .9rem;
+            margin-top: 2rem;
+            width: 90%;
+        }
+        #choice-media640 {
+            margin-top: 3.25rem;
+        }
+    }  
+
+    @media only screen  /*IPAD PRO*/
+	and (min-device-width: 1366px)
+	and (max-device-width: 1366px)
+	and (orientation: landscape)
+	and (-webkit-min-device-pixel-ratio: 2) {
+        .body {
+            background-size: 100vh;
+        }
+        .title {
+            margin-top: 2rem;
+            margin-left: 7rem;
+            width: 70rem;
+        }
+        
+        .title h1 {
+            font-size: 2rem;
+        }
+    
+        #cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .cards__med-title,
+        .cards__bog-title,
+        .cards__san-title {
+            font-size: 1.75rem;
+        }
+        .cards__medimage,
+        .cards__bogimage,
+        .cards__santaimage {
+            width: 380px;
+            height: 260px;
+        }
+        #texthead_media640 {  /*Medellin*/
+            margin-top: 1.15rem;
+        }
+        .cards__texthead {
+            font-size: 1.75rem;
+        }
+        .cards__med,
+        .cards__bog,
+        .cards__san {
+            height: 37rem;
+            width: 26rem;
+            border: 3px black solid;
+            margin-left: 0;
+            
+        }
+    
+        .cards__med:not(:hover) .choice,
+        .cards__bog:not(:hover) .choice,
+        .cards__san:not(:hover) .choice {
+            display: inherit;
+        }
+    
+        .choice {
+            margin-top: 0;
+            font-size: 2rem;
+            margin-left: .9rem;
+            margin-top: 2rem;
+            width: 90%;
+        }
+        #choice-media640 { /*Medellin*/
+            margin-top: 3rem;
+        }
+        #texthead__media1024 { /*Santa*/
+            margin-top: 1.1rem;
+        }
+        #choice_media1024 {
+            margin-top: 3rem;
+        }
+    }
     
 
-    @media only screen and (min-width: 660px) and (max-width: 1024px) {
-        .bg {
-            background:url(https://www.metrojourneys.com/wp-content/uploads/2019/07/guatape-antioquia-colombia.jpg);
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            z-index: -1;
-            }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
