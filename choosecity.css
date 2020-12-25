@@ -114,7 +114,6 @@ body {
 
 .cards__med:not(:hover) .choice {
     display: none;
-  
 }
 
 .choice {
@@ -403,7 +402,7 @@ a {
     }
     
     .title h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     #cards {
@@ -465,7 +464,7 @@ a {
     }
     
     .title h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     #cards {
@@ -672,7 +671,7 @@ a {
       }
       
       .title h1 {
-          font-size: 1.15rem;
+          font-size: 1.5rem;
       }
   
       #cards {
