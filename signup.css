@@ -9,6 +9,12 @@
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
+html,body {
+	text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
 
 body {
 	background:url(https://www.metrojourneys.com/wp-content/uploads/2019/07/guatape-antioquia-colombia.jpg);
