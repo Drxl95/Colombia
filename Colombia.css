@@ -337,7 +337,50 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
   }
+  .top_link_position {
+    display: block;
+	position: fixed;
+    bottom: 0%;
+    right: .20%;
+    z-index: 600;
+}
 
+.top_btn {
+	border: 1.5px solidrgba(255, 111, 15, 0.9);
+	background-color: white;
+	padding: .75rem .75rem;
+	color:rgba(255, 111, 15, 0.9);
+	font-weight: bolder;
+	text-transform: uppercase;
+	border-radius: 2px;
+}
+.top_btn:hover,
+.top_btn:focus {
+	background: rgba(255, 111, 15, 0.9);
+	padding: .85rem 1.95rem;
+    transition: all 0.45s ease-in-out;
+	cursor: pointer;
+	color: white;
+}
+
+.top_btn:hover,
+.top_btn:focus,
+.top_btn:active {
+    outline: 0;
+}
+.top_btn:visited {
+    background: rgb(39, 38, 38);
+    color: white;
+}
+
+.top_btn:active {
+    border: 1.5px solid white;
+	background: rgb(39, 38, 38);
+	padding: 1rem 1rem;
+	color: white;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
 
 @media screen and (max-width: 1024px) {
 	#top-portion {
