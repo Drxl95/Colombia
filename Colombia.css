@@ -11,6 +11,7 @@
 }
 html {
 	scroll-behavior: smooth;
+	
 }
 body {
 margin:0;
@@ -185,7 +186,6 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 .review_list li {
 	padding-right: 42px;
 	padding-left: 42px;
-	
 }
 
 .review {
@@ -382,6 +382,9 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	text-transform: uppercase;
 }
 
+
+
+
 @media screen and (max-width: 1024px) {
 	#top-portion {
 		padding-top: 2rem;
@@ -404,6 +407,7 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	.review_list {
 		flex-direction: column;
 	}
+	
 	.details {
 		display: none;
 	}
@@ -464,7 +468,9 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	}
 }
 
-@media only screen /*IphoneSE*/
+
+/*
+@media only screen ➡IphoneSE⬅
 and (min-device-width: 320px) 
 and (max-device-width: 320px) 
 and (orientation: portrait) 
@@ -485,7 +491,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		padding-left: 0;
 	}
 }
-@media only screen /*IphoneSE*/
+@media only screen ➡IphoneSE⬅
 and (min-device-width: 568px) 
 and (max-device-width: 568px) 
 and (orientation: landscape) 
@@ -555,7 +561,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 }
 
-@media only screen /*Galaxy Fold*/
+@media only screen ➡Galaxy Fold⬅
 and (min-device-width: 280px) 
 and (max-device-width: 280px) 
 and (orientation: portrait) 
@@ -597,7 +603,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 }
 
-@media only screen /*Galaxy Fold*/
+@media only screen ➡Galaxy Fold⬅
 and (min-device-width: 653px) 
 and (max-device-width: 653px) 
 and (orientation: landscape) 
@@ -620,7 +626,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 }
 
-@media only screen  /*SURFACE DUO*/
+@media only screen  ➡SURFACE DUO⬅
 	and (min-device-width: 540px)
 	and (max-device-width: 540px)
 	and (orientation: portrait)
@@ -641,7 +647,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 }
 
-@media only screen  /*IPAD*/
+@media only screen  ➡IPAD⬅
 	and (min-device-width: 768px)
 	and (max-device-width: 834px)
 	and (orientation: portrait)
@@ -819,7 +825,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 }
 
-@media only screen  /*IPAD PRO*/
+@media only screen  ➡IPAD PRO⬅
 	and (min-device-width: 1024px)
 	and (max-device-width: 1024px)
 	and (orientation: portrait)
@@ -988,3 +994,4 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		}
 	}
 
+👈*/
