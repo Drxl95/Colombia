@@ -16,6 +16,7 @@ html {
 body {
 margin:0;
 }
+
 html,body {
 	text-size-adjust: none;
 	-webkit-text-size-adjust: none;
@@ -345,8 +346,9 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
     z-index: 600;
 }
 
+
 .top_btn {
-	border: 1.5px solidrgba(255, 111, 15, 0.9);
+	border: 1.5px solid rgba(255, 111, 15, 0.9);
 	background-color: white;
 	padding: .75rem .75rem;
 	color:rgba(255, 111, 15, 0.9);
@@ -380,6 +382,16 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	color: white;
 	font-weight: bolder;
 	text-transform: uppercase;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 0em;
+    right: 0px;
+    text-decoration: none;
+    font-size: 12px;
+	padding: .35em;
+	display: none;
+    
 }
 
 
