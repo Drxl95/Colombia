@@ -11,8 +11,8 @@
 }
 html {
 	scroll-behavior: smooth;
-	
 }
+
 body {
 margin:0;
 }
@@ -86,6 +86,7 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	width: 100%;
 	/*👉height: 900px;👈*/
 	height: 100vh;
+	min-height: 900px;
 	/* background-image: linear-gradient(rgba(162, 162, 163, 0.22), rgba(162, 162, 163, 0.22)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg"); */
 	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(85, 38, 38, 0.18)), to(rgba(0, 0, 0, 0.18))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 	background-image: -o-linear-gradient( rgba(85, 38, 38, 0.18), rgba(0, 0, 0, 0.18)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
@@ -128,10 +129,10 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 
  a.details {
 	border: 2.5px solid white;
-	padding: 10px 24px;
+	padding: 8px 42px;
 	font-family: 'Roboto', sans-serif;
-	font-size: 2.5rem;
-	background-color: transparent;
+	font-size: 2rem;
+	background-color: rgba(247, 195, 100, 0.5);
 	color: white;
 	cursor: pointer;
 	position: relative;
@@ -145,7 +146,7 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 
 a.details:hover,
 a.details:focus {
-	background-color: rgba(247, 195, 100, 0.1);
+	background-color: rgba(247, 195, 100, 0.25);
 	transition: .5s ease-in;
 }
 a.details:hover,
@@ -154,7 +155,7 @@ a.details:focus {
 	transition: .15s;
 }
 a.details:active {
-	background-color: rgba(247, 195, 100, 0.5);
+	background-color: rgba(247, 195, 100, 0.75);
 	transition: .15s;
 }
 
@@ -495,46 +496,151 @@ a.details:hover + .top-portion__arrows .top-portion__arrows--hide {
 	padding: .35em;
 	display: none;
 }
+@media screen and (min-width: 1201px) and (max-width: 1366px) {
+	.top-portion__desc {
+		padding-left: 5rem;
+		font-size: 1.75rem;
+		line-height: 1.75rem;
+	}
+	a.details {
+	padding: 8px 42px;
+	font-size: 1.5rem;
+	}
+	.top-portion__arrows {
+		left: 51.75%;
+	}
+	.top-portion__arrows .top-portion__arrows--hide {
+		width: 100px;
+		height: 100px;
+		margin: -75px;
+	}
+
+}
+@media screen and (max-width: 1200px) {
+	.top-portion__desc {
+		padding-left: 5rem;
+	}
+	a.details {
+		display: none;
+	}
+	.btm-containers {
+		background-image: url(img/abstract.jpg);
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+}
 
 
 @media screen and (max-width: 1024px) {
+	#top-portion {
+		min-height: 800px;
+	}
+
+	.top-portion__colombia {
+		font-size: 4rem;
+	}
+
+	.top-portion__voted {
+		font-size: 1.75rem;
+		}	
+
+	.top-portion__desc {
+		line-height: 2.25rem;
+		text-align: left;
+		font-size: 1.75rem;
+		padding-left: 2rem;
+	}
+
 	a.details {
 		display: none;
 	}
 	.top-portion__arrows {
 		display: none;
 	}
-	
+	.btm-containers {
+		background-image: url(img/abstract.jpg);
+		background-repeat: no-repeat;
+		background-position: right;
+	}
 }
 
+@media only screen 
+and (min-width: 1366px)
+and (max-width: 1366px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.top-portion__arrows {
+		display: inline-block;
+		left: 29.75%;
+		top: 15%;
+		animation: none;
+		transition: none;
+	}
+}
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.top-portion__colombia {
+		font-size: 5rem;
+	}
+
+	.top-portion__voted {
+		font-size: 2rem;
+		}	
+
+	.top-portion__desc {
+		line-height: 2.25rem;
+		text-align: left;
+		font-size: 2.25rem;
+		padding-left: 0;
+	}
+	a.details {
+		display: inline-block;
+	}
+	.top-portion__arrows {
+		display: inline-block;
+		left: 23.25%;
+		top: 12.5%;
+		animation: none;
+		transition: none;
+	}
+	.btm-containers {
+		background-image: url(img/abstract.jpg);
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+  }
 @media screen and (max-width: 1023px) {
 	#top-portion {
 		min-height: 800px;
-		/*👉height: 700px;👈*/
-		/*👉height: 100vh;👈*/
 		padding-top: 2rem;
 		background-image: linear-gradient( rgba(80, 80, 80, 0.55), rgba(75, 75, 75, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 		background-position: right;
 	}
 	.top-portion__colombia {
-		font-size: 3rem;
+		font-size: 4rem;
 	}
 	.top-portion__voted {
-		font-size: 1.15rem;
+		font-size: 1.5rem;
 	}
 	.top-portion__desc {
-		line-height: 1.45rem;
+		line-height: 1.75rem;
 		text-align: left;
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 		padding-left: 0;
 	}
-
 
 	.review_list {
 		flex-direction: column;
 	}
 	
-	.details {
+	a.details {
+		display: none;
+	}
+	.top-portion__arrows {
 		display: none;
 	}
 	.btm-containers {
@@ -572,8 +678,7 @@ a.details:hover + .top-portion__arrows .top-portion__arrows--hide {
 		padding-left: 0;
 		font-size: 1rem;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		flex-direction: row;
 	}
 	.addresses__info1 {
 		width: 15rem;
@@ -590,25 +695,70 @@ a.details:hover + .top-portion__arrows .top-portion__arrows--hide {
 	}
 	.terms_footer {
 		width: 15rem;
-		margin-top: 2rem;
+		margin-top: 6rem;
 		margin-bottom: 1rem;
 	}
 }
-@media screen and (max-device-width: 800px) {
+@media screen and (max-width: 900px) {
 	#top-portion {
 		min-height: 800px;
 	}
-/*👉	#top-portion {
-		height: ;
-	}👈*/
-	.addresses {
+	.top-portion__colombia {
+		font-size: 3.25rem;
+	}
+	.top-portion__voted {
+		font-size: 1.5rem;
+	}
+	.top-portion__desc {
+		line-height: 2rem;
+		text-align: left;
+		font-size: 1.75rem;
 		padding-left: 0;
 	}
 }
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 800px) {
+	#top-portion {
+		min-height: 800px;
+	}
+	.top-portion__colombia {
+		font-size: 3.25rem;
+	}
+	.top-portion__voted {
+		font-size: 1.5rem;
+	}
+	.top-portion__desc {
+		line-height: 2rem;
+		text-align: left;
+		font-size: 1.75rem;
+		padding-left: 0;
+	}
+	.addresses {
+		padding-left: 0;
+		display: flex;
+		flex-direction: row;
+	}
+}
+@media screen and (min-width: 768px) {
+	
+}
+@media screen and (max-width: 600px) {
 	#top-portion {
 		min-height: 600px;
 	}
+	.top-portion__colombia {
+		font-size: 3rem;
+	}
+	.top-portion__voted {
+		font-size: 1.15rem;
+	}
+	.top-portion__desc {
+		line-height: 1.45rem;
+		text-align: left;
+		font-size: 1.25rem;
+		padding-left: 0;
+	}
+
+
 	.btm-container__depends {
 		text-align: center;
 		font-size: .85rem;
@@ -620,7 +770,7 @@ a.details:hover + .top-portion__arrows .top-portion__arrows--hide {
 		font-size: .80rem;
 	}
 }
-@media screen and (max-device-width: 400px) {
+@media screen and (max-width: 400px) {
 	#top-portion {
 		min-height: 600px;
 	}
@@ -644,8 +794,22 @@ a.details:hover + .top-portion__arrows .top-portion__arrows--hide {
 		padding-left: 0;
 	}
 }
+@media screen and (max-width: 330px) {
+	#top-portion {
+		padding-top: .75rem;
+	}
+	hr {
+		margin: 0;
+	}
+	.top-portion__desc {
+		line-height: 1.45rem;
+		text-align: left;
+		font-size: 1.0rem;
+		padding-left: 0;
+	}
+}
 
-@media screen and (max-device-width: 300px) {
+@media screen and (max-width: 300px) {
 	.nav_lists a {
 		font-size: .75rem;
 	}
@@ -660,6 +824,8 @@ a.details:hover + .top-portion__arrows .top-portion__arrows--hide {
 		text-align: left;
 		font-size: 1rem;
 		padding-left: 0;
+		margin-left: 1rem;
+		margin-right: 0;
 	}
 	.btm-container__why {
 		margin-bottom: 1.75rem;

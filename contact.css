@@ -164,9 +164,12 @@ textarea {
 
 .contact-section__btn:hover,
 .contact-section__btn:focus {
-  background-color: white;
-  color: rgb(201, 83, 5);
+  background-color: rgb(209, 179, 124);
+  opacity: .7;
+  color: gray;
   cursor: pointer;
+  padding: 8px 28px;
+  transition: .45s .08s;
 }
 
 
