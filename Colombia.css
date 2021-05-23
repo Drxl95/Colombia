@@ -452,8 +452,8 @@ a.details:hover + .top-portion__arrows .top-portion__arrows--hide {
 
 
 .top_btn {
-	border: 1.5px solid rgba(255, 111, 15, 0.9);
-	background-color: white;
+	border: 1.75px solid rgba(255, 111, 15, 1);
+	background-color: rgba(255, 255, 255, .75);
 	padding: .75rem .75rem;
 	color:rgba(255, 111, 15, 0.9);
 	font-weight: bolder;
@@ -462,18 +462,20 @@ a.details:hover + .top-portion__arrows .top-portion__arrows--hide {
 }
 .top_btn:hover,
 .top_btn:focus {
-	background: rgba(255, 111, 15, 0.9);
+	background: rgba(255, 111, 15, 0.75);
 	padding: .85rem 1.95rem;
     transition: all 0.45s ease-in-out;
 	cursor: pointer;
 	color: white;
+	outline: 3px solid orange;
+	border: none;
 }
 
-.top_btn:hover,
+/*👉.top_btn:hover,
 .top_btn:focus,
 .top_btn:active {
     outline: 0;
-}
+}👈*/
 .top_btn:visited {
     background: rgb(39, 38, 38);
     color: white;

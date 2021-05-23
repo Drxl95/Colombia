@@ -158,7 +158,6 @@ textarea {
   color: white;
   font-size: 1rem;
   margin-right: 200rem;
-  margin-top: 2rem;
   -webkit-appearance: none;
 }
 
@@ -170,6 +169,7 @@ textarea {
   cursor: pointer;
   padding: 8px 28px;
   transition: .45s .08s;
+  margin: 12px;
 }
 
 
