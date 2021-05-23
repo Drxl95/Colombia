@@ -84,7 +84,8 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	background: url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg")  center no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 900px;
+	/*👉height: 900px;👈*/
+	height: 100vh;
 	/* background-image: linear-gradient(rgba(162, 162, 163, 0.22), rgba(162, 162, 163, 0.22)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg"); */
 	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(85, 38, 38, 0.18)), to(rgba(0, 0, 0, 0.18))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 	background-image: -o-linear-gradient( rgba(85, 38, 38, 0.18), rgba(0, 0, 0, 0.18)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
@@ -126,7 +127,7 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 
 
  a.details {
-	border: 2.5px solid transparent;
+	border: 2.5px solid white;
 	padding: 10px 24px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 2.5rem;
@@ -141,11 +142,16 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	display: inline-block;	
 }
 
+
 a.details:hover,
 a.details:focus {
 	background-color: rgba(247, 195, 100, 0.1);
-	border: 2.5px solid white;
 	transition: .5s ease-in;
+}
+a.details:hover,
+a.details:focus {
+	border: 3.5px solid white;
+	transition: .15s;
 }
 a.details:active {
 	background-color: rgba(247, 195, 100, 0.5);
@@ -503,7 +509,8 @@ a.details:hover + .top-portion__arrows .top-portion__arrows--hide {
 
 @media screen and (max-width: 1023px) {
 	#top-portion {
-		height: 700px;
+		min-height: 800px;
+		/*👉height: 700px;👈*/
 		/*👉height: 100vh;👈*/
 		padding-top: 2rem;
 		background-image: linear-gradient( rgba(80, 80, 80, 0.55), rgba(75, 75, 75, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
@@ -588,6 +595,9 @@ a.details:hover + .top-portion__arrows .top-portion__arrows--hide {
 	}
 }
 @media screen and (max-device-width: 800px) {
+	#top-portion {
+		min-height: 800px;
+	}
 /*👉	#top-portion {
 		height: ;
 	}👈*/
@@ -596,6 +606,9 @@ a.details:hover + .top-portion__arrows .top-portion__arrows--hide {
 	}
 }
 @media screen and (max-device-width: 600px) {
+	#top-portion {
+		min-height: 600px;
+	}
 	.btm-container__depends {
 		text-align: center;
 		font-size: .85rem;
@@ -608,6 +621,9 @@ a.details:hover + .top-portion__arrows .top-portion__arrows--hide {
 	}
 }
 @media screen and (max-device-width: 400px) {
+	#top-portion {
+		min-height: 600px;
+	}
 	.top-portion__colombia {
 		font-size: 2.25rem;
 	}
