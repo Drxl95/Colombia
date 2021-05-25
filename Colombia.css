@@ -92,11 +92,9 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	/*👉height: 900px;👈*/
 	height: 100vh;
 	min-height: 900px;
-	/* background-image: linear-gradient(rgba(162, 162, 163, 0.22), rgba(162, 162, 163, 0.22)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg"); */
-	background-image: -o-linear-gradient( rgba(85, 38, 38, 0.18), rgba(0, 0, 0, 0.18)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
-	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(80, 80, 80, 0.336)), to(rgba(75, 75, 75, 0.35))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
-	background-image: -o-linear-gradient( rgba(80, 80, 80, 0.336), rgba(75, 75, 75, 0.35)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
-	background-image: linear-gradient( rgba(80, 80, 80, 0.336), rgba(75, 75, 75, 0.35)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(80, 80, 80, 0.0)), color-stop(rgba(75, 75, 75, 0.80)), to(rgba(75, 75, 75, 0.0))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+	background-image: -o-linear-gradient( rgba(80, 80, 80, 0.0), rgba(75, 75, 75, 0.80), rgba(75, 75, 75, 0.0)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+	background-image: linear-gradient( rgba(80, 80, 80, 0.0), rgba(75, 75, 75, 0.80), rgba(75, 75, 75, 0.0)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 }
 
 .top-portion__colombia {
@@ -124,9 +122,9 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	padding-left: 10rem;
 	line-height: 2.25rem;
 	text-align: left;
-/*👉	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));👈*/
 	font-size: 1.75em;
-	font-family: 'Kalam', cursive;
+	font-family: 'Roboto', sans-serif;
+	/*👉font-family: 'Kalam', cursive;👈*/
 	margin: 1.5rem; -webkit-filter: brightness(100000%); filter: brightness(100000%);
 	margin-bottom: 0;
 }
@@ -138,7 +136,7 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	padding: 8px 42px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 2rem;
-	background-color: rgba(247, 195, 100, 0.5);
+	background-color: rgba(214, 128, 0, 0.45);
 	color: white;
 	cursor: pointer;
 	position: relative;
@@ -154,7 +152,7 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 
 a.details:hover,
 a.details:focus {
-	background-color: rgba(247, 195, 100, 0.25);
+	background-color: rgba(231, 147, 21, 0.25);
 	-webkit-transition: .5s ease-in;
 	-o-transition: .5s ease-in;
 	transition: .5s ease-in;
@@ -210,7 +208,7 @@ a:focus  .details__border--bottom:before {
 	position: relative;
 	width: 0%;
 	top: 10%;
-	left: 51%;
+	left: 51.25%;
 	
 }
 
@@ -613,8 +611,8 @@ and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
 	.top-portion__arrows {
 		display: inline-block;
-		left: 29.75%;
-		top: 15%;
+		left: 33.55%;
+		top: 12.5%;
 		-webkit-animation: none;
 		        animation: none;
 		-webkit-transition: none;
