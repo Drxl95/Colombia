@@ -72,24 +72,11 @@ html,body {
 
 /*PAGES*/
 
-
-hr { 
-border : 0;
-height: 1px; 
-background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0)); 
-background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.90)), to(rgba(255, 255, 255, 0))); 
-background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0)); 
-}
-
-
-
-
 #top-portion {
 	padding-top: 4.5rem;
 	background: url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg")  center no-repeat;
 	background-size: cover;
 	width: 100%;
-	/*👉height: 900px;👈*/
 	height: 100vh;
 	min-height: 900px;
 	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(80, 80, 80, 0.0)), color-stop(rgba(75, 75, 75, 0.80)), to(rgba(75, 75, 75, 0.0))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
@@ -115,7 +102,13 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	-webkit-filter: brightness(100000%);
 	        filter: brightness(100000%);
 }
-
+hr { 
+border : 0;
+height: 1px; 
+background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0)); 
+background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.90)), to(rgba(255, 255, 255, 0))); 
+background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0)); 
+}
 .top-portion__desc {
 	color: white;
 	width: 90%;
