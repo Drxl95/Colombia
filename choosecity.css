@@ -282,13 +282,13 @@ a {
         transform: translateY(1.5rem);
     }
 }
-@media (hover: none) {
+@media (hover: hover) {
     .cards__med:not(:hover) .choice,
     .cards__bog:not(:hover) .choice,
     .cards__san:not(:hover) .choice {
-      display: none;
-    }
-  }
+     display: none;
+   }
+ }
 
 @media only screen 
 and (min-width: 1366px)
