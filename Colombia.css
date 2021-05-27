@@ -544,6 +544,19 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 		height: 100px;
 		margin: -75px;
 	}
+/*👉	.addresses {
+		font-size: 1rem;
+	}👈*/
+	.addresses__info1--emailus {
+		margin: 1.35rem 0;
+	}
+}
+@media screen and (max-width:1277px) {
+	.addresses {
+		font-size: 1.25rem;
+		padding-top:2.5rem;
+		padding-bottom: 2.5rem;
+	}
 
 }
 @media screen and (max-width: 1200px) {
@@ -558,8 +571,18 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 		background-repeat: no-repeat;
 		background-position: right;
 	}
+	.addresses {
+		padding-top: 2rem;
+	}
+	.addresses__info1--emailus {
+		margin: 1.35rem 0;
+	}
 }
-
+@media screen and (max-width: 1188px) {
+	.addresses__info1--emailus {
+		margin: 0;
+	}
+}
 
 @media screen and (max-width: 1024px) {
 	#top-portion {
@@ -731,11 +754,15 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 	.addresses__info1 {
 		width: 15rem;
+		padding-left: 6rem;
 	}
 	.addresses__info1 img {
 		width: 36px;
 		height: 36px;
 	}
+/*👉	.addresses__info1--emailus {
+		margin: 1.35rem;
+	}👈*/
 	.addresses__info2 {
 		width: 15rem;
 	}
@@ -744,7 +771,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 	.terms_footer {
 		width: 15rem;
-		margin-top: 6rem;
+		margin-top: 5rem;
 		margin-bottom: 1rem;
 	}
 }
@@ -791,9 +818,25 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		    -ms-flex-direction: row;
 		        flex-direction: row;
 	}
+	.addresses__info1 {
+		padding-left: 3rem;
 }
-@media screen and (min-width: 768px) {
-	
+}
+@media screen and (max-width: 719px) {
+	.addresses {
+		padding-bottom: 1rem;
+	}
+	.addresses__info1--emailus {
+		margin: 1.35rem 0;
+	}
+	.terms_footer {
+		margin-bottom: 0rem;
+	}
+}
+@media screen and (max-width: 687px) {
+	.addresses__info1--emailus {
+		margin: 0;
+	}
 }
 @media screen and (max-width: 600px) {
 	#top-portion {
@@ -821,7 +864,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		padding-left: 0;
 	}
 	.terms_lists a {
-		font-size: .80rem;
+		font-size: 1rem;
+	}
+} 
+@media screen and (max-width: 479px) {
+	.addresses__info1 {
+		padding-left: 0rem;
 	}
 }
 @media screen and (max-width: 400px) {
