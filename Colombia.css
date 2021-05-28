@@ -126,10 +126,10 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 
  a.details {
 	border: 2.5px solid white;
-	padding: 8px 42px;
+	padding: 8px 62px;
 	padding-top: 11px;
 	font-family: 'Roboto', sans-serif;
-	font-size: 2rem;
+	font-size: 1.75rem;
 	background-color: rgba(214, 128, 0, 0.45);
 	color: white;
 	cursor: pointer;
@@ -202,7 +202,7 @@ a:focus  .details__border--bottom:before {
 	position: relative;
 	width: 0%;
 	top: 10%;
-	left: 51.25%;
+	left: 51.5%;
 	
 }
 
@@ -658,7 +658,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 	.top-portion__arrows {
 		display: inline-block;
-		left: 23.25%;
+		left: 22.15%;
 		top: 12.5%;
 		-webkit-animation: none;
 		        animation: none;

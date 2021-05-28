@@ -123,6 +123,7 @@ textarea {
   border-color: rgb(201, 83, 5);
   width: 550px;
   height: 40px;
+  box-shadow: rgb(36, 36, 36) 10px 10px 10px;
 }
 ::placeholder {
   color: black;
@@ -137,7 +138,7 @@ textarea {
 }
 
 .contact-section__btn {
-  padding: 12px 42px;
+  padding: 12px 52px;
   background:  rgb(201, 83, 5);
   border: none;
   color: white;
