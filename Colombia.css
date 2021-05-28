@@ -1,3 +1,4 @@
+
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
@@ -79,8 +80,8 @@ html,body {
 	width: 100%;
 	height: 100vh;
 	min-height: 900px;
-	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(80, 80, 80, 0.0)), color-stop(rgba(75, 75, 75, 0.80)), to(rgba(75, 75, 75, 0.0))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 	background-image: -o-linear-gradient( rgba(80, 80, 80, 0.0), rgba(75, 75, 75, 0.80), rgba(75, 75, 75, 0.0)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(80, 80, 80, 0.0)), color-stop(rgba(75, 75, 75, 0.80)), to(rgba(75, 75, 75, 0.0))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 	background-image: linear-gradient( rgba(80, 80, 80, 0.0), rgba(75, 75, 75, 0.80), rgba(75, 75, 75, 0.0)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 }
 
@@ -499,11 +500,7 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	border: none;
 }
 
-/*👉.top_btn:hover,
-.top_btn:focus,
-.top_btn:active {
-    outline: 0;
-}👈*/
+
 .top_btn:visited {
     background: rgb(39, 38, 38);
     color: white;
@@ -676,8 +673,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	#top-portion {
 		min-height: 800px;
 		padding-top: 2rem;
-		background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(80, 80, 80, 0.55)), to(rgba(75, 75, 75, 0.55))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 		background-image: -o-linear-gradient( rgba(80, 80, 80, 0.55), rgba(75, 75, 75, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+		background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(80, 80, 80, 0.55)), to(rgba(75, 75, 75, 0.55))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 		background-image: linear-gradient( rgba(80, 80, 80, 0.55), rgba(75, 75, 75, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 		background-position: right;
 	}
