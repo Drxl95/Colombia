@@ -101,7 +101,8 @@ span {
     background:  rgba(255, 111, 15,0.93);
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+	font-size: 1.5rem;
+	box-shadow: rgb(36, 36, 36) 10px 10px 10px;
 }
 
 .title p {
@@ -117,6 +118,7 @@ span {
 	background: white;
 	color:  rgba(255, 111, 15, 0.95);
 	font-family: 'Roboto', sans-serif;
+	
 }
 
 .medellin_grid_container {
@@ -132,6 +134,7 @@ span {
 	margin: 1rem 0;
 	background-color: rgba(255, 236, 0, 0.83);
 	margin-bottom: 5rem;
+	box-shadow: rgb(36, 36, 36) 10px 10px 10px;
 }
 
 .medellin_grid_container:hover,
@@ -210,6 +213,7 @@ span {
 	position: relative;
 	left: 2.5%;
 	top: 50%;
+	box-shadow: rgb(36, 36, 36) 10px 10px 10px;
 }
 .bog_img {
 	grid-area: picture;
@@ -263,6 +267,7 @@ span {
 	width: 97.5%;
 	margin: 1rem 0;
 	background-color: rgba(255, 0, 8, 0.83);
+	box-shadow: rgb(36, 36, 36) 10px 10px 10px;
 }
 .santa_img {
 	grid-area: picture;
