@@ -396,181 +396,9 @@ span {
 		justify-content: center;
 	}
 	.title {
-		margin: 0;
-		width: auto;
+		width: 75%;
 	}
 
-	
-	.medellin_grid_container {
-		display: grid;
-		grid-template-areas: 
-						"header" 
-						"picture"
-						 "descr";
-		column-gap: 8rem;
-		justify-items: center;
-		align-items: center;
-	}
-
-
-	.medellin_container:hover,
-	.medellin_container:focus,
-	.meddelin_container:active {
-		background-color: rgba(255, 236, 0, 0.93);
-	}
-	
-	.medellin {
-		grid-area: header;
-		font-family: 'Roboto', sans-serif;
-		text-align: center;
-		color: black;
-		font-size: 1.75rem;
-	}
-	
-	.med_img {
-		grid-area: picture;
-		max-width: 100%;
-		height: auto;
-		margin-bottom: 2.5rem;
-		margin-left: 0rem;
-		border: 5px solid #8a0000;
-	}
-	
-	.med_info  {
-		grid-area: descr;
-		padding: 1rem;
-		width: 90%;
-		height: auto;
-		background-color: #ffffe6;
-		color: #b80000;
-		border: 5px solid #8a0000;
-		text-align: center;
-		font-family: 'Roboto', sans-serif;
-		font-size: 1.25rem;
-		margin-bottom: 2.5rem;
-		margin-left: 0;
-	
-	}
-	.bogota_grid_container {
-		display: grid;
-		grid-template-areas: 
-						"header" 
-						"picture"
-						"descr";
-		column-gap: 8rem;
-		justify-items: center;
-		align-items: center;
-		left: 0;
-		
-
-	}
-	.bogota {
-		grid-area: header;
-		font-family: 'Roboto', sans-serif;
-		text-align: center;
-		color: black;
-		font-size: 1.75rem;
-	}
-	.bog_img {
-		grid-area: picture;
-		max-width: 100%;
-		height: auto;
-		margin-bottom: 2.5rem;
-		margin-left: 0rem;
-		border: 5px solid #8a0000;
-	}
-	.bog_info {
-		grid-area: descr;
-		padding: 1rem;
-		width: 90%;
-		height: auto;
-		margin-bottom: 2.5rem;
-		background-color: #ffffe6;
-		color: #b80000;
-		border: 5px solid #8a0000;
-		text-align: center;
-		font-family: 'Roboto', sans-serif;
-		font-size: 1.15rem;
-		margin-left: 0;
-	}
-	.santa {
-		grid-area: header;
-		font-family: 'Roboto', sans-serif;
-		text-align: center;
-		color: black;
-		font-size: 1.75rem;
-	}
-	.santa_grid_container {
-		display: grid;
-		grid-template-areas: 
-						"header" 
-						"picture"
-						"descr";
-		column-gap: 8rem;
-		justify-items: center;
-		align-items: center;
-	}
-	.santa_img {
-		grid-area: picture;
-		max-width: 100%;
-		height: auto;
-		margin-bottom: 2.5rem;
-		margin-left: 0rem;
-		border: 5px solid #8a0000;
-	}
-	.santa_info {
-		grid-area: descr;
-		padding: 1rem;
-		width: 85%;
-		height: auto;
-		margin-bottom: 2.5rem;
-		background-color: #ffffe6;
-		color: #b80000;
-		border: 5px solid #8a0000;
-		text-align: center;
-		font-family: 'Roboto', sans-serif;
-		font-size: 1.15rem;
-		margin-left: 0;
-	}
-	.addresses {
-		padding-left: 0;
-	}
-	.addresses__info1 {
-		width: 15rem;
-	}
-	.addresses__info1 img {
-		width: 36px;
-		height: 36px;
-	}
-	.addresses__info2 {
-		width: 15rem;
-	}
-	.terms_links a {
-		font-size:1rem ;
-	}
-	.terms_footer {
-		width: 15rem;
-		margin-top: 4.5rem;
-		margin-bottom: 1rem;
-	}
-  }
-  @media screen and (max-width: 1150px) {
-	.nav_lists a {
-		font-size: .85rem;
-	}
-	
-
-	#flex_containers {
-		margin-top: 2rem;
-		align-items: center;
-		justify-content: center;
-	}
-	.title {
-		margin: 0;
-		width: auto;
-	}
-
-	
 	.medellin_grid_container {
 		display: grid;
 		grid-template-areas: 
@@ -743,8 +571,7 @@ span {
 		justify-content: center;
 	}
 	.title {
-		margin: 0;
-		width: auto;
+		width: 75%;
 	}
 
 	
@@ -913,10 +740,12 @@ span {
 		justify-content: center;
 	}
 	.title {
-		margin: 0;
-		width: auto;
+		width: 75%;
+		margin-top: 0;
 	}
-
+	.title p {
+		font-size: 1.25rem;
+	}
 	
 	.medellin_grid_container {
 		display: grid;
@@ -1084,10 +913,12 @@ span {
 		justify-content: center;
 	}
 	.title {
-		margin: 0;
-		width: auto;
+		width: 75%;
+		font-size: 1.25rem;
 	}
-
+	.title p {
+		font-size: 1.15rem;
+	}
 	
 	.medellin_grid_container {
 		display: grid;
@@ -1255,8 +1086,8 @@ span {
 		justify-content: center;
 	}
 	.title {
-		margin: 0;
-		width: auto;
+		width: 85%;
+		margin-left: 7.5%;
 	}
 
 	
@@ -1426,8 +1257,8 @@ span {
 		justify-content: center;
 	}
 	.title {
-		margin: 0;
-		width: auto;
+		width: 85%;
+		margin-left: 7.5%;
 	}
 
 	
