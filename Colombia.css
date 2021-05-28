@@ -200,13 +200,21 @@ a:focus  .details__border--bottom:before {
 }
 
 .top-portion__arrows {
+	position: absolute;
+	width: 0%;
+	top: 83%;
+	left: 51.5%;
+	
+}
+
+/*👉.top-portion__arrows {
 	position: relative;
 	width: 0%;
 	top: 10%;
 	left: 51.5%;
 	
 }
-
+👈*/
 .top-portion__arrows .top-portion__arrows--hide {
 	opacity: 0;
 	display: block;
@@ -535,6 +543,7 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	}
 	.top-portion__arrows {
 		left: 51.75%;
+		top: 87%;
 	}
 	.top-portion__arrows .top-portion__arrows--hide {
 		width: 100px;
@@ -621,8 +630,8 @@ and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
 	.top-portion__arrows {
 		display: inline-block;
-		left: 33.55%;
-		top: 12.5%;
+		left: 51.75%;
+		top: 87%;
 		-webkit-animation: none;
 		        animation: none;
 		-webkit-transition: none;
