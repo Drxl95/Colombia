@@ -137,7 +137,7 @@ body {
 	padding: 16px 24px;
 	width: 50%;
 	margin-left: 25%;
-	margin-top: 2rem;
+	margin-top: 5%;
 	box-shadow: rgb(43, 42, 42) 4px 4px 4px;
 }
 
@@ -185,37 +185,37 @@ body {
 	background-size: cover; */
 }
 
-.lists1 {
-	list-style: none;
-	padding-inline-start: 0;
-	/* margin-top: 3rem; */
-	margin-bottom: 5rem;
-	font-size: 17px;
-}
 
 .lists1 li {
 	font-weight: bolder;
 	margin: 1.75rem 0;
 	color: rgb(107, 107, 107);
 	background-color: white;
-	margin-bottom: 2.9rem;
+	margin-bottom: 10.75%;
 }
 
 .list-title {
 	font-size: 1.75rem;
-	margin-top: 2rem;
-	margin-bottom: 3rem;
 	color: white;
 	background: var(--main-color);
+	margin-top: 10%;
+	margin-bottom: 10%;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.lists1 {
+	list-style: none;
+	padding-inline-start: 0;
+	margin-bottom: 19%;
+	font-size: 17px;
 }
 
 .lists2 {
 	list-style: none;
 	padding-inline-start: 0;
 	/* margin-top: 3rem; */
-	margin-bottom: 5rem;
+	margin-bottom: 19%;
 	font-size: 17px;
 }
 .lists2 span,
@@ -239,8 +239,7 @@ i {
 .lists3 {
 	list-style: none;
 	padding-inline-start: 0;
-	/* margin-top: 3rem; */
-	margin-bottom: 5rem;
+	margin-bottom: 19%;
 	font-size: 17px;
 }
 
@@ -249,7 +248,7 @@ i {
 	margin: 1.75rem 0;
 	color: rgb(107, 107, 107);
 	background-color: white;
-	margin-bottom: 2.3rem;
+	margin-bottom: 8.5%;
 }
 
 .button  {
@@ -261,7 +260,6 @@ i {
 	font-size: 1.25rem;
 	font-weight: 800;
 	font-family: inherit;
-	margin-bottom: 3rem;
 	text-decoration: none;
 }
 
@@ -386,7 +384,6 @@ i {
 		width: 100%;
 		margin: 2rem 0rem 0rem;
 		display: inline-block;
-		
 	}
 	
 	.grid-container {
@@ -407,14 +404,13 @@ i {
 	.list-title {
 		font-size: 1.1rem;
 	}
-
 	
-	.lists1 {
+	/*👉.lists1 {
 		margin-bottom: 5rem;
 	}
 	.lists3 li {
 		margin-bottom: 2.857rem;
-	}
+	}👈*/
 	}
 	@media screen and (max-width:1366px) {
 		.grid-header {

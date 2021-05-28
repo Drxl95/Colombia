@@ -123,7 +123,9 @@ textarea {
   border-color: rgb(201, 83, 5);
   width: 550px;
   height: 40px;
-  
+}
+::placeholder {
+  color: black;
 }
 
 .contact__txtarea label,
