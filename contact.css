@@ -131,7 +131,7 @@ input:-webkit-autofill:active {
 input[type="text"],
 [type="email"],
 textarea {
-  background-color: rgb(223, 198, 182);
+  background-color: rgb(223, 198, 182, 0.875);
   border-color: rgb(201, 83, 5);
   width: 550px;
   height: 40px;
