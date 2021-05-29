@@ -469,7 +469,7 @@ textarea {
 	}
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:350px) {
   .contact-section {
     min-height: 500px;
     padding-top: 2rem;
