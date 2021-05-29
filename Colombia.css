@@ -617,7 +617,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	.top-portion__arrows {
 		display: inline-block;
 		left: 33.55%;
-		top: 15.5%;
+		top: 25%;
 		-webkit-animation: none;
 		        animation: none;
 		-webkit-transition: none;
@@ -651,7 +651,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	.top-portion__arrows {
 		display: inline-block;
 		left: 22.15%;
-		top: 15%;
+		top: 25%;
 		-webkit-animation: none;
 		        animation: none;
 		-webkit-transition: none;
