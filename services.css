@@ -264,7 +264,7 @@ body {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	height: 14.7rem;
+	max-height: 14.7rem;
 	list-style: none;
 	-webkit-padding-start: 0;
 	        padding-inline-start: 0;
@@ -291,7 +291,7 @@ body {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	height: 14.7rem;
+	max-height: 14.7rem;
 	list-style: none;
 	-webkit-padding-start: 0;
 	        padding-inline-start: 0;
@@ -325,7 +325,7 @@ i {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	height: 14.7rem;
+	max-height: 14.7rem;
 	list-style: none;
 	-webkit-padding-start: 0;
 	        padding-inline-start: 0;
