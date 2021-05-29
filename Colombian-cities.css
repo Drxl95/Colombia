@@ -1563,6 +1563,17 @@ span {
 		-ms-grid-column: 1;
 	}
   }
+
+  @media screen and (max-width: 1000px) {
+	.terms_footer {
+		width: 15rem;
+		margin-top: 5.5rem;
+		margin-bottom: 1rem;
+	}
+  }
+  @media screen and (max-width: 900px) {
+	  
+  }
   @media screen and (max-width: 800px) {
 	.nav_lists a {
 		font-size: .85rem;
@@ -1857,7 +1868,7 @@ span {
 	}
 	.terms_footer {
 		width: 15rem;
-		margin-top: 4.5rem;
+		margin-top: 5.5rem;
 		margin-bottom: 1rem;
 	}
 	
@@ -2582,6 +2593,9 @@ span {
 	}
 	.addresses__info2 {
 		width: 15rem;
+	}
+	.addresses__info2 p {
+		margin-top: 2.25rem;
 	}
 	.terms_links a {
 		font-size:1rem ;
