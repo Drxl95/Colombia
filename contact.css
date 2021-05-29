@@ -484,7 +484,7 @@ textarea {
   input[type="text"],
   [type="email"],
   textarea {
-    width: 250px;
+    width: 200px;
   }
 
 .name-form {
@@ -492,8 +492,8 @@ textarea {
 }
   .contact__txtarea label,
   .textarea {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
     
   }
   .contact input,
@@ -541,18 +541,18 @@ textarea {
   input[type="text"],
   [type="email"],
   textarea {
-    width: 250px;
+    width: 200px;
   }
 
 .name-form {
   margin: 0;
 }
-  .contact__txtarea label,
-  .textarea {
-    width: 250px;
-    height: 200px;
-    
-  }
+.contact__txtarea label,
+.textarea {
+  width: 200px;
+  height: 150px;
+  
+}
   .contact input,
   .contact textarea {
     font-size: 1.05rem;
