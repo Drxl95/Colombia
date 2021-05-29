@@ -203,8 +203,10 @@ textarea {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      align-items: center;
   text-align: center;
   font-size: 1.15rem;
+  padding-left: 6%;
 }
 
 .addresses a {
@@ -236,8 +238,6 @@ textarea {
 }
 .terms_footer {
   background-color: rgb(201, 83, 5);
-  /*👉margin-top: 5rem;👈*/
-  margin-top: 5.25rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -248,15 +248,10 @@ textarea {
           flex-grow: 1;
 }
 
-.terms_links {
-  /*li*/
-  margin: 0;
-}
 
 .terms_lists {
   /*ul*/
   list-style: none;
-  margin: 0;
   text-align: center;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
@@ -277,7 +272,7 @@ textarea {
 
 @media screen and (max-width: 1023px) {
   .addresses {
-		padding-left: 0;
+		padding-left: 8%;
 		font-size: 1rem;
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -302,14 +297,12 @@ textarea {
 	}
 	.terms_footer {
 		width: 15rem;
-		margin-top: 4.25rem;
-		margin-bottom: 1rem;
 	}
 }
 
 @media screen and (max-width:800px) {
   .addresses {
-		padding-left: 0;
+		padding-left: 6%;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -318,9 +311,7 @@ textarea {
 		    -ms-flex-direction: row;
 		        flex-direction: row;
   }
-  .terms_footer {
-    margin-top:5rem;
-  }
+  
 }
 
 @media screen and (max-width:700px) {
@@ -355,9 +346,6 @@ textarea {
     font-size: 1.05rem;
   }
  
-  .btn {
-    margin-right: .25rem;
-  }
   
 }
 @media screen and (max-width:600px) {
@@ -396,12 +384,13 @@ textarea {
     margin-right: .25rem;
   }
   .addresses {
-		padding-left: 0;
+		padding-left: 3%;
 	}
 	.terms_lists a {
-		font-size: .80rem;
+		font-size: .87rem;
 	}
 }
+
 @media screen and (max-width:400px) {
   .contact-section {
     min-height: 600px;
@@ -411,7 +400,6 @@ textarea {
   .contact-section__text {
     font-size: 1.15rem;
     margin-top: 0;
-    /*👉margin-bottom: 2rem;👈*/
   }
   .contact-section__text p {
     margin: 0;
