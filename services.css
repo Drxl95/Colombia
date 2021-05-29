@@ -172,7 +172,9 @@ body {
 	        flex-direction: column;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+			justify-content: space-between;
+			flex: 1 1 27rem;
+	min-height: 0;
   	text-align: center;
 	grid-area: plan1;
 	width: 27rem;
@@ -200,7 +202,9 @@ body {
 	        flex-direction: column;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+			justify-content: space-between;
+			flex: 1 1 27rem;
+			min-height: 0;
 	text-align: center;
 	grid-area: plan2;
 	width: 27rem;
@@ -228,7 +232,9 @@ body {
 	        flex-direction: column;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+			justify-content: space-between;
+	flex: 1 1 27rem;
+	min-height: 0;
 	text-align: center;
 	grid-area: plan3;
 	width: 27rem;
