@@ -613,7 +613,7 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 and (min-width: 1366px)
 and (max-width: 1366px)
 and (orientation: landscape)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (-webkit-min-device-pixel-ratio: 1.5) {
 	.top-portion__arrows {
 		display: inline-block;
 		left: 33.55%;
@@ -630,7 +630,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (min-width: 1024px) 
   and (max-width: 1024px) 
   and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (-webkit-min-device-pixel-ratio: 1.5) {
 	.top-portion__colombia {
 		font-size: 5rem;
 	}
@@ -955,3 +955,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		margin-bottom: 1rem;👈*/
 	}
 } 
+@media (hover: not hover) {
+    .cards__med:not(:hover) .choice,
+    .cards__bog:not(:hover) .choice,
+    .cards__san:not(:hover) .choice {
+     display: none;
+   }
+ }
