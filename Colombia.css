@@ -617,7 +617,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	.top-portion__arrows {
 		display: inline-block;
 		left: 33.55%;
-		top: 25%;
+		top: 15%;
 		-webkit-animation: none;
 		        animation: none;
 		-webkit-transition: none;
@@ -651,7 +651,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	.top-portion__arrows {
 		display: inline-block;
 		left: 22.15%;
-		top: 25%;
+		top: 15%;
 		-webkit-animation: none;
 		        animation: none;
 		-webkit-transition: none;
@@ -955,10 +955,3 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		margin-bottom: 1rem;👈*/
 	}
 } 
-@media (hover: not hover) {
-    .cards__med:not(:hover) .choice,
-    .cards__bog:not(:hover) .choice,
-    .cards__san:not(:hover) .choice {
-     display: none;
-   }
- }
