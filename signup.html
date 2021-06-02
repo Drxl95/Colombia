@@ -10,8 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 
 <body>
-
-<main>
+<main id="main">
 	<header>
         <section class="title">
             <div class="title__step2">
@@ -19,14 +18,42 @@
             </div>
             <div>
                 <h1>
-                    Submit Payment
+                    Secure Checkout
                 </h1>
-                <p>Final Step!  Submit your payment to us and enjoy your move!</p>
+                <p>Final Step!  Click "Secure Checkout" below and enjoy your move!</p>
             </div>
         </section>
     </header>
 
-<div class="blur">
+	<section class="title2">
+		<div class="title2__step2">
+			<h1 class="title2__head">Your Selection</h1>
+		</div>
+		<div id="table__container">
+			<table>
+				<thead>
+					<tr>
+						<th>Package</th>
+						<th>Chosen City</th>
+					</tr>
+				</thead>
+				<tbody class="tbody">
+					<tr>
+						<td>Plus</td>
+						<td class="border_left">Medellin</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<div class="buttons">
+		<a class="buttons__change" href="services.html">Change Selection</a>
+
+		<button class="buttons__pay" type="submit">Secure Checkout</button>
+	</div>
+</main>
+<!-- <div class="blur">
 	<section class="signup-section">    
 		<h1 class="signup-title">Enter your payment details below!</h1>
 		<p class="cards">We only accept credit cards at this time.</p>
@@ -99,8 +126,8 @@
 		<button class="button">Submit Payment</button>
 	</section>
 
-</div>
-</main>
+</div> -->
+
 
 		
 </body>

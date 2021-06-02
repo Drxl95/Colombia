@@ -178,10 +178,8 @@ textarea {
   opacity: .7;
   color: gray;
   cursor: pointer;
-  padding: 8px 28px;
-  -webkit-transition: .45s .08s;
-  -o-transition: .45s .08s;
-  transition: .45s .08s;
+  transform: scale(0.85);
+  transition: ease .45s;
   margin: 12px;
 }
 

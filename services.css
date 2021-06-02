@@ -175,16 +175,12 @@ body {
 			justify-content: space-between;
   	text-align: center;
 	grid-area: plan1;
-/*👉	width: 27rem;
-	height: 37rem;👈*/
 	background-color:  rgb(255, 241, 227);
 	font-family: 'Roboto', sans-serif;
 	border: solid 2px black;
 	color: white;
 	-webkit-box-shadow: rgb(43, 42, 42) 8px 8px 8px;
 	        box-shadow: rgb(43, 42, 42) 8px 8px 8px;
-	/* background:linear-gradient( rgba(255, 236, 0, 0.60), rgba(255, 236, 0, 0.60)), url("img/Lajas.jpg");
-	background-position: center right 27%; */
 }
 
 
@@ -203,16 +199,13 @@ body {
 			justify-content: space-between;
 	text-align: center;
 	grid-area: plan2;
-/*👉	width: 27rem;
-	height: 37rem;👈*/
 	color:  var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	border: 2px solid black;
 	background: rgb(255, 241, 227);
 	-webkit-box-shadow: rgb(43, 42, 42) 8px 8px 8px;
 	        box-shadow: rgb(43, 42, 42) 8px 8px 8px;
-	/* background:linear-gradient( rgba(0, 17, 223, 0.60), rgba(0, 17, 223, 0.60)), url("img/tatacoa.jpg");
-	background-position: center right 27%;  */
+
 }
 
 
@@ -231,17 +224,13 @@ body {
 			justify-content: space-between;
 	text-align: center;
 	grid-area: plan3;
-	/*👉width: 27rem;
-	height: 37rem;👈*/
 	color:  var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	border: 2px solid black;
 	background:  rgb(255, 241, 227);
 	-webkit-box-shadow: rgb(43, 42, 42) 8px 8px 8px;
 	        box-shadow: rgb(43, 42, 42) 8px 8px 8px;
-	/* background:linear-gradient( rgba(255, 0, 8, 0.60), rgba(255, 0, 8, 0.60)), url("img/cocora.jpg");
-	background-position: center right 27%;
-	background-size: cover; */
+
 }
 
 .list-title {
@@ -272,7 +261,6 @@ body {
 }
 
 .lists1 li {
-/*👉	flex-shrink: 1;👈*/
 	font-weight: bolder;
 	margin: 1.6rem 0;
 	color: rgb(107, 107, 107);
@@ -691,9 +679,7 @@ i {
 	.addresses {
 		padding-left: 0;
 	}
-	.terms_footer {
-		font-size: ;
-	}
+
 }
 @media screen and (max-width: 375px) {
 	.grid-container {
@@ -748,6 +734,4 @@ i {
 
 
 
-  
 
- 
