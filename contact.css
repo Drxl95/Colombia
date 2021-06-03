@@ -174,9 +174,9 @@ textarea {
 
 .contact-section__btn:hover,
 .contact-section__btn:focus {
-  background-color: rgb(209, 179, 124);
+  background-color: rgb(209, 179, 124, 0.7);
   opacity: .7;
-  color: gray;
+  color: black;
   cursor: pointer;
   transform: scale(0.85);
   transition: ease .45s;

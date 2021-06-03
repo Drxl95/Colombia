@@ -341,7 +341,7 @@ i {
 .button:focus,
 .button:active {
 	
-	color: rgb(110, 110, 110);
+	color: black;
 	opacity: .7;
 	-webkit-transition: .75s .08s;
 	-o-transition: .75s .08s;
