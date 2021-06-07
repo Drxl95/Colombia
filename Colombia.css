@@ -266,9 +266,11 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 
 /*Yellow Section*/
 .btm-containers {
-	background-image: url(img/tejo2.jpg);
+	/*👉background-image: url(img/tejo2.jpg);👈*/
+	background-image: url(img/abstract.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	
 }
 .bottom__container {
 	background-color:rgba(255, 236, 0, 0.75);
