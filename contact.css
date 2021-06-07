@@ -27,7 +27,7 @@ html,body {
 }
 body {
   margin: 0;
-  /*👉height: 100%;👈*/
+  font-family: "Roboto", sans-serif;
   
 }
 
@@ -74,8 +74,10 @@ body {
 
 
 #flex-container {
-  font-family: "Roboto", sans-serif;
-  
+/*👉  display: flex;
+  flex-direction: column;
+  justify-content: center;👈*/
+  text-align: center;
 }
 
 
@@ -89,17 +91,26 @@ body {
   background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.50)), to(rgba(0, 0, 0, 0.10))), url(img/colo.png);
   background: -o-linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url(img/colo.png);
   background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), url(img/colo.png);
-  /* background-size: center; */
   background-position: center;
   color: white;
  
 }
 
 .contact-section__text {
-  margin-top: 4rem;
+  display: inline-block;
+  margin-top: 1rem;
   margin-bottom: 4.5rem;
-  font-weight: 700;
-  font-size: 2.2rem;
+  font-size: 1.75rem;
+  border: 3px solid black;
+  background-color:   rgb(255, 111, 15);
+  width: 75%;
+}
+
+.contact-section__text-title {
+  background: white;
+  color: rgb(255, 111, 15);
+  margin: 0;
+  font-size: 2.5rem;
 }
 
 label {
@@ -269,6 +280,12 @@ textarea {
 }
 
 @media screen and (max-width: 1023px) {
+  .contact-section__text {
+    font-size: 1.25rem;
+  }
+  .contact-section__text-title {
+    font-size: 2rem;
+  }
   .addresses {
 		padding-left: 8%;
 		font-size: 1rem;
@@ -346,14 +363,26 @@ textarea {
  
   
 }
+@media screen and (max-width:650px) {
+  .contact-section__text {
+    font-size: 1.15rem;
+  }
+  .contact-section__text-title {
+    font-size: 1.75rem;
+  }
+}
 @media screen and (max-width:600px) {
+
+  .contact-section__text-title {
+    font-size: 1.5rem;
+  }
   .contact-section {
     min-height: 600px;
     padding-top: 2rem;
   }
 
   .contact-section__text {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     margin-top: 0;
     margin-bottom: 2rem;
   }
@@ -394,14 +423,15 @@ textarea {
     min-height: 600px;
     padding-top: 2rem;
   }
+  .contact-section__text-title {
+    font-size: 1.5rem;
+  }
 
   .contact-section__text {
-    font-size: 1.15rem;
+    font-size: 1rem;
     margin-top: 0;
   }
-  .contact-section__text p {
-    margin: 0;
-  }
+
 
   input[type="text"],
   [type="email"],
@@ -437,11 +467,20 @@ textarea {
     padding-top: 2rem;
   }
 
+  .contact-section__text-title {
+    font-size: 1.5rem;
+  }
+
   .contact-section__text {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+
+  /*👉.contact-section__text {
     font-size: 1.15rem;
     margin-top: 0;
     margin-bottom: 2rem;
-  }
+  }👈*/
 
   input[type="text"],
   [type="email"],
