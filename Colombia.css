@@ -97,7 +97,7 @@ html,body {
 .top-portion__voted {
 	color: white;
 	text-align: center;
-	font-family: 'Eagle Lake', cursive;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
 	font-size: 1.35em;
 
@@ -126,7 +126,9 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	border: 2.5px solid white;
 	padding: 8px 62px;
 	padding-top: 11px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	/*👉font-family: 'Roboto', sans-serif;👈*/
 	font-size: 1.75rem;
 	background-color: rgba(214, 128, 0, 0.45);
 	color: white;
@@ -278,7 +280,7 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	margin:0;
 	padding: 8px;
 	color: black;
-	font-family: 'Kalam', cursive;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 600;
 	font-size: 1.5rem;
 }
