@@ -116,6 +116,7 @@ body {
 	-ms-grid-column-span: 5;
 	grid-area: header;
 		margin-top: 2.5%;
+		
 		margin-left: 12.25%;
 		text-align: center;
 		border: 2px solid black;
@@ -127,6 +128,9 @@ body {
 		margin-right: 5rem;
 		-webkit-box-shadow: rgb(36, 36, 36) 10px 10px 10px;
 		        box-shadow: rgb(36, 36, 36) 10px 10px 10px;
+}
+.grid-header p {
+	margin: 1rem;
 }
 .title__head {
 	width: 100%;
