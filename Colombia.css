@@ -530,6 +530,12 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	}
 }
 
+@media screen and (max-width: 1500px) {
+	.top-portion__desc {
+		font-size: 1.5rem;
+		margin-bottom: 2rem;
+	}
+}
 @media screen and /*👉(min-width: 1201px) and👈*/ (max-width: 1366px) {
 	.top-portion__desc {
 		padding-left: 5rem;
