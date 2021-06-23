@@ -522,7 +522,15 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	padding: .35em;
 	display: none;
 }
-@media screen and (min-width: 1201px) and (max-width: 1366px) {
+@media screen and (max-width: 1700px) {
+	.top-portion__desc {
+		font-size: 1.65rem;
+		line-height: 2rem;
+		margin-bottom: 2rem;
+	}
+}
+
+@media screen and /*👉(min-width: 1201px) and👈*/ (max-width: 1366px) {
 	.top-portion__desc {
 		padding-left: 5rem;
 		font-size: 1.75rem;
@@ -540,10 +548,12 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 		height: 100px;
 		margin: -75px;
 	}
-
-/*👉	.addresses__info1--emailus {
-		margin: 1.35rem 0;
-	}👈*/
+}
+@media screen and (max-width:1300px) {
+	.top-portion__desc {
+		font-size: 1.55rem;
+		margin-bottom: 2rem;
+	}
 }
 @media screen and (max-width:1277px) {
 	.addresses {
