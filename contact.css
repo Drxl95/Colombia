@@ -171,6 +171,11 @@ textarea {
 
 }
 
+.error-message {
+  color: white;
+  font-size: 1rem;
+}
+
 .contact-section__btn {
   padding: 12px 52px;
   background:  rgb(201, 83, 5);
@@ -284,6 +289,12 @@ textarea {
   .contact-section__text-title {
     font-size: 2rem;
   }
+  .error-message {
+    display: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
   .addresses {
 		padding-left: 8%;
 		font-size: 1rem;
@@ -524,6 +535,25 @@ textarea {
 		margin-top: 2rem;
 		margin-bottom: 1rem;
 	}
+}
+@media screen and (max-width: 325px) {
+  .contact-section__text-title {
+    font-size: 1.25rem;
+}
+.contact-section__text {
+  font-size: .85rem;
+  margin-bottom: .5rem;
+}
+
+input[type="text"],
+[type="email"],
+textarea {
+  height: 30px;
+}
+.textarea {
+  height: 135px;
+}
+
 }
 @media screen and (max-width:300px) {
   .contact-section {
