@@ -163,6 +163,12 @@ textarea {
   color: black;
 }
 
+/*👉.name-form,
+.email-form,
+.contact__txtarea {
+  margin-bottom: 20px;
+}
+👈*/
 .contact__txtarea label,
 .textarea {
   width: 550px;
@@ -172,9 +178,13 @@ textarea {
 }
 
 .error-message {
+  opacity: 1;
   color: white;
   font-size: 1rem;
 }
+/*👉.error-message.visible {
+  opacity: 1;
+}👈*/
 
 .contact-section__btn {
   padding: 12px 52px;
