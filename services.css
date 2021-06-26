@@ -142,6 +142,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.faq-page {
+	color: white;
+}
+
 .package-title {
 	width: 100%;
 	margin: 0;
