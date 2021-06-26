@@ -84,9 +84,8 @@ body {
 
 .QanA__container h1 {
     color: rgb(255, 102, 0);
-    font-size: 2.25em;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
+    font-size: 1.8em;
+	margin-bottom: .5rem;
 	
 }
 
@@ -99,10 +98,11 @@ body {
     font-size: 1.15rem;
     font-weight: 600;
 	margin: 0;
-	margin-bottom: 3rem;
+	margin-bottom: 4.5rem;
 }
 h3  {
     font-size: 1.25rem;
+	margin-bottom: .5rem;
 }
 .h3-text {
 	margin-bottom: 0!important;
@@ -113,7 +113,9 @@ h3  {
 p a {
 	color: rgb(245, 98, 0);
 }
-
+.process {
+	margin-top: 4rem;
+}
 .addresses {
 	background-color:   rgb(255, 111, 15);
 	color: white;
