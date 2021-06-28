@@ -70,11 +70,16 @@ html,body {
 .nav_lists a:active {
 	text-decoration: underline;
 }
+#nav_logo {
+	margin-right: 2rem;
+	margin-left: 2rem;
+	
+}
 
 /*PAGES*/
 
 #top-portion {
-	padding-top: 4.5rem;
+	padding-top: 1rem;
 	background: url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg")  center no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -82,16 +87,15 @@ html,body {
 	min-height: 900px;
 	background-image: -o-linear-gradient( rgba(80, 80, 80, 0.0), rgba(75, 75, 75, 0.80), rgba(75, 75, 75, 0.0)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(80, 80, 80, 0.0)), color-stop(rgba(75, 75, 75, 0.80)), to(rgba(75, 75, 75, 0.0))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
-	background-image: linear-gradient( rgba(80, 80, 80, 0.10), rgba(75, 75, 75, 0.80), rgba(75, 75, 75, 0.10)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+	background-image: linear-gradient( rgba(80, 80, 80, 0.35), rgba(75, 75, 75, 0.80), rgba(75, 75, 75, 0.10)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 }
 
-.top-portion__colombia {
-	font-family: 'Playball', cursive;
-	font-weight: 500;
+.title-logo {
 	text-align: center;
-	color: white;
-	margin: 0;
-	font-size: 5.25rem; 
+}
+.title-logo img {
+	width: 55%;
+	filter: brightness(1.15);
 }
 
 .top-portion__voted {
@@ -774,6 +778,7 @@ input:-webkit-autofill:active {
 @media screen and (max-width: 1024px) {
 	#top-portion {
 		min-height: 800px;
+		padding-top: 2.5rem;
 	}
 
 	.top-portion__colombia {
@@ -787,7 +792,7 @@ input:-webkit-autofill:active {
 	.top-portion__desc {
 		line-height: 2.25rem;
 		text-align: left;
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 		padding-left: 2rem;
 	}
 
@@ -876,8 +881,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		background-image: linear-gradient( rgba(80, 80, 80, 0.55), rgba(75, 75, 75, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 		background-position: right;
 	}
-	.top-portion__colombia {
-		font-size: 4rem;
+	.title-logo img {
+		width: 80%;
 	}
 	.top-portion__voted {
 		font-size: 1.5rem;
@@ -942,8 +947,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	#top-portion {
 		min-height: 800px;
 	}
-	.top-portion__colombia {
-		font-size: 3.25rem;
+	.title-logo img {
+		width: 65%;
+		
 	}
 	.top-portion__voted {
 		font-size: 1.5rem;
@@ -951,7 +957,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	.top-portion__desc {
 		line-height: 2rem;
 		text-align: left;
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 		padding-left: 0;
 	}
 }
@@ -959,6 +965,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	#top-portion {
 		min-height: 800px;
 	}
+	.title-logo img {
+		width: 85%;
+	}
 	.top-portion__colombia {
 		font-size: 3.25rem;
 	}
@@ -968,7 +977,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	.top-portion__desc {
 		line-height: 2rem;
 		text-align: left;
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 		padding-left: 0;
 	}
 
@@ -995,7 +1004,11 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		font-size: 1rem;
 	}
 }
-
+@media screen and (max-width: 700px) {
+		.top-portion__desc {
+			font-size: 1.25rem;
+		}
+	}
 @media screen and (max-width: 675px) {
 	.contact-section {
 		padding: 0;
@@ -1044,8 +1057,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	#top-portion {
 		min-height: 600px;
 	}
-	.top-portion__colombia {
-		font-size: 3rem;
+	.title-logo img {
+		width: 90%;
 	}
 	.top-portion__voted {
 		font-size: 1.15rem;
@@ -1070,6 +1083,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 } 
 
 @media screen and (max-width: 525px) {
+
 	input[type="text"], [type="email"], .textarea {
 		width: 450px;
 	}	
@@ -1110,6 +1124,14 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 
 @media screen and (max-width: 400px) {
+	#nav_logo {
+		margin-left: 1rem;
+		margin-right: 0rem;
+	}
+	#nav_logo img  {
+
+		width: 185px!important;
+	}
 	#top-portion {
 		min-height: 600px;
 	}
@@ -1148,6 +1170,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	}
 }
 @media screen and (max-width: 330px) {
+	#nav_logo img  {
+
+		width: 155px!important;
+	}
 	#top-portion {
 		padding-top: .75rem;
 	}
