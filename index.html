@@ -24,7 +24,6 @@
     <ul role="menubar" class="nav_list">
         <li role="presentation" class="nav_lists"><a class="purpose" href="index.html">Our Purpose</a></li>
         <li role="presentation" class="nav_lists"><a role="menuitem" href="Colombian-cities.html">Cities</a></li>
-        <li role="presentation" class="nav_lists"><a role="menuitem" href="contact.html">Contact</a></li>
         <li role="presentation" class="nav_lists"><a role="menuitem" href="services.html">Our Services</a></li>
         <li role="presentation" class="nav_lists"><a role="menuitem" href="faq.html">FAQ</a></li>
     </ul>
@@ -32,14 +31,14 @@
 
 <main>
 <section id="top-portion">
-<h1 class="top-portion__colombia">The Country of Colombia</h1>
+<h1 class="top-portion__colombia">Expat Colombia</h1>
 <h1 class="top-portion__voted">Voted #1 by <em>Digital Nomads</em>.</h1>
 <hr>
     <div class="div">
         <p class="top-portion__desc">Are you considering to move to the wonderful country of Colombia but don't know where to start? We can help!</br> 
         We are a professional expat service based in Colombia, with locations in Medellín, Bogotá, and Santa Marta.  We have a solid team of experts who have not only lived in these cities but have lived in the country for decades. <br>
         Avoiding "gringo prices", safe parts of towns, and the culture as a whole are some of the many things expats will need to be aware of when planning their move.  
-        Why spend hours upon hours visiting websites and forums when you could spend as little as an hour an a half consulting with us? <span class="book"><a href="contact.html">Book a FREE consultation with us now to get started!</a></span></p>
+        Why spend hours upon hours visiting websites and forums when you could spend as little as an hour an a half consulting with us? <span class="book"><a href="#contact">Book a FREE consultation with us now to get started!</a></span></p>
     </div>
 
     <a class="details" href="#scroll"> <span class="details__border--bottom">More Details</span>
@@ -64,7 +63,7 @@
                         <div class="circle">
                             <div class="icon"><i class="fa fa-users fa-3x" aria-hidden="true"></i></div>
                         </div>
-                        <p>Thousands of Clients</p>
+                        <p>Plan Tailored for YOU!</p>
                     </li>
                     <li class="lists">
                         <div class="circle">
@@ -74,7 +73,7 @@
                     </li>
                     <li class="lists">
                         <div class="circle">
-                           <div class="icon"><i class="fas fa-directions fa-3x"></i></div>
+                        <div class="icon"><i class="fas fa-directions fa-3x"></i></div>
                         </div>
                         <p>Guided Tours*</p>
                     </li>
@@ -87,81 +86,116 @@
             </ul>
             <p class="btm-container__depends">*Depends on service purchased.</p>
         </div>
-       </section> 
+</section> 
 
 
 
 <section class="btm-container2">
-    <div>
     <h1 class="btm-container2__header" >See what others have to say!</h1>
-         <ul class="review_list">
-            <li>
-                <div class="pic_container">
-                     <img src="img/couple.jpg" width="160px" height="78">
-                      <p class="btm-container2__mymove">"Our move was fantastic because of them."</p>
-                      <hr>
-                        <p>- Todd and Sherrie</p>
+        <div class="grid-container"> 
+            <div class="grid-flex-container">
+                <div class="grid-item1">
+                    <img class="image" src="img/couple.jpg" width="219" height="154px">
+                        <div class="flex-item1--text">
+                            <p class="btm-container2__mymove">"Our move was fantastic because of them. We really enjoyed working with their staff."</p>
+                            <hr>
+                            <p>- Todd and Sherrie</p>
+                        </div>
                 </div>
-            </li>
-
-            <li>
-                <div class="pic_container">
-                   <img src="img/male1.jpg" width="160px" height="78px">
+            </div>
         
-                    <p class="review">"Wholeheartedly recommend for any expat!"</p>
+
+        <div class="grid-flex-container">
+            <div class="grid-item2">
+                <img class="image" src="img/male1.jpg" width="219" height="154px">
+                <div class="flex-item2--text">
+                    <p class="review">"Wholeheartedly reccommend for any expat!  Friendly staff and very knowlegable."</p>
                     <hr>
                     <p>- Larry S.</p>
                 </div>
-            </li>
-            
-            <li>
-                <div class="pic_container" class="pic_container3">
-                    <img src="img/images.jpg" width="160px" height="78">
+            </div>
+        </div>
 
-                    <p class="review2">"Best Service I have ever had!"</p>
+        <div class="grid-flex-container">
+            <div class="grid-item3">
+                <img class="image" src="img/images.jpg" width="219" height="154px">
+                <div class="flex-item3--text">
+                    <p class="review2">"Expat Colombia did all the work for me!"</p>
                     <hr>
                     <p>- Jason</p>
                 </div>
-            </li>
-        </ul>
-     </div>    
+            </div>
+        </div>
+        <div class="grid-flex-container">
+            <div class="grid-item4">
+                <img class="image" src="img/latina.jpg" width="219" height="154px">
+                <div class="flex-item3--text">
+                    <p class="review2">"Expat Colombia was a lifesaver! 100% Satisfied!"</p>
+                    <hr>
+                    <p>- Karla R.</p>
+                </div>
+            </div>
+        </div>
+        </div>  
 </section>
 
-<footer class="addresses">
+<footer id="contact" class="addresses">
+<h2 class="addresses__contact">Contact Us</h2>
+    <main id="flex-container">
+        <section class="contact-section">
+            <h1>Have a question or want to book your FREE consulation?</h1>
+            <form action="" method="POST" id="contact-form" class="contact">
+                <div class="name-form">
+                <label for="name">Your Name</label>
+                <input  id="name" type="text" placeholder=" Your name..." required>
+                </div>
+            <div class="email-form">
+                <label for="email">Your Email</label>
+                <input id="email" type="email" placeholder=" Your email..." required>
+            </div>
+            <div class="contact__txtarea">
+                <label for="text">Message</label>
+                <textarea class="textarea" id="text" placeholder="Your message..." required></textarea>
+            </div>
+            <div class="btn">
+                <input class="contact-section__btn" type="submit" value="Send Message" required>
+            </div>
+            </form>
+        </section>
+    
+
+    <section id="flex-item2">
+        <h1 class="office-info">Company and Office Info</h1>
     <div class="addresses__info1">
-      <p>Finds us on:</p>
-      <img src="img/you.svg" alt="Youtube" width="45px" height="45px">
-      <img src="img/insta.svg" alt="Instagram" width="45px" height="45px">
-      <img src="img/face.svg" alt="Facebook" width="45px" height="45px">
-        <br><br>
-      <p class="addresses__info1--emailus">Email us at: <a href="mailto:questions@countryofcol.com">questions@countryofcol.com</a><br> Call us at: <a href="tel:+57 118-647-0023">+57 118-647-0023</a><br></p>
+        <p>Finds us on:</p>
+        <img src="img/you.svg" alt="Youtube">
+        <img src="img/insta.svg" alt="Instagram">
+        <img src="img/face.svg" alt="Facebook">
+        <p>Email us at: <a href="mailto:questions@countryofcol.com">questions@countryofcol.com</a><br> Call us at: <a href="tel:+57 118-647-0023">+57 118-647-0023</a><br></p>
     </div>
-
-
     <div class="addresses__info2">
-      <p>Calle Maria 63 Oficina 702<br> Medellín 4665684<br> Colombia
+        <p>Calle Maria 63 Oficina 702<br> Medellín 4665684<br> Colombia
         <br></p>
-        <br>
-      <p>Tuesday-Saturday<br> 9AM - 6PM COT<br></p>
-
+        <p>Tuesday-Saturday<br> 9AM - 6PM COT<br></p>
     </div>
-
-    <div class="terms_footer"> 
-      <ul class="terms_lists">
-        <li class="terms_links"><a href="terms.html">Terms</a></li>
-        <li class="terms_links"><a href="privacy.html">Privacy Policy</a></li>
-      </ul>
-    </div>
-    <div class="top_link_position">
-        <a class="back-to-top" href="#page_top" title="Top"
-        ><button class="top_btn"><span class="icon"><i class="fas fa-chevron-up fa-2x"></i></span></button>
-        </a>
-    </div>
-</footer>
-</section>
+    </section>
 </main>
+        <div class="terms_footer"> 
+            <ul class="terms_lists">
+            <li class="terms_links"><a href="terms.html">Terms</a></li>
+            <li class="terms_links"><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+</footer>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body> 
 </html>
+
+
+
+
+
