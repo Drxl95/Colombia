@@ -321,7 +321,7 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 /* BLUE SECTION */
 .btm-container2 {
 	background: url(img/Happy-Thumbs-Up-Girl-scaled.jpg);
-	background-image: linear-gradient( rgba(80, 80, 80, 0.75),  rgba(75, 75, 75, 0.75)), url("img/Happy-Thumbs-Up-Girl-scaled.jpg");
+	background-image: linear-gradient( rgba(49, 49, 49, 0.75),  rgba(48, 48, 48, 0.75)), url("img/Happy-Thumbs-Up-Girl-scaled.jpg");
 	background-position: right;
 	background-position-y: 40%;
 	background-size: cover;
