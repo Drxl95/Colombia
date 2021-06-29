@@ -5,62 +5,109 @@
         <meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="img/colo-logo-symbol.PNG" rel="shortcut icon" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
         <link rel="stylesheet" type="text/css" href="choosecity.css">
     </head>
 
     <body>
-      
-    <header>
-        <section class="title">
-            <div class="title__step2">
-                <h1 class="title__head">Step 2</h1>
-            </div>
-            <div>
-                <h1>
-                    Choose your City
-                </h1>
-                <p>Welcome to Step Number 2! You're almost there, just tell us which city you are interested in moving to and we can make it happen!</p>
-            </div>
-        </section>
-    </header>
-  
-
-<main class="animate__animated animate__slideInDown" id="cards">
-    <a href="signup.html">
-        <section class="cards__med">
-            <div class="cards__flexchild">
-                <h1 class="cards__med-title">Medellín</h1>
-                <img class="cards__medimage" src="img/medellin.jpeg" alt="medellin">
-                <h2 class="cards__texthead" id="texthead_media640">The City of Eternal Spring</h2>
-                <h2 class="choice" id="choice-media640">I choose Medellín!</h2>
-            </div>
-        </section>
-    </a>
-
-        <a href="signup.html"><section class="cards__bog">
-            <div>
-                <h1 class="cards__bog-title">Bogotá</h1>
-                <img class="cards__bogimage" src="img/bogota.jpg" alt="bogota">
-                <h1 class="cards__texthead">The City where the Past and Present Meet</h1>
+<div class="bottom-background">    
+</div>
+        <header class="title-main">
+            <section class="title">
+                <div class="title__step2">
+                    <h1 class="title__head">Choose City</h1>
+                </div>
                 
-                <!-- <a href="signup.html" class="cards__bog-btn">Choose City</a> -->
+            </section>
+        </header>
+
+    
+    <section id="flex_containers">
+        <div class="card-group">
+            <div class="card">
+              <img id="cityImg1" src="img/med-city2.jpg" class="card-img-top" width="450px" height="270" alt="...">
+            <div class="card-body">
+                <h5 id="cityTitle1" class="card-title">Medellín</h5>
+                <p class="card-text">The City of Eternal Spring</p>
+                <button type="button" id="show-modal" class="btn">Choose</button>
             </div>
-            <h2 class="choice">I choose Bogotá!</h2>
-        
-        </section></a>
-        
-        <a href="signup.html"><section class="cards__san">
-            <div>
-                <h1 class="cards__san-title">Santa Marta</h1>
-                <img class="cards__santaimage" src="img/santa.jpg" alt="santa">
-                <h1 class="cards__texthead" id="texthead__media1024">The Destination with Everything</h1>
-                
-                <!-- <a href="signup.html" class="cards__san-btn">Choose City</a> -->
             </div>
-                <h2 class="choice" id="choice_santa">I choose Santa Marta!</h2>
-        </section></a>
-    </main>
+    
+            
+            <div class="card">
+              <img src="img/bogot-city2.jpg" class="card-img-top" width="450px" height="270" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bogotá</h5>
+                <p class="card-text">Where the past and present meet.</p>
+                <button type="button" class="btn">Choose</button>
+              </div>
+            </div>
+    
+        
+            <div class="card">
+            <img src="img/satna-marta2.jpg" class="card-img-top" width="450px" height="270" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Santa Marta</h5>
+                <p class="card-text">The destination with everything.</p>
+                <button type="button" class="btn" >Choose</button>
+            </div>
+            </div>
+        </div>
+    </section>
+   
+        
     </body>
 </html>
+
+
+
+<!-- <header>
+    <section class="title">
+        <div class="title__step2">
+            <h1 class="title__head">Step 2</h1>
+        </div>
+        <div>
+            <h1>
+                Choose your City
+            </h1>
+            <p>Welcome to Step Number 2! You're almost there, just tell us which city you are interested in moving to and we can make it happen!</p>
+        </div>
+    </section>
+</header>
+
+
+<main class="animate__animated animate__slideInDown" id="cards">
+<a href="signup.html">
+    <section class="cards__med">
+        <div class="cards__flexchild">
+            <h1 class="cards__med-title">Medellín</h1>
+            <img class="cards__medimage" src="img/medellin.jpeg" alt="medellin">
+            <h2 class="cards__texthead" id="texthead_media640">The City of Eternal Spring</h2>
+            <h2 class="choice" id="choice-media640">I choose Medellín!</h2>
+        </div>
+    </section>
+</a>
+
+    <a href="signup.html"><section class="cards__bog">
+        <div>
+            <h1 class="cards__bog-title">Bogotá</h1>
+            <img class="cards__bogimage" src="img/bogota.jpg" alt="bogota">
+            <h1 class="cards__texthead">The City where the Past and Present Meet</h1>
+            
+        </div>
+        <h2 class="choice">I choose Bogotá!</h2>
+    
+    </section></a>
+    
+    <a href="signup.html"><section class="cards__san">
+        <div>
+            <h1 class="cards__san-title">Santa Marta</h1>
+            <img class="cards__santaimage" src="img/santa.jpg" alt="santa">
+            <h1 class="cards__texthead" id="texthead__media1024">The Destination with Everything</h1>
+            
+        </div>
+            <h2 class="choice" id="choice_santa">I choose Santa Marta!</h2>
+    </section></a>
+</main> -->

@@ -27,600 +27,127 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: rgb(255, 217, 181);
+    background: rgb(100, 100, 100);
 }
-
 :root {
     --main-color: rgba(255, 111, 15, 0.8) 
 }
 
-.title {
-    margin-top: 2.5%;;
-    margin-left: 12.5%;
-    text-align: center;
-    border: 3px solid black;
-    width: 75%;
-    background: var(--main-color);
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: larger;
+.bottom-background {
+    background-image: linear-gradient( rgba(34, 34, 34, 0.8),  rgba(36, 36, 36, 0.8)), url("img/colombia-city-city.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    z-index: -2;
+    transform: skewY(7deg) translateY(-200px);
+    
 }
 
 .title__head {
     width: 100%;
-	margin-top: 0;
-	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-top: 3rem;
+    margin-top: 0;
+	margin-bottom: 1.5rem;
+	color: white;
+	text-align: center;
+	font-size: 3.5rem;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+}
+
+
+
+.card-group {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 8rem;
+}
+.card {
+	width: 450px;
+	background: rgb(255, 255, 255);
+	padding-bottom: 4rem;
+	margin-top: 3.5rem;
+	
+}
+.card-body {
+	text-align: center;
+	
+}
+.card-title {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.card-text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25rem;
+	margin-bottom: 4rem;
+}
+div #city-text1,
+div #city-text2,
+div #city-text3 {
+	display: block;
+}
+#city-text1,
+#city-text2,
+#city-text3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25rem;
+	width: 50%;
 	background: white;
-	color:  var(--main-color);
-	font-family: 'Roboto', sans-serif;
+	text-align: center;
 }
-
-#cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 3rem;
-    /* animation: slide 1s; */
-    /* transform: translateY(10rem); */
-    
+.btn {
+	padding: 12px 82px;
+	font-size: 1.25rem;
+	font-family: 'Open Sans', sans-serif;
+	background: rgba(255, 111, 15, 0.91);
+	color: white;
+	border: none;
 }
-
-.cards__texthead {
-    width: 100%;
-	margin-top: 0;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background: white;
-	color:  var(--main-color);
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.4rem;
-}
-
-.cards__med {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-preferred-size: 30rem;
-        flex-basis: 30rem;
-    -webkit-box-flex: .1;
-        -ms-flex-positive: .1;
-            flex-grow: .1;
-    border: 4px solid black;
-    background:  rgba(255, 236, 0, 0.65);
-    height: 35rem;
-    width: 30rem;
-    -webkit-animation: med_slide 1.25s;
-            animation: med_slide 1.25s;
-}
-.cards__med:hover {
-    background:  rgba(255, 236, 0, 0.8);
-   
+.btn:hover,
+.btn:focus {
+	transition: .45s;
+	opacity: .5;
+	color: black;
 }
 
 
-.cards__med-title {
-    width: 100%;
-	margin-top: 0;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	background: white;
-	color: var(--main-color);
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.6rem;
-}
-.cards__medimage {
-    width: 412px;
-    height: 220px;
-    margin-bottom: 2rem;
-}
-
-.cards__med:not(:hover) .choice {
-    display: none;
-    
-}
-
-.choice {
-    color: white;
-    background: var(--main-color);
-    font-size: 2.25rem;
-    margin-top: 4.25rem;
-    width: 75%;
-    border: 1px solid white;
-    margin-left: 3.75rem;
-    
-}
-
-.cards__bog {
-    border: 4px solid black;
-    background: rgba(0, 17, 223, 0.65);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-flex: .1;
-        -ms-flex-positive: .1;
-            flex-grow: .1;
-    -ms-flex-preferred-size: 30rem;
-        flex-basis: 30rem;
-        height: 35rem;
-    width: 30rem;
-    -webkit-animation: bog_slide 1.5s;
-            animation: bog_slide 1.5s;
-}
-.cards__bog:hover {
-    background: rgba(0, 17, 223, 0.8);
-}
-
-.cards__bog-title {
-    width: 100%;
-	margin-top: 0;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	background: white;
-	color: var(--main-color);
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.6rem;
-}
-
-
-.cards__bogimage {
-    width: 412px;
-    height: 220px;
-    margin-bottom: 2rem;
-}
-
-.cards__bog:not(:hover) .choice {
-    display: none;
-}
-
-.cards__san {
-    border: 4px solid black;
-    background: rgba(255, 0, 8, 0.65);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-flex: .1;
-        -ms-flex-positive: .1;
-            flex-grow: .1;
-    -ms-flex-preferred-size: 30rem;
-        flex-basis: 30rem;
-        height: 35rem;
-    width: 30rem;
-    -webkit-animation: san_slide 2s;
-            animation: san_slide 2s;
-}
-.cards__san:hover {
-    background: rgba(255, 0, 8, 0.8);
-}
-.cards__san-title {
-    width: 100%;
-	margin-top: 0;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	background: white;
-	color:  var(--main-color);
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.6rem;
-}
-
-.cards__santaimage {
-    width: 412px;
-    height: 220px;
-    margin-bottom: 2rem;
-}
-
-.cards__san:not(:hover) .choice {
-    display: none;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-@-webkit-keyframes med_slide {
-    from {
-        -webkit-transform: translateY(-100rem);
-                transform: translateY(-100rem);
+@media screen and (max-width: 500px) {
+    .card {
+        width: 350px;
     }
-
-    to {
-        -webkit-transform: translateY(1.55rem);
-                transform: translateY(1.55rem);
+    .card-img-top {
+        width: 350px;
+        height: 250px;
     }
 }
 
-@keyframes med_slide {
-    from {
-        -webkit-transform: translateY(-100rem);
-                transform: translateY(-100rem);
+@media screen and (max-width: 350px) {
+    .card {
+        width: 300px;
     }
-
-    to {
-        -webkit-transform: translateY(1.55rem);
-                transform: translateY(1.55rem);
-    }
-}
-
-@-webkit-keyframes bog_slide {
-    from {
-        -webkit-transform: translateY(-80rem);
-                transform: translateY(-80rem);
-    }
-
-    to {
-        -webkit-transform: translateY(1.5rem);
-                transform: translateY(1.5rem);
-    }
-}
-
-@keyframes bog_slide {
-    from {
-        -webkit-transform: translateY(-80rem);
-                transform: translateY(-80rem);
-    }
-
-    to {
-        -webkit-transform: translateY(1.5rem);
-                transform: translateY(1.5rem);
-    }
-}
-
-@-webkit-keyframes san_slide {
-    from {
-        -webkit-transform: translateY(-60rem);
-                transform: translateY(-60rem);
-    }
-
-    to {
-        -webkit-transform: translateY(1.5rem);
-                transform: translateY(1.5rem);
-    }
-}
-
-@keyframes san_slide {
-    from {
-        -webkit-transform: translateY(-60rem);
-                transform: translateY(-60rem);
-    }
-
-    to {
-        -webkit-transform: translateY(1.5rem);
-                transform: translateY(1.5rem);
-    }
-}
-
-
-@media only screen 
-and (min-width: 1366px)
-and (max-width: 1366px)
-and (orientation: landscape)
-and (-webkit-min-device-pixel-ratio: 1.5) {
-    .cards__med:not(:hover) .choice,
-    .cards__bog:not(:hover) .choice,
-    .cards__san:not(:hover) .choice {
-        display: inherit;
-    }
-}
-
-
-@media screen and (max-width: 1450px) {
-    .cards__medimage,
-    .cards__bogimage,
-    .cards__santaimage {
-        width: 330px;
-        height: 220px;
-    }
-
-    .cards__med,
-    .cards__bog,
-    .cards__san {
-        height: 32rem;
-        width: 27rem;
-        margin-bottom: 4rem;
-        border: 3px black solid;
-        margin-left: .5rem;
-    }
-
-    #choice_santa {
-        margin-top: 4.5rem;
-        font-size: 2rem;
-    }
-}
-
-
-@media screen and (max-width: 1300px) {
-    body {
-        background-attachment: scroll;
-    }
-    header {
-        text-align: center;
-    }
-    
-    .title {
-        margin: 0;
-        margin-top: 2rem;
-        border: 2px black solid;
-        display: inline-block;
-        text-align: center;
-    }
-
-    #cards {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
-     
-    .cards__medimage,
-    .cards__bogimage,
-    .cards__santaimage {
-        width: 310px;
+    .card-img-top {
+        width: 300px;
         height: 200px;
     }
-
-    .cards__med,
-    .cards__bog,
-    .cards__san {
-        height: 32rem;
-        width: 21.5rem;
-        margin-bottom: 4rem;
-        border: 3px black solid;
-        /*👉margin-left: .5rem;👈*/
+}
+@media screen and (max-width: 300px) {
+    .title__head {
+        font-size: 2.75rem;
     }
-
-    .choice {
-        margin-top: 0;
-        margin-left: 2.75rem;
+    .card {
+        width: 250px;
     }
-    #choice-media640 {
-        margin-top: 2.8rem ;
-    }
-    #choice_santa {
-        margin-top: 3.5rem;
+    .card-img-top {
+        width: 250px;
+        height: 150px;
     }
 }
 
 
-
-@media screen and (max-width: 1199px) {
-    body {
-        background-attachment: scroll;
-    }
-    header {
-        text-align: center;
-    }
-    
-    .title {
-        margin: 0;
-        margin-top: 2rem;
-        border: 2px black solid;
-        display: inline-block;
-        text-align: center;
-    }
-
-    #cards {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
-    .cards__medimage,
-    .cards__bogimage,
-    .cards__santaimage {
-        width: 290px;
-        height: 180px;
-    }
-
-    .cards__med,
-    .cards__bog,
-    .cards__san {
-        height: 32rem;
-        width: 19rem;
-        margin-bottom: 4rem;
-        border: 3px black solid;
-        /*👉margin-left: .5rem;👈*/
-    }
-
-    .cards__med:not(:hover) .choice,
-    .cards__bog:not(:hover) .choice,
-    .cards__san:not(:hover) .choice {
-        display: inherit;
-    }
-
-    .choice {
-        margin-top: 0;
-        margin-left: 2.75rem;
-    }
-    #choice-media640 {
-        margin-top: 2.8rem ;
-    }
-    #choice_santa {
-        margin-top: 1rem;
-    }
-}
-
-
- @media screen and (max-width: 1023px) {
-    body {
-        background-attachment: scroll;
-    }
-    header {
-        text-align: center;
-    }
-    
-    .title {
-        margin: 0;
-        margin-top: 2rem;
-        border: 2px black solid;
-        display: inline-block;
-        text-align: center;
-    }
-
-    #cards {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
-    .cards__medimage,
-    .cards__bogimage,
-    .cards__santaimage {
-        width: 310px;
-        height: 200px;
-    }
-
-    .cards__med,
-    .cards__bog,
-    .cards__san {
-        height: 32rem;
-        width: 21.5rem;
-        margin-bottom: 4rem;
-        border: 3px black solid;
-        /*👉margin-left: .5rem;👈*/
-    }
-
-    .cards__med:not(:hover) .choice,
-    .cards__bog:not(:hover) .choice,
-    .cards__san:not(:hover) .choice {
-        display: inherit;
-    }
-
-    .choice {
-        margin-top: 0;
-        margin-left: 2.75rem;
-    }
- }
- @media screen and (max-width: 400px) {
-    body {
-        background-attachment: scroll;
-    }
-   
-    .title {
-        margin-top: 2rem;
-        /*👉width: 21.5rem;👈*/
-        border: 2px black solid;
-        display: inline-block;
-    }
-
-    #cards {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-    .cards__medimage,
-    .cards__bogimage,
-    .cards__santaimage {
-        width: 230px;
-        height: 120px;
-    }
-
-    .cards__med,
-    .cards__bog,
-    .cards__san {
-        height: 29rem;
-        width: 17rem;
-        margin-bottom: 4rem;
-        border: 3px black solid;
-        margin-left: 0rem;
-    }
-
-    .cards__med:not(:hover) .choice,
-    .cards__bog:not(:hover) .choice,
-    .cards__san:not(:hover) .choice {
-        display: inherit;
-    }
-
-    .choice {
-        margin-top: 0;
-        margin-left: 2rem;
-        font-size: 1.75rem;
-    }
- }
- @media screen and (max-width: 300px) {
-    body {
-        background-attachment: scroll;
-    }
-   
-    .title {
-        margin-top: 2rem;
-        /*👉width: 21.5rem;👈*/
-        border: 2px black solid;
-        display: inline-block;
-    }
-
-    #cards {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-    .cards__medimage,
-    .cards__bogimage,
-    .cards__santaimage {
-        width: 230px;
-        height: 120px;
-    }
-
-    .cards__med,
-    .cards__bog,
-    .cards__san {
-        height: 29rem;
-        width: 17rem;
-        margin-bottom: 4rem;
-        border: 3px black solid;
-        margin-left: 0rem;
-    }
-
-    .cards__med:not(:hover) .choice,
-    .cards__bog:not(:hover) .choice,
-    .cards__san:not(:hover) .choice {
-        display: inherit;
-    }
-
-    .choice {
-        margin-top: 0;
-        margin-left: 2rem;
-        font-size: 1.75rem;
-    }
- }
- @media (hover: hover) {
-    .cards__med:not(:hover) .choice,
-    .cards__bog:not(:hover) .choice,
-    .cards__san:not(:hover) .choice {
-     display: none;
-   }
- }
