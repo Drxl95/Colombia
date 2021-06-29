@@ -27,11 +27,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background:url(https://www.metrojourneys.com/wp-content/uploads/2019/07/guatape-antioquia-colombia.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    background-attachment : fixed
+    background-color: rgb(255, 217, 181);
 }
 
 :root {

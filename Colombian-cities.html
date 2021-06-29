@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="Colombian-cities.css">
     <link href="img/colo-logo-symbol.PNG" rel="shortcut icon" type="image/x-icon" />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -15,10 +17,12 @@
 <div class="background"></div>
 <nav>
     <ul role="menubar" class="nav_list">
-        <li role="presentation" class="nav_lists" style="float:right;"><a href="index.html">Our Purpose</a></li>
+        <li role="img" id="nav_logo" class="nav_lists"><img src="img/White logo - no background.svg"></li> 
+        <li role="presentation" class="nav_lists"><a role="menuitem" class="purpose" href="index.html">Our Purpose</a></li>
         <li role="presentation" class="nav_lists"><a role="menuitem" href="Colombian-cities.html">Cities</a></li>
         <li role="presentation" class="nav_lists"><a role="menuitem" href="services.html">Our Services</a></li>
-		<li role="presentation" class="nav_lists"><a role="menuitem" href="faq.html">FAQ</a></li>
+        <li role="presentation" class="nav_lists"><a role="menuitem" href="faq.html">FAQ</a></li>
+
     </ul>
 </nav>
 <main>
@@ -26,16 +30,52 @@
 	<header class="title-main">
         <section class="title">
             <div class="title__step2">
-                <h1 class="title__head">Choose your Next Move!</h1>
+                <h1 class="title__head">Our Cities</h1>
             </div>
-            <div>
-                <p>We know it might be a difficult choice, but we also love variety... so we have a team of experts located in three  of Colombia's most terrific cities!</p>
-            </div>
+            
         </section>
     </header>
 
+	<div class="card-group">
+		<div class="card">
+		  <img id="cityImg1" src="img/medimgcity.jpeg" class="card-img-top" width="450px" height="270" alt="...">
+		  <div class="card-body">
+			<h5 id="cityTitle1" class="card-title">Medellín</h5>
+			<p class="card-text">The City of Eternal Spring</p>
+			<button type="button" id="show-modal" onclick="toggleText()" class="btn">More Info</button>
+		  </div>
+		</div>
+		<div id="modal-container">
 
-	<div class="medellin_grid_container">
+		</div>
+		<div>
+			<p style="display: none;" id="city-text1">Medellín, capital of Antioquia department, has a pleasant climate of around 24°C; offers modern transport systems like Metro and Metro Cable an efficient infrastructure which has allowed it to host world-class events such as OAS and IDB meetings. Located in a valley surrounded by mountains, this city is always friendly to visitors. </p>
+		  </div>
+		<div class="card">
+		  <img src="img/bogota.jpg" class="card-img-top" width="450px" height="270" alt="...">
+		  <div class="card-body">
+			<h5 class="card-title">Bogotá</h5>
+			<p class="card-text">Where the past and present meet.</p>
+			<button type="button" class="btn"  onclick="toggleText2()">More Info</button>
+		  </div>
+		</div>
+		<div>
+			<p style="display: none;" id="city-text2" >Bogotá is the capital of and largest city in Colombia. It is a place of convergence for people from all around the country and is therefore diverse and multicultural. Within this city, the past and present come together. The city is also very green thanks to its parks and the hills that extend along its eastern boundary, dwarfed by their two highest points, Monserrate and Guadalupe. The landscape that the people of Bogotá enjoy daily—the sea of green that makes up the Andes mountain range, rising up in the east—would be nearly impossible to find in any other large city. But Bogotá also has the colors of modern buildings and authentic colonial roof tiles that are a true historical treasure from the colonial era.</p>
+		  </div>
+		<div class="card">
+		  <img src="img/santamartacity.png" class="card-img-top" width="450px" height="270" alt="...">
+		  <div class="card-body">
+			<h5 class="card-title">Santa Marta</h5>
+			<p class="card-text">The destination with everything.</p>
+			<button type="button" class="btn"  onclick="toggleText2()">More Info</button>
+		  </div>
+		</div>
+		<div>
+			<p style="display: none;" id="city-text3" >Santa Marta is pure flavor. The city's diversity is evident in its landscape, people, and each and every aspect of its culture; it is a destination that truly embraces its visitors and makes them feel at home.  What makes this city unique? Santa Marta's beautiful terrain is its most distinguishing feature: its unforgettable landscapes in which the green foliage, blue sea, yellow sun and sand, and the contrast between the beaches and the white-peaked Sierra Nevada, make Santa Marta a must-see destination.</p>
+		  </div>
+	  </div>
+
+	<!-- <div class="medellin_grid_container">
 		<h1 class="medellin"><span>Medellín</span> (The City of Eternal Spring)</h1>
 		<img class="med_img" src="img/medimgcity.jpeg" width="512px" height="270">
 			<div class="med_info"> 
@@ -60,7 +100,7 @@
 			<p>Santa Marta is pure flavor. The city's diversity is evident in its landscape, people, and each and every aspect of its culture; it is a destination that truly embraces its visitors and makes them feel at home.  What makes this city unique? Santa Marta's beautiful terrain is its most distinguishing feature: its unforgettable landscapes in which the green foliage, blue sea, yellow sun and sand, and the contrast between the beaches and the white-peaked Sierra Nevada, make Santa Marta a must-see destination.</p>
 		</div>
 	
-</div>
+</div> -->
 
 </section>
 
@@ -90,6 +130,6 @@
 	  </ul>
 	</div>
   </footer>
-
+<script src="js/main.js"></script>
 </body>
 </html>

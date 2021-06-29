@@ -8,6 +8,92 @@ if (ua.indexOf('safari') != -1) {
 document.getElementById("btn1").style.marginTop = "-9%";  }
 }  
 
+//SAVE CODE FOR FAQ PAGE
+// function toggleText() {
+//   var text = document.getElementById("city-text1");
+//   if (text.style.display === "none") {
+//     text.style.display = "block";
+//   } else {
+//     text.style.display = "none";
+//   }
+// }
+// function toggleText2() {
+//   var text = document.getElementById("city-text2");
+//   if (text.style.display === "none") {
+//     text.style.display = "block";
+//   } else {
+//     text.style.display = "none";
+//   }
+// }
+// function toggleText3() {
+//   var text = document.getElementById("city-text3");
+//   if (text.style.display === "none") {
+//     text.style.display = "block";
+//   } else {
+//     text.style.display = "none";
+//   }
+// }
+
+
+
+// let modalContainer = document.querySelector('#modal-container');
+// let cityText = document.querySelector('#city-text1');
+// let cityImg = document.querySelector('#cityImg1');
+// let cityTitle = document.querySelector('#cityTitle1');
+
+//   function showModal(title, cityText) {
+//     modalContainer.innerHTML = '';
+//     let modal = document.createElement('div');
+//     modal.classList.add('modal');
+
+//     let closeButtonElement = document.createElement('button');
+//     closeButtonElement.classList.add('modal-close');
+//     closeButtonElement.innerText = 'Close';
+//     closeButtonElement.addEventListener('click', hideModal);
+    
+//     let imageElement = document.createElement('img');
+//     imageElement.innerHTML = cityImg;
+
+//     let titleElement = document.createElement('h1');
+//     titleElement.innerText = cityTitle;
+
+//     let contentElement = document.createElement('p');
+//     contentElement.innerText = cityText;
+
+//     modal.appendChild(closeButtonElement);
+//     modal.appendChild(titleElement);
+//     modal.appendChild(contentElement);
+//     modalContainer.appendChild(modal);
+
+
+//     modalContainer.classList.add('is-visible');
+//   }
+
+//   function hideModal() {
+//     modalContainer.classList.remove('is-visible');
+//   }
+
+//   window.addEventListener('keydown', (e) => {
+//     if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+//       hideModal();  
+//     }
+//   });
+//   modalContainer.addEventListener('click', (e) => {
+//     // Since this is also triggered when clicking INSIDE the modal
+//     // We only want to close if the user clicks directly on the overlay
+//     let target = e.target;
+//     if (target === modalContainer) {
+//       hideModal();
+//     }
+//   });
+
+
+//   document.querySelector('#show-modal').addEventListener('click', () => {
+//     showModal(cityImg, cityTitle, cityText);
+//   });
+
+
+
 
 // Form Validation  (contact.css)
 // (function() {
@@ -83,3 +169,5 @@ document.getElementById("btn1").style.marginTop = "-9%";  }
 //   emailInput.addEventListener('input', validateEmail);
 //   textAreaInput.addEventListener('input', validateTextArea);
 // })();
+
+
