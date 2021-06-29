@@ -274,13 +274,11 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
     }
 }
 
-/*Yellow Section*/
+/*Pic Section*/
 .btm-containers {
-	background-color:rgb(255, 242, 224);
+	background-color:rgb(255, 250, 242);
 
-	
 
-	
 }
 .bottom__container {
 	text-align: center;
@@ -320,37 +318,9 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	text-align: center;
 }
 
-/*👉.bottom__container li {
-	list-style: none;
-	display: inline-block;
-	padding: 32px;
-}
-.btm-container__why {
-	font-family: 'Open Sans', sans-serif;
-    font-size:2.5rem;
-    margin:0;
-}
-.btm-container__depends {
-    font-size: small;
-    text-align: right;
-    font-family: initial;
-}
-.circle {
-	width: 128px;
-    height: 128px;
-    border: 2px solid #424242;
-    border-radius: 50%;
-    margin: auto;
-    background-color: white;
-    
-}
-.icon {
-	margin-top: 20%;
-}
-👈*/
 
 
-/* BLUE SECTION */
+/* Review SECTION */
 .btm-container2 {
 	background: url(img/Happy-Thumbs-Up-Girl-scaled.jpg);
 	background-image: linear-gradient( rgba(49, 49, 49, 0.75),  rgba(48, 48, 48, 0.75)), url("img/Happy-Thumbs-Up-Girl-scaled.jpg");

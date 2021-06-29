@@ -8,32 +8,6 @@ if (ua.indexOf('safari') != -1) {
 document.getElementById("btn1").style.marginTop = "-9%";  }
 }  
 
-//SAVE CODE FOR FAQ PAGE
-// function toggleText() {
-//   var text = document.getElementById("city-text1");
-//   if (text.style.display === "none") {
-//     text.style.display = "block";
-//   } else {
-//     text.style.display = "none";
-//   }
-// }
-// function toggleText2() {
-//   var text = document.getElementById("city-text2");
-//   if (text.style.display === "none") {
-//     text.style.display = "block";
-//   } else {
-//     text.style.display = "none";
-//   }
-// }
-// function toggleText3() {
-//   var text = document.getElementById("city-text3");
-//   if (text.style.display === "none") {
-//     text.style.display = "block";
-//   } else {
-//     text.style.display = "none";
-//   }
-// }
-
 
 
 // let modalContainer = document.querySelector('#modal-container');

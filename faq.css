@@ -7,7 +7,7 @@
 }
 body {
     margin: 0;
-    background-color: rgb(255, 217, 181);
+    background-color: rgb(243, 243, 243);
 }
 
 .nav_list {
@@ -29,6 +29,7 @@ body {
 
 .nav_lists {
 	font-family: 'Open-sans', sans-serif;
+	font-weight: 300;
 }
 .nav_lists a {
 	padding: 14px 16px;
@@ -50,73 +51,55 @@ body {
 #nav_logo {
 	margin-right: 2rem;
 	margin-left: 2rem;
-	
+	height: 47px;
 }
 
 .title {
-    margin-top: 4%;;
-    margin-left: 12.5%;
-    text-align: center;
-    border: 3px solid black;
-    width: 75%;
-    background: rgb(255, 111, 15);
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: larger;
-}
+color: rgb(255, 145, 15);
+text-align: center;
+margin-top: 4rem;
+margin-bottom: 0;
+font-family: 'Open-sans', sans-serif;
+font-weight: 300;
 
-.title__head {
-    width: 100%;
-	margin-top: 0;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	background: white;
-	color:  rgb(255, 111, 15);
-	font-family: 'Roboto', sans-serif;
 }
 
 
-#QandA {
-    margin-top: 5rem;
-    margin-left: 4rem;
-    width: 90%;
-    font-family: "Roboto", sans-serif;
-	margin-bottom: 10rem;
-    
-    
+.accordion-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.accordion {
+	width: 70%;
+	margin: 5rem 0rem;
+}
+.accordion-body {
+    font-size: 1.05rem;
 }
 
-.QanA__container h1 {
-    color: rgb(255, 102, 0);
-    font-size: 1.8em;
-	margin-bottom: .5rem;
-	
+.accordion-button {
+	color: rgb(255, 145, 15);
+	font-size: 1.35rem;
+}
+.accordion-button::after {
+	color:rgb(255, 145, 15);
+}
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+	box-shadow:none;
+}
+.accordion-button:not(.collapsed) {
+	color:rgb(255, 145, 15);
+    background-color: #ffffff;
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: url(img/downArrow.svg);
 }
 
 
-.QanA__container p {
-   
-    font-size: 1.15rem;
-    font-weight: 600;
-	margin: 0;
-	margin-bottom: 4.5rem;
-}
-h3  {
-    font-size: 1.25rem;
-	margin-bottom: .5rem;
-}
-.h3-text {
-	margin-bottom: 0!important;
-}
-.depends {
-	margin-bottom: 0!important;
-}
-p a {
-	color: rgb(245, 98, 0);
-}
-.process {
-	margin-top: 4rem;
-}
+
 .addresses {
 	background-color:   rgb(255, 111, 15);
 	color: white;
@@ -180,14 +163,14 @@ p a {
   }
 
   .terms_lists {
-	/*ul*/
+	
 	list-style: none;
 	text-align: center;
 	-webkit-padding-start: 0;
 			padding-inline-start: 0;
   }
   .terms_links a {
-	/*li a*/
+	
 	color: white;
 	text-decoration: none;
 	font-size: 1.1rem;
@@ -197,9 +180,10 @@ p a {
 	-webkit-text-decoration-line: underline;
 			text-decoration-line: underline;
   }
+
   @media screen and (max-width: 1024px) {
 	.addresses {
-		padding-left: 8%;
+		padding-left: 0%;
 		font-size: 1rem;
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -223,54 +207,50 @@ p a {
 		font-size:1rem ;
 	}
 	.terms_footer {
-		width: 15rem;
-}
-}
+		width: 15rem
+  }
+  }
+  @media screen and (max-width:700px) {
+	.accordion-button {
+		color: rgb(255, 145, 15);
+		font-size: 1.25rem;
+	}
+  }
+  @media screen and (max-width:650px) {
+		.accordion-center {
+			display: inherit;
+		}
+		.accordion {
+			width: 100%;
+		}
+		.accordion-body {
+			font-size: 1rem;
+		}
+	}
 
-  @media screen and (max-width: 900px) {
-	  #QandA {
-		  margin-left: 3rem;
-	  }
-	  .addresses {
-		  padding-left: 1.5rem;
-	  }
-  }
-
-  @media screen and (max-width: 650px) {
-	#QandA {
-		margin-left: 2rem;
+  @media screen and (max-width:410px) {
+	#nav_logo {
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+	#nav_logo img {
+		width: 190px;
+	}
+	.accordion-button {
+		color: rgb(255, 145, 15);
+		font-size: 1.15rem;
+	}
+	.accordion-body {
+		font-size: .9rem;
 	}
   }
-  @media screen and (max-width: 510px) {
-	  .addresses {
-		  padding-left: 0rem;
-	  }
+  
+  @media screen and (max-width:300px) {
+	#nav_logo {
+		margin-right: .5rem;
+		margin-left: .5rem;
+	}
+	#nav_logo img {
+		width: 190px;
+	}
   }
-	@media screen and (max-width: 450px) {
-		body h1{
-			text-align: center;
-		}
-		#QandA {
-			margin-left: 1.5rem;
-		}
-		.hours {
-			text-align: center;
-		}
-		.visit {
-			text-align: center;
-		}
-	}
-	@media screen and (max-width: 350px) {
-		body h1{
-			text-align: center;
-		}
-		#QandA {
-			margin-left: 1.25rem;
-		}
-		.hours {
-			text-align: center;
-		}
-		.visit {
-			text-align: center;
-		}
-	}
