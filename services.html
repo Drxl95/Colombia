@@ -23,90 +23,73 @@
         </ul>
     </nav>
 <div id="background">
-<main class="grid-parent">
-<section class="grid-container">
-    <header class="grid-header">
-        <h1 class="title__head">Step 1</h1>
-        <h1>Our Services</h1>
-        <p>Every journey begins with a single step.  Let us make your move as easy as possible!</p>
-        <p>Check out our <a class="faq-page" href="faq.html">FAQ</a> page for information on each package.</p>
-    </header>
-        <article class="grid1-basic">
-            <!-- <section class="grid1-basic__flex"> -->
-                <h1 class="package-title">Basic Package</h1>
-                <h2 class="prices">$199</h2>
-                <h3 class="list-title">Prepare your Move from Home!</h3>
-                    <ul class="lists1">
-                        <li><i class="fas fa-angle-right"></i>
-                            1.5-Hour "Pre-Move Consultation" via Zoom
-                        </li>
     
-                        <li><i class="fas fa-angle-right"></i>
-                            Plans/Advice Tailored Exclusively for You
-                        </li>
-
-                        <li>
-                            <i class="fas fa-angle-right"></i>
-                            Unlimited Questions via Email
-                        </li>
-                        
-                    </ul>
-                    <a class="button" href="choosecity.html">Choose Plan</a>
-            <!-- </section> -->
-        </article>
-
-        <article class="grid2-plus">
-            <!-- <section class="grid2-plus__flex"> -->
-                <h1 class="package-title">Plus Package</h1>
-                <h2 class="prices">$699</h2>
-                <h3 class="list-title">Come meet us!</h3>
-                    <ul class="lists2">
-                        <li><i class="fas fa-angle-right"></i>
-                            <span>Everything in the <u>Basic</u> Package</span>
-                        </li>
-
-                        <li>
-                            <i class="fas fa-angle-right"></i>
-                            In-Person Tailored Plan Consultation
-                        </li>
-            
-                        <li><i class="fas fa-angle-right"></i>
-                            Unlimited Questions via Email or Zoom 
-                        </li>
-
-                        <li><i class="fas fa-angle-right"></i>
-                            Guided Tour of the City
-                        </li>
-                    </ul>
-                    <a class="button" href="choosecity.html">Choose Plan</a>
-            <!-- </section> -->
-        </article>
+<h1 class="demo-title">Our Services</h1>
+<main id="container">
+<div class="pricing-table">
+    <div class="pricing-option">
+        <h2 >Plan Your Move From Home</h2>
+        <h1>Basic</h1>
+        <hr />
+        <ul class="perks-list">
+            <li>1.5-Hour "Pre-Move Consultation" via Zoom</li>
+            <li>Plans/Advice Tailored Exclusively for You</li>
+            <li>Unlimited Questions via Email</li>
+        </ul>
+        <hr />
+        <div class="price">
+            <div class="front">
+                <span class="price">229 <b>$</b></span>
+            </div>
+            <div class="back">
+                <a href="choosecity.html" class="button">Purchase now</a>
+            </div>
+        </div>
+    </div>
     
+    <div id="pricing-option-plus" class="pricing-option">
+        <h2 class="top-text">Come Meet Us</h2>
+        <h1 class="title-text">Plus</h1>
+        <hr />
+        <ul id="perks-list-plus" class="perks-list">
+            <li>Everything in the <span id="list-package" class="list-package"><u>Basic Package</u></span></li>
+            <li>In-Person Tailored Plan Consultation</li>
+            <li>Unlimited Questions via Email or Zoom</li>
+            <li>Guided Tour of the City</li>
+        </ul>
+        <hr />
+        <div class="price">
+            <div class="front">
+                <span id="plus-price" class="price">699 <b>$</b></span>
+            </div>
+            <div class="back">
+                <a href="choosecity.html" class="button">Purchase now</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pricing-option">
+        <h2 >Housing Included</h2>
+        <h1>Premium</h1>
+        <hr />
         
-        <article class="grid3-premium">
-            <!-- <section class="grid3-premium__flex"> -->
-                <h1 class="package-title">Premium Package</h1>
-                <h2 class="prices">$1200</h2>
-                <h3 class="list-title">Housing Included!</h3>
-                    <ul class="lists3">
-                        <li><i class="fas fa-angle-right"></i>
-                            <span>Everything in the <u>Plus</u> Package</span>
-                        </li>
-
-                        <li><i class="fas fa-angle-right"></i>
-                            Grocery Tour
-                        </li>
-
-                        <li><i class="fas fa-angle-right"></i>
-                            We Will Find You an Affordable Apartment via our Contacts!
-                        </li>
-                    </ul>
-                    <a class="button" href="choosecity.html">Choose Plan</a> 
-            <!-- </section> -->
-        </article>
-            
-</main>
+        <ul class="perks-list">
+            <li>Everything in the <span class="list-package"><u>Plus Package</u></span></li>
+            <li>Grocery Tour</li>
+            <li>Guaranteed Apartment Room</li>
+        </ul>
+        <hr />
+        <div class="price">
+            <div class="front">
+                <span class="price">1299 <b>$</b></span>
+            </div>
+            <div class="back">
+                <a href="choosecity.html" class="button">Purchase now</a>
+            </div>
+        </div>
+    </div>
 </div>
+</main>
 
 <footer class="addresses">
       <div class="addresses__info1">
@@ -138,3 +121,88 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+<!-- <main class="grid-parent">
+    <section class="grid-container">
+        <header class="grid-header">
+            <h1 class="title__head">Step 1</h1>
+            <h1>Our Services</h1>
+            <p>Every journey begins with a single step.  Let us make your move as easy as possible!</p>
+            <p>Check out our <a class="faq-page" href="faq.html">FAQ</a> page for information on each package.</p>
+        </header>
+            <article class="grid1-basic">
+              
+                    <h1 class="package-title">Basic Package</h1>
+                    <h2 class="prices">$199</h2>
+                    <h3 class="list-title">Prepare your Move from Home!</h3>
+                        <ul class="lists1">
+                            <li><i class="fas fa-angle-right"></i>
+                                1.5-Hour "Pre-Move Consultation" via Zoom
+                            </li>
+        
+                            <li><i class="fas fa-angle-right"></i>
+                                Plans/Advice Tailored Exclusively for You
+                            </li>
+    
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Unlimited Questions via Email
+                            </li>
+                            
+                        </ul>
+                        <a class="button" href="choosecity.html">Choose Plan</a>
+              
+            </article>
+    
+            <article class="grid2-plus">
+    
+                    <h1 class="package-title">Plus Package</h1>
+                    <h2 class="prices">$699</h2>
+                    <h3 class="list-title">Come meet us!</h3>
+                        <ul class="lists2">
+                            <li><i class="fas fa-angle-right"></i>
+                                <span>Everything in the <u>Basic</u> Package</span>
+                            </li>
+    
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                In-Person Tailored Plan Consultation
+                            </li>
+                
+                            <li><i class="fas fa-angle-right"></i>
+                                Unlimited Questions via Email or Zoom 
+                            </li>
+    
+                            <li><i class="fas fa-angle-right"></i>
+                                Guided Tour of the City
+                            </li>
+                        </ul>
+                        <a class="button" href="choosecity.html">Choose Plan</a>
+         
+            </article>
+        
+            
+            <article class="grid3-premium">
+             
+                    <h1 class="package-title">Premium Package</h1>
+                    <h2 class="prices">$1200</h2>
+                    <h3 class="list-title">Housing Included!</h3>
+                        <ul class="lists3">
+                            <li><i class="fas fa-angle-right"></i>
+                                <span>Everything in the <u>Plus</u> Package</span>
+                            </li>
+    
+                            <li><i class="fas fa-angle-right"></i>
+                                Grocery Tour
+                            </li>
+    
+                            <li><i class="fas fa-angle-right"></i>
+                                We Will Find You an Affordable Apartment via our Contacts!
+                            </li>
+                        </ul>
+                        <a class="button" href="choosecity.html">Choose Plan</a> 
+            
+            </article>
+                
+    </main> -->
