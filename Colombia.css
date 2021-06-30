@@ -125,9 +125,13 @@ background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 25
 	margin-bottom: 0;
 }
 
-.book a {
-	font-weight: bolder;
-	color: rgb(255, 111, 15);
+.book-div  {
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.book-div a {
+	color: white;
 }
 
  a.details {
@@ -306,6 +310,7 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	height: 468px;
 	filter: drop-shadow(20px 20px 20px #515152);
 }
+
 .flex-container-text {
 	display: flex;
 	flex-direction: column;
@@ -891,7 +896,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		padding-top: 2rem;
 		background-image: -o-linear-gradient( rgba(80, 80, 80, 0.55), rgba(75, 75, 75, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 		background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(80, 80, 80, 0.55)), to(rgba(75, 75, 75, 0.55))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
-		background-image: linear-gradient( rgba(49, 49, 49, 0.75), rgba(49, 49, 49, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+		background-image: linear-gradient( rgba(49, 49, 49, 0.80), rgba(49, 49, 49, 0.80)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 		background-position: right;
 	}
 	.title-logo img {
@@ -958,6 +963,11 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	}
 	.flex-container-text{
 		width: 80%;
+	}
+}
+@media screen and (max-width: 890px) {
+	.top-portion__desc {
+		margin-bottom: 1rem;
 	}
 }
 @media screen and (max-width: 800px) {
@@ -1054,7 +1064,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 @media screen and (max-width: 600px) {
 	#top-portion {
-		min-height: 600px;
+		min-height: 700px;
 	}
 	.title-logo img {
 		width: 90%;
@@ -1067,6 +1077,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		text-align: left;
 		font-size: 1.25rem;
 		padding-left: 0;
+	}
+	.book-div {
+		font-size: 1.25rem;
 	}
 .flex-container img {
 	width: 400px;
@@ -1145,7 +1158,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		width: 185px!important;
 	}
 	#top-portion {
-		min-height: 600px;
+		min-height: 700px;
+		
 	}
 	.top-portion__colombia {
 		font-size: 2.25rem;
@@ -1158,10 +1172,11 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		text-align: left;
 		font-size: 1.05rem;
 		padding-left: 0;
+		
 	}
 
 	.btm-container2__header {
-		font-size: 1.75em;
+		font-size: 1.5em;
 		padding-top: 2rem;
 	}
 	.contact-section h1 {
@@ -1182,7 +1197,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		
 	}
 	#flex-item2 {
-		padding: 26px 28px;
+		padding: 26px 0px;
 	}
 }
 
@@ -1197,12 +1212,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	hr {
 		margin: 0;
 	}
-	.top-portion__desc {
-		line-height: 1.45rem;
-		text-align: left;
-		font-size: 1.0rem;
-		padding-left: 0;
-	}
+
 	.flex-container img {
 		width: 250px;
 		height: 175px;
@@ -1217,11 +1227,20 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		width: 100px;
 		height: 100px;
 	}
+	.flex-item1--text,
+	.flex-item2--text,
+	.flex-item3--text,
+	.flex-item4--text {
+		font-size: .85rem;
+	}
 	.contact-section {
 		padding: 0 1rem;
 	}
 	.contact-section h1 {
 		margin-left: 2.25rem;
+	}
+	.addresses__contact {
+		font-size: 2.5rem;
 	}
 	input[type="text"], [type="email"], .textarea {
 		width: 250px;
@@ -1272,7 +1291,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		padding: 0;
 	}
 	#flex-item2 {
-		padding: 8px 7px;
+		padding: 0;
 	}
 	.office-info {
 		margin-top: 01rem;
