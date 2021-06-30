@@ -891,7 +891,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		padding-top: 2rem;
 		background-image: -o-linear-gradient( rgba(80, 80, 80, 0.55), rgba(75, 75, 75, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 		background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(80, 80, 80, 0.55)), to(rgba(75, 75, 75, 0.55))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
-		background-image: linear-gradient( rgba(80, 80, 80, 0.55), rgba(75, 75, 75, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+		background-image: linear-gradient( rgba(49, 49, 49, 0.75), rgba(49, 49, 49, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 		background-position: right;
 	}
 	.title-logo img {

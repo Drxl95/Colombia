@@ -27,7 +27,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: rgb(172, 172, 172);
+   /*👉 background: rgb(172, 172, 172);👈*/
+   background: rgb(83, 83, 83);
 }
 :root {
     --main-color: rgba(255, 111, 15, 0.8) 
@@ -37,7 +38,7 @@ body {
     background-image: linear-gradient( rgba(34, 34, 34, 0.8),  rgba(36, 36, 36, 0.8)), url("img/colombia-city-city.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 800px;
     width: 100%;
     margin: 0;
     position: absolute;
@@ -115,6 +116,12 @@ div #city-text3 {
 	transition: .45s;
 	opacity: .5;
 	color: black;
+}
+@media screen and (max-width: 1349px) {
+    .bottom-background {
+        position: fixed;
+    }
+   
 }
 
 
