@@ -213,7 +213,6 @@ font-weight: 300;
   }
   @media screen and (max-width:700px) {
 	.accordion-button {
-		color: rgb(255, 145, 15);
 		font-size: 1.25rem;
 	}
   }
@@ -238,7 +237,6 @@ font-weight: 300;
 		width: 190px;
 	}
 	.accordion-button {
-		color: rgb(255, 145, 15);
 		font-size: 1.15rem;
 	}
 	.accordion-body {
