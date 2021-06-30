@@ -8,11 +8,64 @@
     <link href="img/colo-logo-symbol.PNG" rel="shortcut icon" type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
-	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Medellín</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<img id="cityImg1" src="img/colo.png" class="acard-img-top" width="500px" height="320" alt="...">
+		  <p>Medellín, capital of Antioquia department, has a pleasant climate of around 24°C; offers modern transport systems like Metro and Metro Cable an efficient infrastructure which has allowed it to host world-class events such as OAS and IDB meetings. Located in a valley surrounded by mountains, this city is always friendly to visitors. </p>
+		</div>
+		<div class="modal-footer">
+		  
+		</div>
+	  </div>
+	</div>
+  </div>
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel2">Bogotá</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<img src="img/bogota_modal.jpg" class="acard-img-top" width="500px" height="320" alt="...">
+		  <p>Bogotá is the capital of and largest city in Colombia. It is a place of convergence for people from all around the country and is therefore diverse and multicultural. Within this city, the past and present come together. The city is also very green thanks to its parks and the hills that extend along its eastern boundary, dwarfed by their two highest points, Monserrate and Guadalupe. The landscape that the people of Bogotá enjoy daily—the sea of green that makes up the Andes mountain range, rising up in the east—would be nearly impossible to find in any other large city. But Bogotá also has the colors of modern buildings and authentic colonial roof tiles that are a true historical treasure from the colonial era.</p>
+		</div>
+		<div class="modal-footer">
+		  
+		</div>
+	  </div>
+	</div>
+  </div>
+
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel3">Santa Marta</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<img src="img/santa-modal.jpg" class="acard-img-top" width="500px" height="320" alt="...">
+		  <p>Santa Marta is pure flavor. The city's diversity is evident in its landscape, people, and each and every aspect of its culture; it is a destination that truly embraces its visitors and makes them feel at home.  What makes this city unique? Santa Marta's beautiful terrain is its most distinguishing feature: its unforgettable landscapes in which the green foliage, blue sea, yellow sun and sand, and the contrast between the beaches and the white-peaked Sierra Nevada, make Santa Marta a must-see destination.</p>
+		</div>
+		<div class="modal-footer">
+
+		</div>
+	  </div>
+	</div>
+  </div>
 <body>
 <div class="background"></div>
 <nav>
@@ -34,33 +87,33 @@
         </section>
     </header>
 <section id="flex_containers">
-	<div class="card-group">
-		<div class="card">
-		  <img id="cityImg1" src="img/medimgcity.jpeg" class="card-img-top" width="450px" height="270" alt="...">
-		<div class="card-body">
-			<h5 id="cityTitle1" class="card-title">Medellín</h5>
-			<p class="card-text">The City of Eternal Spring</p>
-			<button type="button" id="show-modal" class="btn">More Info</button>
+	<div class="acard-group">
+		<div class="acard">
+		  <img id="cityImg1" src="img/medimgcity.jpeg" class="acard-img-top" width="450px" height="270" alt="...">
+		<div class="acard-body">
+			<h5 id="cityTitle1" class="acard-title">Medellín</h5>
+			<p class="acard-text">The City of Eternal Spring</p>
+			<button type="button" class="acard__button" data-bs-toggle="modal" data-bs-target="#exampleModal">More Info</button>
 		</div>
 		</div>
 
 		
-		<div class="card">
-		  <img src="img/bogota.jpg" class="card-img-top" width="450px" height="270" alt="...">
-		  <div class="card-body">
-			<h5 class="card-title">Bogotá</h5>
-			<p class="card-text">Where the past and present meet.</p>
-			<button type="button" class="btn">More Info</button>
+		<div class="acard">
+		  <img src="img/bogota.jpg" class="acard-img-top" width="450px" height="270" alt="...">
+		  <div class="acard-body">
+			<h5 class="acard-title">Bogotá</h5>
+			<p class="acard-text">Where the past and present meet.</p>
+			<button type="button" class="acard__button" data-bs-toggle="modal" data-bs-target="#exampleModal2">More Info</button>
 		  </div>
 		</div>
 
 	
-		<div class="card">
-		<img src="img/santamartacity.png" class="card-img-top" width="450px" height="270" alt="...">
-		<div class="card-body">
-			<h5 class="card-title">Santa Marta</h5>
-			<p class="card-text">The destination with everything.</p>
-			<button type="button" class="btn" >More Info</button>
+		<div class="acard">
+		<img src="img/santamartacity.png" class="acard-img-top" width="450px" height="270" alt="...">
+		<div class="acard-body">
+			<h5 class="acard-title">Santa Marta</h5>
+			<p class="acard-text">The destination with everything.</p>
+			<button type="button" class="acard__button" data-bs-toggle="modal" data-bs-target="#exampleModal3">More Info</button>
 		</div>
 		</div>
 	
@@ -68,6 +121,8 @@
 
 </section>
 
+
+  
 <footer class="addresses">
 	<div class="addresses__info1">
 	  <p>Finds us on:</p>
