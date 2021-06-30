@@ -78,7 +78,35 @@ body {
 	
 }
 
+.modal-content {
+	border-radius: 0rem!important;
+	background-color: rgb(240, 240, 240)!important;
+}
+.modal-header {
+	text-align: center!important;
+	font-family: 'Open-sans', sans-serif;
+	font-size: .85rem;
+	background: rgba(255, 111, 15, 0.91);
 
+}
+/*👉.btn-close {
+	width: .5em!important;
+	height: .5em!important;
+}👈*/
+.modal-title {
+	font-size: 2.25rem;
+	line-height: 1!important;
+	color: white;
+}
+.modal-body{
+	font-family: 'Open-sans', sans-serif;
+	font-size: 1.25rem;
+	text-align: center;
+}
+.modal-body p {
+	text-align: left;
+	margin-top: 2.5rem;
+}
 .background {
 	background: url(https://miro.medium.com/max/13378/0*TtZttV6PeaCOIpSb.) center/cover;
 	background-image: linear-gradient( rgba(34, 34, 34, 0.85), rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)), url("https://miro.medium.com/max/13378/0*TtZttV6PeaCOIpSb.");
@@ -98,30 +126,32 @@ body {
 	font-weight: 500;
 }
 
-.card-group {
+.acard-group {
 	flex: 1;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	margin-bottom: 8rem;
 }
-.card {
+.acard {
 	width: 450px;
 	background: rgb(255, 255, 255);
 	padding-bottom: 4rem;
 	margin-top: 3.5rem;
 	
 }
-.card-body {
+.acard-body {
 	text-align: center;
 	
 }
-.card-title {
+.acard-title {
 	font-size: 2rem;
 	margin-bottom: 2rem;
+	margin-top: 3rem;
 	font-family: 'Open Sans', sans-serif;
 }
-.card-text {
+
+.acard-text {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.25rem;
 	margin-bottom: 4rem;
@@ -140,7 +170,7 @@ div #city-text3 {
 	background: white;
 	text-align: center;
 }
-.btn {
+.acard__button {
 	padding: 12px 82px;
 	font-size: 1.25rem;
 	font-family: 'Open Sans', sans-serif;
@@ -148,69 +178,12 @@ div #city-text3 {
 	color: white;
 	border: none;
 }
-.btn:hover,
-.btn:focus {
+.acard__button:hover,
+.acard__button:focus {
 	transition: .45s;
 	opacity: .5;
 	color: black;
 }
-#modal-container {
-	position: fixed;
-	padding: 20px;
-	box-sizing: border-box;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	
-	/* to show it above other content */
-	z-index: 999; 
-	
-	/* to allow scrolling if the screen is not high enough*/
-	overflow: auto; 
-	
-	/* this is used to center the modal */
-	display: grid;
-	text-align: center;
-  }
-  
-  .modal {
-	margin: auto;
-	display: inline-block;
-	box-sizing: border-box;
-	background: #fff;
-	padding: 15px;
-	width: 100%;
-	max-width: 700px;
-	text-align: left;
-  }
-  
-  .modal-close {
-	float: right;
-	-webkit-appearance: none;
-	border: 0;
-	background: none;
-	color: #777;
-	text-decoration: underline;
-  }
-  
-  .modal h1 {
-	margin-top: 0;
-  }
-  
-  .modal p {
-	margin-bottom: 0;
-  }
-  
-  #modal-container {
-	display: none;
-  }
-  
-  #modal-container.is-visible {
-	/* CSS for modal container - add your own desired CSS styles here */
-	display: block;
-  }
 
 /*👉span {
 	text-decoration: underline;
@@ -682,10 +655,10 @@ div #city-text3 {
 	}
 }
   @media screen and (max-width: 500px) {
-	  .card {
+	  .acard {
 		  width: 375px;
 	  }
-	 .card-img-top {
+	 .acard-img-top {
 		width: 375px!important;
 	  }
   }
@@ -694,20 +667,20 @@ div #city-text3 {
 	.title__head {
 		font-size: 3rem;
 	}
-	.card {
+	.acard {
 		width: 300px;
 	}
-   .card-img-top {
+   .acard-img-top {
 	    width: 300px!important;
 		height: 225px;
 	}
-	.card-title {
+	.acard-title {
 		font-size: 1.5rem;
 	}
-	.card-text {
+	.acard-text {
 		font-size: 1.15rem;
 	}
-	.btn {
+	.acard__button {
 		padding: 12px 72px;
 	}
   }
@@ -716,21 +689,21 @@ div #city-text3 {
 	.title__head {
 		font-size: 3rem;
 	}
-	.card {
+	.acard {
 		width: 250px;
 		padding-bottom: 2rem;
 	}
-   .card-img-top {
+   .acard-img-top {
 	    width: 250px!important;
 		height: 180px;
 	}
-	.card-title {
+	.acard-title {
 		font-size: 1.25rem;
 	}
-	.card-text {
+	.acard-text {
 		font-size: 1.15rem;
 	}
-	.btn {
+	.acard__button {
 		padding: 12px 72px;
 	}
   }
