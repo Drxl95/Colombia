@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 :root {
@@ -30,7 +38,8 @@ body {
   
   .header {
 	background-color: rgb(255, 145, 55);
-	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	-webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	        box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 	position: fixed;
 	width: 100%;
 	z-index: 3;
@@ -81,6 +90,8 @@ body {
   .header .menu {
 	clear: both;
 	max-height: 0;
+	-webkit-transition: max-height .2s ease-out;
+	-o-transition: max-height .2s ease-out;
 	transition: max-height .2s ease-out;
   }
   
@@ -92,7 +103,10 @@ body {
 	float: right;
 	padding: 24px 20px;
 	position: relative;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
   }
   
   .header .menu-icon .navicon {
@@ -100,6 +114,8 @@ body {
 	display: block;
 	height: 2px;
 	position: relative;
+	-webkit-transition: background .2s ease-out;
+	-o-transition: background .2s ease-out;
 	transition: background .2s ease-out;
 	width: 18px;
   }
@@ -111,6 +127,8 @@ body {
 	display: block;
 	height: 100%;
 	position: absolute;
+	-webkit-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
 	transition: all .2s ease-out;
 	width: 100%;
   }
@@ -138,11 +156,15 @@ body {
   }
   
   .header .menu-btn:checked ~ .menu-icon .navicon:before {
-	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
   }
   
   .header .menu-btn:checked ~ .menu-icon .navicon:after {
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
   }
   
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
@@ -224,9 +246,16 @@ font-weight: 300;
 
 
 .accordion-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .accordion {
 	width: 70%;
@@ -248,7 +277,8 @@ font-weight: 300;
 .accordion-button:focus {
     z-index: 3;
     outline: 0;
-	box-shadow:none;
+	-webkit-box-shadow:none;
+	        box-shadow:none;
 }
 .accordion-button:not(.collapsed) {
 	color: rgb(0, 0, 0);
@@ -274,7 +304,9 @@ font-weight: 300;
 			flex-direction: row;
 	-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	text-align: center;
 	font-size: 1.15rem;
 	padding-left: 6%;

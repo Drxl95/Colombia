@@ -1,10 +1,10 @@
-
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+
 
 
 * {
@@ -46,7 +46,8 @@ body {
   
   .header {
 	background-color: rgb(255, 145, 55);
-	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	-webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	        box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 	position: fixed;
 	width: 100%;
 	z-index: 3;
@@ -97,6 +98,8 @@ body {
   .header .menu {
 	clear: both;
 	max-height: 0;
+	-webkit-transition: max-height .2s ease-out;
+	-o-transition: max-height .2s ease-out;
 	transition: max-height .2s ease-out;
   }
   
@@ -108,7 +111,10 @@ body {
 	float: right;
 	padding: 24px 20px;
 	position: relative;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
   }
   
   .header .menu-icon .navicon {
@@ -116,6 +122,8 @@ body {
 	display: block;
 	height: 2px;
 	position: relative;
+	-webkit-transition: background .2s ease-out;
+	-o-transition: background .2s ease-out;
 	transition: background .2s ease-out;
 	width: 18px;
   }
@@ -127,6 +135,8 @@ body {
 	display: block;
 	height: 100%;
 	position: absolute;
+	-webkit-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
 	transition: all .2s ease-out;
 	width: 100%;
   }
@@ -154,11 +164,15 @@ body {
   }
   
   .header .menu-btn:checked ~ .menu-icon .navicon:before {
-	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
   }
   
   .header .menu-btn:checked ~ .menu-icon .navicon:after {
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
   }
   
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
@@ -222,7 +236,8 @@ body {
 	height: 100vh;
 	min-height: 900px;
 	background-image: -o-linear-gradient( rgba(80, 80, 80, 0.0), rgba(75, 75, 75, 0.80), rgba(75, 75, 75, 0.0)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
-	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(80, 80, 80, 0.0)), color-stop(rgba(75, 75, 75, 0.80)), to(rgba(75, 75, 75, 0.0))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(80, 80, 80, 0.5)), color-stop(rgba(75, 75, 75, 0.80)), to(rgba(75, 75, 75, 0.20))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+	background-image: -o-linear-gradient( rgba(80, 80, 80, 0.5), rgba(75, 75, 75, 0.80), rgba(75, 75, 75, 0.20)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 	background-image: linear-gradient( rgba(80, 80, 80, 0.5), rgba(75, 75, 75, 0.80), rgba(75, 75, 75, 0.20)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 }
 
@@ -231,7 +246,8 @@ body {
 }
 .title-logo img {
 	width: 55%;
-	filter: brightness(1.15);
+	-webkit-filter: brightness(1.15);
+	        filter: brightness(1.15);
 	margin-top: 2rem;
 }
 
@@ -435,21 +451,36 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 }
 
 .flex-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin: 6rem 4rem;
 }
 .flex-container img {
 	width: 700px;
 	height: 468px;
-	filter: drop-shadow(20px 20px 20px #515152);
+	-webkit-filter: drop-shadow(20px 20px 20px #515152);
+	        filter: drop-shadow(20px 20px 20px #515152);
 }
 
 .flex-container-text {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	width: 40%;
 	text-align: left;
 } 
@@ -464,6 +495,8 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 /* Review SECTION */
 .btm-container2 {
 	background: url(img/Happy-Thumbs-Up-Girl-scaled.jpg);
+	background-image: -webkit-gradient( linear,  left top, left bottom,  from(rgba(49, 49, 49, 0.75)),  to(rgba(48, 48, 48, 0.75))), url("img/Happy-Thumbs-Up-Girl-scaled.jpg");
+	background-image: -o-linear-gradient( rgba(49, 49, 49, 0.75),  rgba(48, 48, 48, 0.75)), url("img/Happy-Thumbs-Up-Girl-scaled.jpg");
 	background-image: linear-gradient( rgba(49, 49, 49, 0.75),  rgba(48, 48, 48, 0.75)), url("img/Happy-Thumbs-Up-Girl-scaled.jpg");
 	background-position: right;
 	background-position-y: 40%;
@@ -487,10 +520,13 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 .grid-container {
 	list-style: none;
 	max-width: 100%;
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
 	row-gap: 3rem;
-	grid-template-areas: "griditem1  griditem2"
+	-ms-grid-rows: auto 3rem auto;
+	    grid-template-areas: "griditem1  griditem2"
 						"griditem3  griditem4";
 	margin-top: 6rem;
 	
@@ -499,11 +535,22 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 
 
 .grid-item1 {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
 	grid-area: griditem1;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
@@ -526,11 +573,22 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 }
 
 .grid-item2 {
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
 	grid-area: griditem2;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
@@ -545,12 +603,25 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 }
 
 .grid-item3 {
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
 	grid-area: griditem3;
 	
-	display: flex;
-	flex-direction: row;
+	display: -webkit-box;
 	
-	align-items: center;
+	display: -ms-flexbox;
+	
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	
+	-webkit-box-align: center;
+	
+	    -ms-flex-align: center;
+	
+	        align-items: center;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
@@ -559,11 +630,22 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 }
 
 .grid-item4 {
+	-ms-grid-row: 3;
+	-ms-grid-column: 2;
 	grid-area: griditem4;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 
-	align-items: center;
+	-webkit-box-align: center;
+
+	    -ms-flex-align: center;
+
+	        align-items: center;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
@@ -582,6 +664,8 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 /*FOOTER*/
 
 .addresses {
+	background-image: -webkit-gradient( linear,  left top, left bottom,  from(rgba(231, 112, 15, 0.9)),  to(rgba(231, 112, 15, 0.9))), url("img/abstract.jpg");
+	background-image: -o-linear-gradient( rgba(231, 112, 15, 0.9),  rgba(231, 112, 15, 0.9)), url("img/abstract.jpg");
 	background-image: linear-gradient( rgba(231, 112, 15, 0.9),  rgba(231, 112, 15, 0.9)), url("img/abstract.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -603,11 +687,21 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	font-size: 3rem;
 }
 #flex-container {
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 .contact-section {
 	text-align: center;
@@ -693,6 +787,8 @@ input:-webkit-autofill:active {
 	opacity: .7;
 	color: black;
 	cursor: pointer;
+	-webkit-transition: ease .45s;
+	-o-transition: ease .45s;
 	transition: ease .45s;
 	
   }
@@ -916,7 +1012,10 @@ input:-webkit-autofill:active {
 }
 @media screen and (max-width:1075px) {
 	#flex-container {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	.contact-section {
 		margin-bottom: 3rem;
@@ -1037,7 +1136,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		min-height: 800px;
 		padding-top: 2rem;
 		background-image: -o-linear-gradient( rgba(80, 80, 80, 0.55), rgba(75, 75, 75, 0.55)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
-		background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(80, 80, 80, 0.55)), to(rgba(75, 75, 75, 0.55))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+		background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(49, 49, 49, 0.80)), to(rgba(49, 49, 49, 0.80))), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
+		background-image: -o-linear-gradient( rgba(49, 49, 49, 0.80), rgba(49, 49, 49, 0.80)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 		background-image: linear-gradient( rgba(49, 49, 49, 0.80), rgba(49, 49, 49, 0.80)), url("https://worldstrides.com/wp-content/uploads/2017/10/Columbia.jpg");
 		background-position: right;
 	}
@@ -1066,7 +1166,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		margin-top: 1.25rem;
 	}
 	.flex-container {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		margin-left: 0;
 		margin-right: 0;
 	}
@@ -1079,7 +1182,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	}
 	#flip-flexbox, 
 	#flip-flexbox2 {
-		flex-direction: column-reverse;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		    -ms-flex-direction: column-reverse;
+		        flex-direction: column-reverse;
 	}
 	
 }
@@ -1209,8 +1315,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		height: 900px;
 	}
 	.grid-container {
+		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
-		grid-template-areas: "griditem1"
+		    grid-template-areas: "griditem1"
 							"griditem2"
 							"griditem3"
 							"griditem4";
@@ -1218,6 +1325,22 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	.btn {
 		text-align: center;
 		margin-left: 0;
+	}
+	.grid-item1 {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+	}
+	.grid-item2 {
+		-ms-grid-row: 2;
+		-ms-grid-column: 1;
+	}
+	.grid-item3 {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+	}
+	.grid-item4 {
+		-ms-grid-row: 4;
+		-ms-grid-column: 1;
 	}
 	
 }
