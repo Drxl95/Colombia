@@ -347,10 +347,9 @@ flex-wrap: wrap;
 			position: fixed;
 			bottom: 0;
 			height: 200px!important;
-		}
-
-	
+		}	
 }
+
 @media screen and (min-width: 834px)
  and (max-width: 834px) 
  and (orientation: portrait) {
