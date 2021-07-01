@@ -631,7 +631,7 @@ input:-webkit-autofill:active {
   .contact textarea {
 	margin: .5rem;
 	font-weight: 1000;
-	font-family: "Roboto", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.1rem;
   }
   
