@@ -1222,7 +1222,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 @media screen and (max-width: 600px) {
 	#top-portion {
-		min-height: 700px;
+		min-height: 750px;
 	}
 	.title-logo img {
 		width: 90%;
@@ -1316,10 +1316,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 		width: 185px!important;
 	}
-	#top-portion {
-		min-height: 700px;
+/*👉	#top-portion {
+		min-height: 800px;
 		
-	}
+	}👈*/
 	.top-portion__colombia {
 		font-size: 2.25rem;
 	}
@@ -1367,10 +1367,13 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 	#top-portion {
 		padding-top: .75rem;
+		min-height: 800px;
 	}
+
 	hr {
 		margin: 0;
 	}
+
 
 	.flex-container img {
 		width: 250px;
