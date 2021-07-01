@@ -1277,6 +1277,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 
 @media screen and (max-width: 450px) {
+
 	.flex-container img {
 		width: 300px;
 		height: 200px;
@@ -1360,10 +1361,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 }
 
 @media screen and (max-width: 350px) {
-	#nav_logo img  {
-
-		width: 155px!important;
+	.title-logo {
+		margin-top: 1rem;
 	}
+
 	#top-portion {
 		padding-top: .75rem;
 	}
@@ -1406,9 +1407,13 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 }
 
 @media screen and (max-width: 300px) {
-	.nav_lists a {
-		font-size: .75rem;
+	.header .logo {
+		padding-top: 10px;
 	}
+	.logo img {
+		width: 150px;
+	}
+
 	.top-portion__colombia {
 		font-size: 2rem;
 	}
@@ -1461,7 +1466,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	}
 	.terms_footer {
 		width: 15rem;
-		/*👉margin-top: 2rem;
-		margin-bottom: 1rem;👈*/
+
 	}
 } 
