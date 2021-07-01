@@ -5,7 +5,9 @@
 :root {
     --main-color: rgb(255, 111, 15);
 }
+
 body {
+	height: 100%;
     margin: 0;
     background-color: rgb(233, 229, 220);
 }
@@ -54,7 +56,7 @@ body {
 }
 
 .title {
-color: rgb(88, 88, 88);
+color: rgb(0, 0, 0);
 text-align: center;
 margin-top: 4rem;
 margin-bottom: 0;
@@ -76,15 +78,15 @@ font-weight: 300;
 }
 .accordion-body {
     font-size: 1.05rem;
-	background-color: rgb(250, 241, 234);
+	background-color: rgb(253, 227, 206);
 }
 
 .accordion-button {
-	color: rgb(88, 88, 88);
+	color: rgb(0, 0, 0);
 	font-size: 1.35rem;
 }
 .accordion-button::after {
-	color: rgb(88, 88, 88);
+	color: rgb(0, 0, 0);
 }
 .accordion-button:focus {
     z-index: 3;
@@ -93,7 +95,7 @@ font-weight: 300;
 }
 .accordion-button:not(.collapsed) {
 	color: rgb(0, 0, 0);
-    background-color: #f3c590;
+    background-color: #faad55;
 }
 .accordion-button:not(.collapsed)::after {
 	background-image: url(img/downArrow.svg);
@@ -182,8 +184,23 @@ font-weight: 300;
 			text-decoration-line: underline;
   }
 
+@media screen and (min-width: 1024px)
+ and (max-width: 1024px) 
+ and (orientation: portrait) {
+	
+	.addresses {
+		position: fixed;
+		bottom: 0;
+		height: 200px!important;
+	}
+	.accordion-center {
+		margin-top: 7rem;
+	}
+}
+
   @media screen and (max-width: 1024px) {
 	.addresses {
+	
 		padding-left: 0%;
 		font-size: 1rem;
 		display: -webkit-box;
