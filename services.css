@@ -21,9 +21,7 @@ html,body {
 body {
 	font-family: 'Open-sans', sans-serif;
 	width: 100%;
-	
 	margin: 0;
-	
 	background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
 
 }
@@ -32,64 +30,138 @@ body {
 :root {
     --main-color: rgba(255, 111, 15,1);
 }
+/*NAVBAR*/
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+  }
+  
 
-.nav_list {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	list-style-type: none;
+  
+  /* header */
+  
+  .header {
+	background-color: rgb(255, 145, 55);
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	position: fixed;
 	width: 100%;
+	z-index: 3;
+	height: 52px;
+	font-size: 1rem;
+	
+	
+  }
+  
+  .header ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 	overflow: hidden;
-	background-color:   rgb(255, 111, 15);
-}
-.nav_lists {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}
-
-.nav_lists {
-	font-family: 'Open-sans', sans-serif;
-}
-.nav_lists a {
+	background-color: rgb(255, 145, 55);
+  }
+  
+  .header li a {
+	display: block;
 	padding: 14px 16px;
-	color: white!important;
 	text-decoration: none;
-}
-.nav_lists a:hover,
-.nav_lists a:focus {
-	-webkit-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.65), 0 17px 50px 0 rgba(0,0,0,0.75);
-	        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.65), 0 17px 50px 0 rgba(0,0,0,0.75);
-	color: lightgray;
+	color: white;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+	background-color: rgb(230, 230, 230);
+	color: rgb(0, 0, 0);
 	-webkit-transition: .75s;
 	-o-transition: .75s;
 	transition: .75s;
-}
-.nav_lists a:active {
-	text-decoration: underline;
-}
-#nav_logo {
-	margin-right: 2rem;
-	margin-left: 2rem;
-	
-}
-
-
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,300italic,400italic,600,700,600italic,700italic);
-body {
-  font-family: "Open Sans", sans-serif!important;
-  line-height: 1;
+  }
   
+  .header .logo {
+	display: block;
+	float: left;
+	font-size: 2em;
+	padding: 10px 20px;
+	padding-right: 0px;
+	padding-top: 2.5px;
+	text-decoration: none;
+  }
   
-}
+  /* menu */
+  
+  .header .menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 24px 20px;
+	position: relative;
+	user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+	background: white;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+	background: white;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+	top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+	top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+	display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+	max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+	transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+  }
+  
 
-/*👉a {
-	color: black!important;
-	text-decoration: none!important;
-	
-}👈*/
+
 
 #background {
 	background-color: rgb(233, 233, 233);
@@ -105,9 +177,10 @@ body {
 .demo-title {
   text-align: center;
   font-size: 3rem;
+  padding-top: 6rem;
   margin-bottom: 50px;
-  margin-top: 50px;
-  font-weight: 400;
+  margin-top: 0px;
+  font-weight: 300;
   color: black;
 }
 
@@ -367,6 +440,23 @@ flex-wrap: wrap;
 
 	
 }
+/*NavBar Media Query*/
+@media (min-width: 800px) {
+	.header li {
+	  float: left;
+	}
+	.header li a {
+	padding: 15px 30px;
+	  padding-top: 18.5px;
+	}
+	.header .menu {
+	  clear: none;
+	  float: right;
+	  max-height: none;
+	}
+	.header .menu-icon {
+	  display: none;
+	}}
 
 
   @media screen and (max-width: 800px) {
@@ -666,6 +756,14 @@ flex-wrap: wrap;
 		font-size: 1.25rem;
 	}
 }
+@media screen and (max-width:350px) {
+	.header .logo {
+		padding-top: 10px;
+	}
+	.logo img {
+		width: 150px;
+	}
+  }
 @media screen and (max-width: 300px) {
 	.prices {
 		font-size: 1.25rem;

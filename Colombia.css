@@ -1112,6 +1112,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		margin-bottom: 1rem;
 	}
 }
+/*NavBar Media Query*/
 @media (min-width: 800px) {
 	.header li {
 	  float: left;
@@ -1128,6 +1129,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	.header .menu-icon {
 	  display: none;
 	}}
+
 @media screen and (max-width: 800px) {
 	#top-portion {
 		min-height: 800px;
@@ -1316,10 +1318,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 		width: 185px!important;
 	}
-/*👉	#top-portion {
-		min-height: 800px;
-		
-	}👈*/
+
 	.top-portion__colombia {
 		font-size: 2.25rem;
 	}
@@ -1361,6 +1360,12 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 }
 
 @media screen and (max-width: 350px) {
+	.header .logo {
+		padding-top: 10px;
+	}
+	.logo img {
+		width: 150px;
+	}
 	.title-logo {
 		margin-top: 1rem;
 	}
