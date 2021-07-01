@@ -478,11 +478,10 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	color: white;
 	padding: 44px 42px;
 	background: rgb(190, 138, 94);
-
 }
 
 label {
-	display: none!important;
+	display: none;
 	font-size: 1px;
 }
 input:-webkit-autofill,
@@ -496,7 +495,7 @@ input:-webkit-autofill:active {
   .contact textarea {
 	margin: .5rem;
 	font-weight: 1000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 1.1rem;
   }
   
@@ -539,10 +538,9 @@ input:-webkit-autofill:active {
 	vertical-align: top;
   
   }
-  .abtn {
+  .btn {
 	  text-align: left;
-	  margin-left: 22.25%;
-	  font-family: 'Open Sans', sans-serif;
+	  margin-left: 6%;
   }
   .contact-section__btn {
 	padding: 12px 52px;
@@ -566,7 +564,6 @@ input:-webkit-autofill:active {
 #flex-item2 {
 	background: rgb(190, 138, 94);
 	padding: 82px 56px;
-	
 }
 
 .office-info {
@@ -660,17 +657,10 @@ input:-webkit-autofill:active {
 	display: none;
 }
 @media screen and (max-width: 1700px) {
-
 	.top-portion__desc {
 		font-size: 1.65rem;
 		line-height: 2rem;
 		margin-bottom: 2rem;
-	}
-}
-@media screen and (max-width: 1662px) {
-	
-	.contact-section {
-		margin-bottom: 3rem;
 	}
 }
 @media screen and (max-width: 1600px) {
@@ -737,9 +727,6 @@ input:-webkit-autofill:active {
 }
 
 @media screen and (max-width:1250px) {
-	.contact-section {
-		margin-bottom: 0;
-	}
 	.contact-section h1 {
 		font-size: 1.25rem;
 	}
@@ -749,7 +736,7 @@ input:-webkit-autofill:active {
 	.office-info {
 		font-size: 1.25rem;
 	}
-	.abtn {
+	.btn {
 		margin-left: 4%;
 	}
 	
@@ -780,7 +767,7 @@ input:-webkit-autofill:active {
 		padding-top: 2rem;
 	}
 }
-@media screen and (max-width:1127px) {
+@media screen and (max-width:1125px) {
 	.contact-section {
 		padding: 38px 40px;
 	}
@@ -789,11 +776,6 @@ input:-webkit-autofill:active {
 	}
 	.addresses__info2 {
 		font-size: 1.25rem;
-	}
-}
-@media screen and (max-width: 1092px) {
-	.contact-section {
-		margin-bottom: 3rem;
 	}
 }
 @media screen and (max-width:1075px) {
@@ -809,7 +791,7 @@ input:-webkit-autofill:active {
 	input[type="text"], [type="email"], .textarea {
 		width: 550px;
 	}	
-	.abtn {
+	.btn {
 		margin-left: 0;
 	}
 	.office-info {
@@ -1057,7 +1039,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	.contact__txtarea {
 		display: block;
 	}
-	.abtn {
+	.btn {
 		margin-left: 1.5rem;
 		
 	}
@@ -1079,7 +1061,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 							"griditem3"
 							"griditem4";
 	}
-	.abtn {
+	.btn {
 		text-align: center;
 		margin-left: 0;
 	}
@@ -1327,6 +1309,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	}
 	.terms_footer {
 		width: 15rem;
-		
+		/*👉margin-top: 2rem;
+		margin-bottom: 1rem;👈*/
 	}
 } 
