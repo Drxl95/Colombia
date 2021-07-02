@@ -17,7 +17,6 @@ html,body {
 	-webkit-text-size-adjust: none;
 	-moz-text-size-adjust: none;
 	-ms-text-size-adjust: none;
-	/*👉height: 100%;👈*/
 }
 body {
 	font-family: 'Open-sans', sans-serif;
@@ -180,7 +179,8 @@ body {
 
 
 #background {
-	background-color: rgb(233, 233, 233);
+	background-image: linear-gradient( rgba(34, 34, 34, 0.85), rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)), url("img/handshake-services-page.jpg");
+	background-position: center top;
 	background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
@@ -190,7 +190,7 @@ body {
     z-index: -1;
     -webkit-transform: skewY(7deg) translateY(-200px);
         -ms-transform: skewY(7deg) translateY(-200px);
-            transform: skewY(7deg) translateY(-200px);
+            transform: skewY(7deg) translateY(-100px);
 }
 .demo-title {
   text-align: center;
@@ -199,7 +199,7 @@ body {
   margin-bottom: 50px;
   margin-top: 0px;
   font-weight: 300;
-  color: black;
+  color: white;
 }
 
 
@@ -222,7 +222,8 @@ display: flex;
 }
 .pricing-table .pricing-option {
   width: 28%;
-  
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
   background: rgb(255, 255, 255);
   float: left;
   padding: 2%;
@@ -236,8 +237,8 @@ display: flex;
 }
 .pricing-table .pricing-option:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.712);
+          box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.712);
   -webkit-transform: scale(1.04);
       -ms-transform: scale(1.04);
           transform: scale(1.04);
@@ -299,7 +300,7 @@ display: flex;
   display: block;
   font-weight: 400;
   position: relative;
-  text-decoration: underline;
+
 }
 .pricing-table .pricing-option .price .front span.price b {
   position: absolute;
@@ -347,8 +348,6 @@ display: flex;
 	color: black;
 }
 
-
-
 .list-package {
 	color: var(--main-color);
 }
@@ -357,7 +356,6 @@ display: flex;
 	-webkit-padding-start: 0;
 	        padding-inline-start: 0;
 	font-size: 1.10rem;
-
 }
 .perks-list li {
 	margin: 3rem 0;
@@ -365,13 +363,7 @@ display: flex;
 
 
 
-
-
 /*FOOTER*/
-
-
-
-
   .addresses {
 	background-color: rgb(201, 83, 5);
 	width: 100%;
@@ -456,11 +448,18 @@ display: flex;
 @media screen and (min-width: 1024px)
  			  and (max-width: 1024px) 
  		  and (orientation: portrait) {
-			   html {
-				height: 100%;
-			   }
+
+		html {
+			height: 100%;
+		}
+		#background {
+			height: 900px;
+			-webkit-transform: skewY(7deg) translateY(-158px);
+					-ms-transform: skewY(7deg) translateY(-158px);
+					transform: skewY(7deg) translateY(-158px);
+		}
 	 	.demo-title {
-			margin-top: 6rem;
+			padding-top: 8rem;
 	 	}
 		.pricing-table {
 			margin-top: 15rem;
@@ -475,8 +474,9 @@ display: flex;
 @media screen and (min-width: 834px)
  and (max-width: 834px) 
  and (orientation: portrait) {
+
 	 .demo-title {
-		 margin-top: 6rem;
+		 padding-top: 6rem;
 	 }
 	.pricing-table {
 		margin-top: 7rem;
@@ -614,61 +614,7 @@ display: flex;
 		width: 15rem;
 }
 }
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-	.grid-parent {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-	}
-	.grid-container {
-		    grid-template-areas: "header"
-									"plan1"
-									"plan2"
-									"plan3"; 
-		-ms-grid-columns: .65fr; 
-		grid-template-columns: .65fr;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-	}
-	
-	.grid-header {
-		width: 100%;
-		margin-left: 0;
-	}
-	.prices {
-		font-size: 2rem;
-	}
-	.grid-header {
-		font-size: 1.25rem;
-	}
-	.package-title {
-		font-size: 2.5rem;
-	}
-	.list-title {
-		font-size: 2rem;
-	}
-	.lists1, .lists2, .lists3 {
-		font-size: 1.5rem;
-	}
-	.lists3 li {
-		margin: 1.55rem 0;
-	}
-	.button  {
-		font-size: 2rem;
-	}
-  }
+
 @media screen and (max-width: 900px) {
 	.grid-parent {
 		display: -webkit-box;
