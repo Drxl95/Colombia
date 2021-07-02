@@ -178,7 +178,7 @@ body {
 
 
 
-#background {
+.background {
 	background-image: linear-gradient( rgba(34, 34, 34, 0.85), rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)), url("img/handshake-services-page.jpg");
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -452,7 +452,7 @@ display: flex;
 		html {
 			height: 100%;
 		}
-		#background {
+		.background {
 			height: 900px;
 			-webkit-transform: skewY(7deg) translateY(-158px);
 					-ms-transform: skewY(7deg) translateY(-158px);
@@ -491,6 +491,7 @@ display: flex;
 }
 /*NavBar Media Query*/
 @media (min-width: 800px) {
+
 	.header li {
 	  float: left;
 	}
@@ -505,8 +506,8 @@ display: flex;
 	}
 	.header .menu-icon {
 	  display: none;
-	}}
-
+	}
+}
 
   @media screen and (max-width: 800px) {
 	  .pricing-table {
@@ -668,55 +669,18 @@ display: flex;
 	}
 }
 @media screen and (max-width: 800px) {
-	.grid-parent {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-	}
-	.grid-container {
-		    grid-template-areas: "header"
-									"plan1"
-									"plan2"
-									"plan3"; 
-		-ms-grid-columns: .7fr; 
-		grid-template-columns: .7fr;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-	}
-	
-	.grid-header {
+
+	#background-800px {
+		background-color: rgb(255, 145, 55)!important;
+		-webkit-box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
+		box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
+		position: fixed;
 		width: 100%;
-		margin-left: 0;
+		z-index: -10;
+		height: 52px;
+		font-size: 1rem;
 	}
-	.prices {
-		font-size: 1.75rem;
-	}
-	.grid-header {
-		font-size: 1.25rem;
-	}
-	.package-title {
-		font-size: 2rem;
-	}
-	.list-title {
-		font-size: 1.5rem;
-	}
-	.lists1, .lists2, .lists3 {
-		font-size: 1.25rem;
-	}
-	.lists3 li {
-		margin: 1.5rem 0;
-	}
-	.button  {
-		font-size: 1.5rem;
-	}
+
 	.addresses {
 		padding-left: 6%;
 		padding-top: 2%;
