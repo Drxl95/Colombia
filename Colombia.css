@@ -183,48 +183,7 @@ body {
 
 
 
-/*👉.nav_list {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	list-style-type: none;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color:   rgb(255, 111, 15);
-}
-.nav_lists {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}
 
-.nav_lists {
-	font-family: 'Open-sans', sans-serif;
-}
-.nav_lists a {
-	padding: 14px 16px;
-	color: white;
-	text-decoration: none;
-}
-.nav_lists a:hover,
-.nav_lists a:focus {
-	-webkit-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.65), 0 17px 50px 0 rgba(0,0,0,0.75);
-	        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.65), 0 17px 50px 0 rgba(0,0,0,0.75);
-	color: lightgray;
-	-webkit-transition: .75s;
-	-o-transition: .75s;
-	transition: .75s;
-}
-.nav_lists a:active {
-	text-decoration: underline;
-}
-#nav_logo {
-	margin-right: 2rem;
-	margin-left: 2rem;
-	
-}👈*/
 
 /*PAGES*/
 
@@ -707,7 +666,9 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	text-align: center;
 	color: white;
 	padding: 44px 42px;
-	background: rgb(190, 138, 94);
+	background: rgb(190, 138, 94, 0.8);
+
+	
 }
 
 label {
@@ -794,7 +755,8 @@ input:-webkit-autofill:active {
   }
   
 #flex-item2 {
-	background: rgb(190, 138, 94);
+	
+	background: rgb(190, 138, 94, 0.8);
 	padding: 82px 56px;
 }
 
