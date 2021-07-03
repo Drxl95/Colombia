@@ -510,6 +510,14 @@ display: flex;
 }
 
   @media screen and (max-width: 800px) {
+	.header li a {
+		border-bottom: black 1px solid;
+		font-weight: 400;
+
+	}
+	#border-none {
+		border: none!important;
+	}
 	  .pricing-table {
 		margin-top: 2.5rem;
 	  }

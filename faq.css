@@ -373,6 +373,16 @@ font-weight: 300;
 		width: 15rem
   }
   }
+  @media screen and (max-width: 800px) {
+	.header li a {
+		border-bottom: black 1px solid;
+		font-weight: 400;
+
+	}
+	#border-none {
+		border: none!important;
+	}
+  }
   @media screen and (max-width:700px) {
 	.accordion-button {
 		font-size: 1.25rem;
