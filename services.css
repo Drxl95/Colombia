@@ -6,6 +6,7 @@
 */
 
 
+
 * {
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
@@ -179,6 +180,8 @@ body {
 
 
 .background {
+	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(34, 34, 34, 0.85)), color-stop(rgba(36, 36, 36, 0.85)), to(rgba(36, 36, 36, 0.85))), url("img/handshake-services-page.jpg");
+	background-image: -o-linear-gradient( rgba(34, 34, 34, 0.85), rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)), url("img/handshake-services-page.jpg");
 	background-image: linear-gradient( rgba(34, 34, 34, 0.85), rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)), url("img/handshake-services-page.jpg");
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -638,7 +641,7 @@ display: flex;
 		        justify-content: center;
 	}
 	.grid-container {
-		    grid-template-areas: "header"
+		        grid-template-areas: "header"
 									"plan1"
 									"plan2"
 									"plan3"; 
@@ -793,6 +796,5 @@ display: flex;
 		font-size: 1.25rem;
 	}
 }
-
 
 

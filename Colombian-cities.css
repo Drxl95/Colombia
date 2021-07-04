@@ -232,8 +232,8 @@ body {
 
 .background {
 	background: url(https://miro.medium.com/max/13378/0*TtZttV6PeaCOIpSb.) center/cover;
-	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(34, 34, 34, 0.85)), color-stop(rgba(36, 36, 36, 0.85)), to(rgba(36, 36, 36, 0.85))), url("https://miro.medium.com/max/13378/0*TtZttV6PeaCOIpSb.");
 	background-image: -o-linear-gradient( rgba(34, 34, 34, 0.85), rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)), url("https://miro.medium.com/max/13378/0*TtZttV6PeaCOIpSb.");
+	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(34, 34, 34, 0.85)), color-stop(rgba(36, 36, 36, 0.85)), to(rgba(36, 36, 36, 0.85))), url("https://miro.medium.com/max/13378/0*TtZttV6PeaCOIpSb.");
 	background-image: linear-gradient( rgba(34, 34, 34, 0.85), rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)), url("https://miro.medium.com/max/13378/0*TtZttV6PeaCOIpSb.");
 	width: 100%;
 	height: 100%;
@@ -591,5 +591,4 @@ div #city-text3 {
 		left: 80.5%;
 	}
   }
-
 
