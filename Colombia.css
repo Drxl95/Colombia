@@ -879,17 +879,18 @@ input:-webkit-autofill:active {
 		margin-bottom: 1rem;
 	}
 	a.details {
+		margin-top: .5rem;
 		padding: 8px 42px;
 		font-size: 1.5rem;
-		}
-		.top-portion__arrows {
-			left: 51.75%;
-		}
-		.top-portion__arrows .top-portion__arrows--hide {
-			width: 100px;
-			height: 100px;
-			margin: -75px;
-		}
+	}
+	.top-portion__arrows {
+		left: 51.75%;
+	}
+	.top-portion__arrows .top-portion__arrows--hide {
+		width: 100px;
+		height: 100px;
+		margin: -75px;
+	}
 }
 
 @media screen and /*👉(min-width: 1201px) and👈*/ (max-width: 1366px) {
