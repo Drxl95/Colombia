@@ -431,7 +431,9 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	margin: 6rem 4rem;
+	margin: 10rem 4rem;
+
+
 }
 .flex-container img {
 	width: 700px;
@@ -450,6 +452,8 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	        flex-direction: column;
 	width: 40%;
 	text-align: left;
+
+
 } 
 .flex-container-text-h1 {
 	font-size: 3rem;
