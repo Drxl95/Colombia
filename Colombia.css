@@ -855,8 +855,8 @@ input:-webkit-autofill:active {
 }
 .back-to-top {
     position: fixed;
-    bottom: 0em;
-    right: 0px;
+    bottom: 3em;
+    right: 1em;
     text-decoration: none;
     font-size: 12px;
 	padding: .35em;
