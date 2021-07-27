@@ -826,7 +826,25 @@ input:-webkit-autofill:active {
 	text-transform: uppercase;
 	border-radius: 2px;
 }
-.top_btn:hover,
+
+
+.top_btn:active {
+	opacity: 0;
+	transition: .1s;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 3em;
+    right: 1em;
+    text-decoration: none;
+    font-size: 12px;
+	padding: .35em;
+	display: none;
+}
+
+@media (hover: hover) {
+	.top_btn:hover,
 .top_btn:focus {
 	background: rgba(255, 111, 15, 0.75);
 	padding: .85rem 1.95rem;
@@ -838,29 +856,6 @@ input:-webkit-autofill:active {
 	outline: 3px solid orange;
 	border: none;
 }
-
-
-.top_btn:visited {
-    background: rgb(39, 38, 38);
-    color: white;
-}
-
-.top_btn:active {
-    border: 1.5px solid white;
-	background: rgb(39, 38, 38);
-	padding: 1rem 1rem;
-	color: white;
-	font-weight: bolder;
-	text-transform: uppercase;
-}
-.back-to-top {
-    position: fixed;
-    bottom: 3em;
-    right: 1em;
-    text-decoration: none;
-    font-size: 12px;
-	padding: .35em;
-	display: none;
 }
 @media screen and (max-width: 1700px) {
 	.top-portion__desc {
