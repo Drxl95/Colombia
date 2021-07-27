@@ -1344,7 +1344,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	}
 .flex-container img {
 	width: 400px;
-	height: 225px;
+	height: auto;
 }
 .flex-container-text {
 	font-size: 1.15rem;
@@ -1382,8 +1382,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 @media screen and (max-width: 450px) {
 
 	.flex-container img {
-		width: 300px;
-		height: 200px;
+		width: 350px;
+		height: auto;
 	}
 	.flex-container-text {
 		font-size: 1rem;
@@ -1443,6 +1443,13 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	}
 
 }
+
+@media screen and (max-width: 375px) {
+	.flex-container img {
+		width: 325px;
+		height: auto;
+	}
+}
 @media screen and (max-width: 350px) {
 	.flex-container-text {
 		width: 100%;
@@ -1480,10 +1487,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		margin: 0;
 	}
 
-
 	.flex-container img {
-		width: 250px;
-		height: 175px;
+		width: 300px;
+		height: auto;
 	}
 	.grid-container {
 		margin-top: 2rem;
@@ -1555,6 +1561,11 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 	.btm-container2__header {
 		font-size: 1.75rem;
 		
+	}
+
+	.flex-container img {
+		width: 275px;
+		height: auto;
 	}
 	.flex-item1--text, .flex-item2--text, .flex-item3--text, .flex-item4--text {
 		font-size: .85rem;
