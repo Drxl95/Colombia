@@ -957,7 +957,7 @@ input:-webkit-autofill:active {
 	}
 	.flex-container img {
 		width: 500px;
-		height: 275px;
+		height: auto;
 	}
 	.flex-container-text-h1 {
 		font-size: 1.5rem;
@@ -1324,9 +1324,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 }
 
 @media screen and (max-width: 600px) {
-/*👉	#top-portion {
-		min-height: 750px;
-	}👈*/
 	.title-logo img {
 		width: 90%;
 	}
