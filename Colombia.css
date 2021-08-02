@@ -81,10 +81,13 @@ body {
   }
 
   
-  .header li a:hover,
-  .header .menu-btn:hover {
+.header li a:hover,
+.header .menu-btn:hover,
+.header li a:focus,
+.header .menu-btn:focus,
+.header li a:active, 
+.header .menu-btn:active  {
 	background-color: rgb(230, 230, 230);
-	
 	color: rgb(0, 0, 0);
 	-webkit-transition: .75s;
 	-o-transition: .75s;
