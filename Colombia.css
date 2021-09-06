@@ -403,8 +403,6 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 /*Pic Section*/
 .btm-containers {
 	background-color:rgb(255, 250, 242);
-
-
 }
 .bottom__container {
 	text-align: center;
@@ -419,7 +417,6 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	font-size: 3rem;
 	margin-bottom: 7rem;
 }
-
 .flex-container {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -435,8 +432,6 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	margin: 10rem 4rem;
-
-
 }
 .flex-container img {
 	width: 700px;
@@ -444,7 +439,6 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	-webkit-filter: drop-shadow(20px 20px 20px #515152);
 	        filter: drop-shadow(20px 20px 20px #515152);
 }
-
 .flex-container-text {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -455,8 +449,6 @@ a.details:focus + .top-portion__arrows .top-portion__arrows--hide {
 	        flex-direction: column;
 	width: 40%;
 	text-align: left;
-
-
 } 
 .flex-container-text-h1 {
 	font-size: 3rem;
