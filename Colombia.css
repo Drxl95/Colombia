@@ -1134,26 +1134,31 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
-		        flex-direction: column;
+		        flex-direction: column-reverse;
 		margin-left: 0;
 		margin-right: 0;
+		margin-top: 6rem;
 	}
 	.flex-container-text {
 		font-size: 1.25rem;
 	}
 
-	.flex-container-text-h1 {
-		margin-top: 3rem;
-	}
+
+.flex-container-text-h1 {
+    margin-top: 5rem;
+}
+
+
 	#flip-flexbox, 
 	#flip-flexbox2 {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: reverse;
-		    -ms-flex-direction: column-reverse;
-		        flex-direction: column-reverse;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	
 }
+
 @media screen and (max-width: 900px) {
 	#top-portion {
 		min-height: 800px;
