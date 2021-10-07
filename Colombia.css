@@ -852,6 +852,106 @@ input:-webkit-autofill:active {
 	border: none;
 }
 }
+
+@media screen and (min-width: 2225px) {
+	.top-portion__voted {
+		font-size: 2em;
+	}
+
+	
+	.top-portion__desc {
+		font-size: 2.25rem;
+		line-height: 2.75rem;
+	}
+
+	.book-div {
+		font-size: 2.25rem;
+	}
+
+	a.details {
+		font-size: 2.5rem;
+	}
+
+	.top-portion__arrows {
+    	left: 50.75%;
+	}
+
+	.top-portion__arrows .top-portion__arrows--hide {
+		width: 130px;
+		height: 130px;
+	}
+
+	.bottom__container {
+		font-size: 2rem;
+	}
+
+	.flex-container-text-h1 {
+		font-size: 3.5rem;
+	}
+
+
+	.flex-container img {
+		width: 900px;
+		height: auto;
+	}
+
+	.btm-container2 {
+		height: 800px;
+	}
+
+	.btm-container2__header {
+		font-size: 3rem;
+	}
+
+	.image {
+		width: 200px;
+		height: 200px;
+	}
+
+	.grid-item1,
+	.grid-item2,
+	.grid-item3,
+	.grid-item4 {
+		font-size: 1.75rem;
+	}
+
+	.contact-section h1 {
+		font-size: 2rem;
+	}
+
+	input[type="text"], [type="email"], textarea {
+		width: 700px;
+		height: 60px;
+	}
+	
+	.contact__txtarea label, .textarea {
+		width: 700px;
+		height: 400px;
+		vertical-align: top;
+	}
+
+	.contact input, .contact textarea {
+		font-size: 1.75rem;
+	}
+
+	.office-info {
+		font-size: 2.5rem;
+	}
+
+	.addresses__info1 {
+		font-size: 2rem;
+	}
+
+	.contact-addresses {
+		font-size: 1.5rem;
+	}
+
+	.contact-social {
+		width: 72px;
+	}
+
+}
+
 @media screen and (max-width: 1700px) {
 	.top-portion__desc {
 		font-size: 1.65rem;
