@@ -29,4 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var instances = M.Modal.init(elems);
 });
 
+var elem = document.querySelector('.collapsible.expandable');
+var instance = M.Collapsible.init(elem, {
+  accordion: false
+});
+
 

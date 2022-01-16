@@ -6,260 +6,216 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="img/colo-logo-symbol.PNG" rel="shortcut icon" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="css/faq.css">
+  <link rel="stylesheet" type="text/css" href="css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Frequently Asked Questions </title>
 </head>
 
 <body>
-  <header class="header">
-    <a href="index.html" class="logo"><img src="img/White logo - no background.svg"></a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul role="menubar" class="menu">
-      <li role="presentation"><a role="menuitem" href="index.html">Our Purpose</a></li>
-      <li role="presentation"><a role="menuitem" href="Colombian-cities.html">Our Cities</a></li>
-      <li role="presentation"><a role="menuitem" href="services.html">Our Services</a></li>
-      <li role="presentation"><a id="border-none" role="menuitem" href="faq.html">FAQ</a></li>
-    </ul>
-  </header>
 
+  <!--NAVBAR-->
 
-  <header>
-    <section class="title">
-      <div class="title__step2">
-        <h1 class="title__head">Frequently Asked Questions</h1>
-      </div>
-    </section>
-  </header>
+  <nav class="navbar-fixed">
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo right"><img class="big-logo" src="img/logo.png"
+          alt="Expat Colombia, Medellín, Colombia"></a>
+      <a href="index.html" id="mobile-logo" class="brand-logo right"><img class="mobile-logo-img" src="img/logo2.png"
+          alt="Expat Colombia, Medellín, Colombia"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 
-  <section id="accordion-container">
-    <div class="accordion-center">
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              What is an Expat Service?
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">An expat service is a team of experts that help an individual (an expat) move to
-              a different country.</div>
+  <ul role="menubar" class="sidenav" id="mobile-demo">
+    <li role="presentation"><a role="menuitem" href="index.html">Home</a></li>
+    <li role="presentation"><a role="menuitem" href="about.html">About Us</a></li>
+    <li role="presentation"><a role="menuitem" href="services.html">Our Services</a></li>
+    <li role="presentation"><a role="menuitem" href="faq.html">FAQ</a></li>
+    <li role="presentation"><a role="menuitem" href="contact.html">Contact Us</a></li>
+  </ul>
+
+  <!--FAQ CONTAINER-->
+  <div class="faq-container">
+    <h1 class="faq-title center-align">Frequently Asked Questions</h1>
+    <div class="container">
+      <ul class="collapsible expandable">
+
+        <li>
+          <div class="collapsible-header">What is an Expat Service?</div>
+          <div class="collapsible-body"><span>An expat service is a team of experts that helps an individual (an expat)
+              move to a different country.</span>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Why would I need an Expat Service?
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Good Question. Anytime someone plans on relocating to a different country,
-              planning and research is paramount.
+        </li>
+
+        <li>
+          <div class="collapsible-header">Why would I need an Expat Service?</div>
+          <div class="collapsible-body"><span>Good Question. Anytime someone plans on relocating to a different country,
+              planning and researching is paramount.
               There is a lot of information on the internet and it is easy to fall victim to "information overload."
               Our purpose is to educate and assist people during this period. Clients also have the option of meeting
-              with us in person as well if they are interested in tours or housing.</div>
+              with us in person as well if they are interested in tours or housing.</span>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Where are you located?
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">We have three locations. Our headquarters in is Medellín and that address is at
+        </li>
+
+        <li>
+          <div class="collapsible-header"> Where are you located?</div>
+          <div class="collapsible-body"><span>We have three locations. Our headquarters in is Medellín and that address
+              is
+              at
               the bottom of our pages.
               We also have 2 branch offices located in Bogotá and Santa Marta. At this time we can only offer
               advice for people interested in these three locations. Rest assured we plan on providing more options as
               we grow.
-              Our experts also reside in these cities as well, and have been for a very long time (10+ years).</div>
+              Our experts reside in these cities as well, and have been for a very long time (10+ years).</span>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-              So how exactly does this service work?
-            </button>
-          </h2>
-          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">This depends entirely on the service purchased. </p><br>
-              <h3><u>Basic Package</u>:</h3>
-              <p class="h3-text">Our most basic package is intended for people who would only like to plan their move
-                from home. First we will ask you questions about yourself, your interests, and
-                intentions regarding Colombia. That way we can give you more concentrated advice that has been tailored
-                specifically for you.
-                After that comes the actual "Pre-Move Consultation"
-                . We offer consultations via Zoom, during which we
-                will briefly go over your tailored plan/advice (if you chose the basic package, then educate you on your
-                options for how to get here, where to stay and other necessary information. You will also have all this
-                information sent
-                to you via email. Finally, you have the ability to ask unlimited questions anytime during the service
-                process via email. We guarantee a response within <u>24 hours</u>.<br>
+        </li>
 
-              <h3><u>Plus Package</u>:</h3>
-              <p class="h3-text">The plus package includes everything in the Basic Package, however the unlimited
-                questions can also be asked in a skype/zoom call if desired.
-                After this point, all other perks occur <u>once you have moved to your desired city.</u> These perks
-                include another consultation that is done in-person, where you will be given your
-                tailored plan and advice (discussed in detail), followed by a tour of the entire city where we will
-                point out important places, especially the ones included in your tailored plan. <u>Make sure you are
-                  taking notes of
-                  some kind, as we can only do one tour per client.</u> This tour can go for several hours depending on
-                your package, certain locations, and city cirumstances so please schedule accordingly. </p><br>
+        <li>
+          <div class="collapsible-header">So how exactly does this service work?</div>
+          <div class="collapsible-body"><span>
+              Upon purchasing your package you will receive various emails, including a brief questionnaire and
+              an email allowing you to schedule your "Pre-Move Consultation". Following that, you will be assigned a
+              mentor who will be working
+              with you throughout the entire process, which, if you purchased either the Plus or Premium Package,
+              will last for 3 months beginning after your move-in date. The questionnaire will be used to create your
+              Travel Plan and the "Pre-Move Consultation" is for discussing all the important information you need to
+              plan
+              and make your trip. It is also worth mentioning that your Travel Plan will be discussed in this
+              consultation, which usually takes 1-2 hours. All consultations and tours are done by appointment.
 
-              <h3><u>Premium Package</u>:</h3>
-              <p class="h3-text">The premium package includes all consultations and the city tour from the previous
-                packages, however we will include a grocery tour which can be scheduled right after your
-                city tour or on another day. We will also find an apartment for you via our connections-guaranteed.
-                Please make sure to read the policies on apartments at secure checkout. </p>
-            </div>
+              <br>
+              <br>
+              <br>
+
+              <h6><b>Basic Package:</b></h6>
+              Our Basic Package includes mostly the "Pre Move" and the Travel Plan, customers will also be able to
+              ask unlimited questions via email. We can guarantee a response within <b>24 hours on business days.</b>
+
+              <br>
+              <br>
+
+              <h6><b>Plus Package</b>:</h6>
+              The Plus Package includes everything in the Basic Package, however, you will also have access to our
+              affiliates
+              and will receive follow-up consultations with your mentor, these are done via Zoom.
+
+              <br>
+              <br>
+
+              <h6><b>Premium Package</b>:</h6>
+              The Premium Package includes everything from the previous pacakages, as well an apartment space of your
+              choice at a great discount, and you will also be given a tour of the entire city where we will
+              point out important places, especially the ones included in your tailored plan. <b>Make sure you are
+                taking notes of
+                some kind, as we can only do one tour per client.</b> This tour can go for several hours depending
+              on
+              your package, certain locations, and city circumstances so please schedule accordingly.<br>
+            </span>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-              What are differences between the two consultations?
-            </button>
-          </h2>
-          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">The "Pre-Move Consultation" is for everyone, and we will go over important
-              information about actually getting to Colombia. The other consultation is only available in either the
-              Plus or Premium Package.
-              This consultation is more focused on the actual city and consequently, your Travel Plan.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingSix">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-              What is the ordering process like?
-            </button>
-          </h2>
-          <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">When you select your package and city, you will be prompted to either go back or
+        </li>
+
+        <li>
+          <div class="collapsible-header">Who are your affiliates?</div>
+          <div class="collapsible-body"><span>We are affiliated with an international moving company, various apartment
+              complexes, a gym franchise, various restaurants, bars, and nightclubs, as well
+              as nail salons, and a grocery store.
+            </span></div>
+        </li>
+
+        <li>
+          <div class="collapsible-header">What is the ordering process like?</div>
+          <div class="collapsible-body"><span>When you select your package and city,
               go to secure checkout. Before reaching the checkout page you will be reminded of our policies and
               procedures
               and required to select "I agree". If you chose the Premium Package then you will have another agreement
               regarding our policies on our apartment guarantee.
-              After your payment has been submitted you will recieve a confirmation email, from there you may schedule
+              After your payment has been submitted you will receive a confirmation email, from there you may schedule
               your "Pre-Move Consultation". All other info you need
-              will be sent to you via email.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingSeven">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-              Do you do free consultations?
-            </button>
-          </h2>
-          <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Yes! We do free 20 minute consultations via phone call. During this consultation
+              will be sent to you via email.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header">Do you do free consultations?</div>
+          <div class="collapsible-body"><span>Yes! We do free 20 minute consultations via phone call. During this
+              consultation,
               we will go over our policies and procedures for each of our services.
-              This includes tours, email communication, housing arrangements etc. You will also be informed on the
-              content of the "Pre-Move Consultation". Simply <a href="index.html#contact">reach out to us</a> with a
+              This includes tours, email communication, housing arrangements, etc. You will also be informed of the
+              content of the "Pre-Move Consultation". Simply <a href="contact.html">reach out to us</a> with a
               preferred email
               address and a staff member will reach out to you to schedule an appointment. From there simply provide us
-              with a phone number and we will happily call you.</div>
+              with a phone number and we will happily call you.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header">What is the refund policy?</div>
+          <div class="collapsible-body"><span>You are elgible for a refund up until you have had your "Pre-Move
+              Consultation". </span></div>
+        </li>
+        <li>
+          <div class="collapsible-header">Hours of Operation?</div>
+          <div class="collapsible-body"><span>Monday-Friday<br>
+              9AM - 6PM COT</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header">I still have more questions.</div>
+          <div class="collapsible-body"><span>Please <a style="color: rgb(255, 145, 15);"
+                href="index.html#contact">Contact
+                Us</a> here.</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--FOOTER SECTION-->
+
+  <footer class="page-footer">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col l6 s12">
+          <h4 class="white-text">Connect</h4>
+          <div class="social-icon-container">
+            <img width="32px" class="social-icon" src="img/youtube.png" alt="Youtube">
+            <img width="32px" class="social-icon" src="img/instagram.png" alt="Instagram">
+            <img width="32px" class="social-icon" src="img/twitter.png" alt="Twitter">
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingEight">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-              What is the refund policy?
+          <div class="input-background">
+            <input placeholder=" Enter your email" id="email" type="email">
+          </div>
+          <div class="subscribe-btn">
+            <button class="waves-effect waves-light orange accent-4 btn hoverable" type="submit" name="action">Subscribe
+              <i class="material-icons right">send</i>
             </button>
-          </h2>
-          <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"> You are elgible for a refund up until you have had your "Pre-Move
-              Consultation". </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingNine">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-              Hours of Operation?
-            </button>
-          </h2>
-          <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Tuesday-Saturday<br>
-              9AM - 6PM COT</div>
-          </div>
+
+        <div class="col l2 offset-l2 s12">
+          <h4 class="white-text">Navigate</h4>
+          <ul class="navigation-list">
+            <li><a class="grey-text text-lighten-3" href="#">Home</a></li>
+            <li><a class="grey-text text-lighten-3" href="about.html">About</a></li>
+            <li><a class="grey-text text-lighten-3" href="services.html">Services</a></li>
+            <li><a class="grey-text text-lighten-3" href="faq.html">FAQ</a></li>
+            <li><a class="grey-text text-lighten-3" href="contact.html">Contact Us</a></li>
+          </ul>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTen">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-              I still have more questions.
-            </button>
-          </h2>
-          <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Please <a style="color: rgb(255, 145, 15);" href="index.html#contact">Contact
-                Us</a> here.</div>
-          </div>
-        </div>
+      </div>
+
+      <div class="links">
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
       </div>
     </div>
 
-  </section>
-
-
-
-
-  <footer class="addresses">
-    <div class="addresses__info1">
-      <p>Finds us on:</p>
-      <img src="img/you.svg" alt="Youtube">
-      <img src="img/insta.svg" alt="Instagram">
-      <img src="img/face.svg" alt="Facebook">
-
-      <p>Email us at: <a href="mailto:questions@countryofcol.com">questions@countryofcol.com</a><br> Call us at: <a
-          href="tel:+57 118-647-0023">+57 118-647-0023</a><br></p>
+    <div class="footer-copyright">
+      <div class="container center-align">
+        © 2022 ExpatColombia, Inc
+      </div>
     </div>
-
-
-    <div class="addresses__info2">
-      <p>Calle Maria 63 Oficina 702<br> Medellín 4665684<br> Colombia
-        <br>
-      </p>
-
-      <p>Tuesday-Saturday<br> 9AM - 6PM COT<br></p>
-
-    </div>
-
-    <div class="terms_footer">
-      <ul class="terms_lists">
-        <li class="terms_links"><a href="terms.html">Terms</a></li>
-        <li class="terms_links"><a href="privacy.html">Privacy Policy</a></li>
-      </ul>
-    </div>
-
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
