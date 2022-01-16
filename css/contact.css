@@ -1,0 +1,146 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: rgb(255, 111, 15);
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --main-color: #ff9137;
+}
+
+/*NAVBAR*/
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f5f5f5;
+}
+.big-logo {
+  width: 280px;
+  margin-top: 0.125rem;
+}
+.brand-logo {
+  margin-right: 3rem;
+}
+#mobile-logo {
+  display: none;
+}
+.sidenav li > a {
+  border-bottom: none !important;
+}
+
+/*CONTACT SECTION*/
+
+.contact-title {
+  background-color: var(--main-color);
+  padding: 5rem 0;
+  margin: 5rem 0;
+  color: #ffffff;
+}
+
+/*FOOTER*/
+
+.social-icon-container {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.social-icon {
+  margin-right: 1rem;
+}
+.input-background {
+  background-color: rgb(255, 255, 255);
+  padding: 0.25rem;
+  -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  -webkit-transition: -webkit-box-shadow 0.25s;
+  transition: -webkit-box-shadow 0.25s;
+  -o-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+  border-radius: 2px;
+}
+input[type="email"]:not(.browser-default) {
+  height: 2.5rem !important;
+  margin: 0px 0px 4px !important;
+}
+.input-background label {
+  display: none;
+}
+.subscribe-btn button {
+  margin-top: 1rem;
+  background-color: #c05e0d !important;
+}
+::-webkit-input-placeholder {
+  color: #ff9137 !important;
+  font-size: 1rem;
+}
+::-moz-placeholder {
+  color: #ff9137 !important;
+  font-size: 1rem;
+}
+:-ms-input-placeholder {
+  color: #ff9137 !important;
+  font-size: 1rem;
+}
+::-ms-input-placeholder {
+  color: #ff9137 !important;
+  font-size: 1rem;
+}
+::placeholder {
+  color: #ff9137 !important;
+  font-size: 1rem;
+}
+.navigation-list {
+  font-size: 1.25rem;
+  margin-top: 1.75rem;
+}
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.links a {
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.5rem;
+}
+
+/*responsive logo*/
+@media only screen and (max-width: 650px) {
+  .brand-logo {
+    display: none !important;
+  }
+  #mobile-logo {
+    display: unset !important;
+    margin-right: 1rem;
+  }
+  .mobile-logo-img {
+    width: 65px;
+  }
+}
+
+/*responsive footer links*/
+@media only screen and (max-width: 425px) {
+  .links {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+  }
+}
