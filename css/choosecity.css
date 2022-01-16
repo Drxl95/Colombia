@@ -1,0 +1,139 @@
+/* * Prefixed by https://autoprefixer.github.io * PostCSS: v7.0.29, * Autoprefixer: v9.7.6 * Browsers: last 4 version */
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html,body {
+	text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: rgb(83, 83, 83);
+}
+:root {
+	--main-color: rgba(255, 111, 15, 0.8) 
+}
+.bottom-background {
+	background-image: -o-linear-gradient( rgba(34, 34, 34, 0.8), rgba(36, 36, 36, 0.8)), url("img/colombia-city-city.jpg");
+	background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(34, 34, 34, 0.8)), to(rgba(36, 36, 36, 0.8))), url("img/colombia-city-city.jpg");
+	background-image: linear-gradient( rgba(34, 34, 34, 0.8), rgba(36, 36, 36, 0.8)), url("img/colombia-city-city.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 800px;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	z-index: -2;
+	-webkit-transform: skewY(7deg) translateY(-200px);
+	-ms-transform: skewY(7deg) translateY(-200px);
+	transform: skewY(7deg) translateY(-200px);
+}
+.title__head {
+	width: 100%;
+	padding-top: 3rem;
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+	color: white;
+	text-align: center;
+	font-size: 3.5rem;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+}
+.card-group {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: space-evenly;
+	-ms-flex-pack: space-evenly;
+	justify-content: space-evenly;
+	margin-bottom: 8rem;
+}
+.card {
+	width: 450px;
+	background: rgb(255, 255, 255);
+	padding-bottom: 4rem;
+	margin-top: 3.5rem;
+}
+.card-body {
+	text-align: center;
+}
+.card-title {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.card-text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25rem;
+	margin-bottom: 4rem;
+}
+div #city-text1, div #city-text2, div #city-text3 {
+	display: block;
+}
+#city-text1, #city-text2, #city-text3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25rem;
+	width: 50%;
+	background: white;
+	text-align: center;
+}
+.btn {
+	padding: 12px 82px;
+	font-size: 1.25rem;
+	font-family: 'Open Sans', sans-serif;
+	background: rgba(255, 111, 15, 0.91);
+	color: white;
+	border: none;
+}
+.btn:hover, .btn:focus {
+	-webkit-transition: .45s;
+	-o-transition: .45s;
+	transition: .45s;
+	opacity: .5;
+	color: black;
+}
+@media screen and (max-width: 1349px) {
+	.bottom-background {
+		position: fixed;
+   }
+}
+@media screen and (max-width: 500px) {
+	.card {
+		width: 350px;
+   }
+	.card-img-top {
+		width: 350px;
+		height: 250px;
+   }
+}
+@media screen and (max-width: 350px) {
+	.card {
+		width: 300px;
+   }
+	.card-img-top {
+		width: 300px;
+		height: 200px;
+   }
+}
+@media screen and (max-width: 300px) {
+	.title__head {
+		font-size: 2.75rem;
+   }
+	.card {
+		width: 250px;
+   }
+	.card-img-top {
+		width: 250px;
+		height: 150px;
+   }
+}
