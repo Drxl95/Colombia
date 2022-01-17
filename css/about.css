@@ -1,29 +1,17 @@
-/* * Prefixed by https://autoprefixer.github.io * PostCSS: v7.0.29, * Autoprefixer: v9.7.6 * Browsers: last 4 version */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-:root {
-  --main-color: rgb(255, 111, 15);
-}
-body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-}
-
-body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
+html {
+  scroll-behavior: smooth;
 }
 :root {
   --main-color: #ff9137;
 }
-
 /*NAVBAR*/
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  background-color: #f5f5f5;
 }
 .big-logo {
   width: 280px;
@@ -39,15 +27,101 @@ body {
   border-bottom: none !important;
 }
 
-/*TITLE*/
-.faq-title {
-  padding: 5rem 0;
-  margin: 5rem 0;
-  color: #ffffff;
-  background-color: var(--main-color);
+/*TOP-SECTION*/
+#top-section {
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 96vh;
+  min-height: 100%;
+  background-position: center;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(68, 68, 68, 0.5)),
+      color-stop(rgba(68, 68, 68, 0.6)),
+      to(rgba(68, 68, 68, 0.6))
+    ),
+    url("../img/colombiaguide.jpg");
+  background-image: -o-linear-gradient(
+      rgba(68, 68, 68, 0.5),
+      rgba(68, 68, 68, 0.6),
+      rgba(68, 68, 68, 0.6)
+    ),
+    url("../img/colombiaguide.jpg");
+  background-image: linear-gradient(
+      rgba(68, 68, 68, 0.5),
+      rgba(68, 68, 68, 0.6),
+      rgba(68, 68, 68, 0.6)
+    ),
+    url("../img/colombiaguide.jpg");
 }
-.faq-container {
-  margin-bottom: 10rem;
+.front-card {
+  padding: 5rem;
+  width: 900px;
+  position: absolute;
+  bottom: 0%;
+  -webkit-animation: slideIn ease-in-out 1s;
+  animation: slideIn ease-in-out 1s;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-150px);
+    transform: translateX(-150px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-150px);
+    transform: translateX(-150px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.front-card-title {
+  color: white;
+  font-size: 4.35rem;
+  font-weight: 900;
+  margin-bottom: 2.5rem;
+}
+.front-card-body {
+  font-size: 1.75rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+.button-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5rem;
+}
+.btn:hover,
+.btn:focus {
+  -webkit-transition: ease-in-out 0.25s;
+  -o-transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.25s;
 }
 
 /*FOOTER*/
@@ -160,7 +234,7 @@ input[type="email"]:not(.browser-default) {
   }
 }
 
-/*responsive footer links*/
+/*responsive (FOOTER) links*/
 @media only screen and (max-width: 425px) {
   .links {
     text-align: center;

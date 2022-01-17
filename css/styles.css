@@ -12,9 +12,6 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  margin: 0;
-}
 :root {
   --main-color: #ff9137;
 }
@@ -308,8 +305,13 @@ body {
 }
 .social-icon {
   margin-right: 1rem;
+  cursor: pointer;
+}
+.subscribe-container {
+  display: flex;
 }
 .input-background {
+  width: 80%;
   background-color: rgb(255, 255, 255);
   padding: 0.25rem;
   -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
@@ -322,6 +324,9 @@ body {
   transition: box-shadow 0.25s;
   transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
   border-radius: 2px;
+}
+#subscribe-btn {
+  padding: 8px 26px !important;
 }
 input[type="email"]:not(.browser-default) {
   height: 2.5rem !important;
@@ -373,6 +378,13 @@ input[type="email"]:not(.browser-default) {
 }
 
 /*MEDIA QUERIES*/
+
+/*subscribe button position (FOOTER)*/
+@media only screen and (max-width: 992px) {
+  .input-background {
+    width: 60%;
+  }
+}
 
 @media only screen and (max-width: 900px) {
   .front-card {
@@ -432,6 +444,13 @@ input[type="email"]:not(.browser-default) {
   }
 }
 
+/*subscribe bar (FOOTER)*/
+@media only screen and (max-width: 600px) {
+  .input-background {
+    width: 75%;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .front-card {
     width: 400px;
@@ -453,7 +472,7 @@ input[type="email"]:not(.browser-default) {
   }
 }
 
-/*responsive footer links*/
+/*responsive (FOOTER) links*/
 @media only screen and (max-width: 425px) {
   .links {
     text-align: center;
@@ -490,8 +509,59 @@ input[type="email"]:not(.browser-default) {
   .packages-flex-title {
     font-size: 2.25rem;
   }
+  .reviews-title {
+    font-size: 3.25rem;
+  }
   .image-background {
     width: 150px !important;
     height: 150px !important;
+  }
+}
+
+/*subscribe button (FOOTER)*/
+@media only screen and (max-width: 360px) {
+  input[type="email"]:not(.browser-default) {
+    height: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .btn {
+    font-size: 14px !important;
+  }
+  .front-card-container {
+    display: flex;
+    justify-content: center;
+  }
+  .front-card {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .image-background {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
+@media only screen and (max-width: 245px) {
+  .cities-title {
+    font-size: 2.25rem !important;
+  }
+  .cities-subtitle {
+    font-size: 1.5rem;
+  }
+  .parallax-text-title {
+    font-size: 2.25rem;
+  }
+  .offer-title {
+    font-size: 2.25rem !important;
+  }
+  .services-title {
+    font-size: 2.25rem !important;
+  }
+  .packages-flex-title {
+    font-size: 2rem;
+  }
+  .reviews-title {
+    font-size: 2.25rem;
   }
 }

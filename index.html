@@ -11,7 +11,6 @@
   <link href="img/colo-logo-symbol.PNG" rel="shortcut icon" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/3116d9e728.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -39,11 +38,13 @@
   <!--TOP SECTION-->
 
   <section id="top-section">
-    <div class="front-card">
-      <h1 class="front-card-title">Let us make your move as simple as possible</h1>
-      <p class="front-card-body">Moving to a new country can be stressful, let us do it all for you!</p>
-      <div class="button-flex">
-        <a class="waves-effect waves-light orange btn hoverable" href="contact.html">Free consultation</a>
+    <div class="front-card-container">
+      <div class="front-card">
+        <h1 class="front-card-title">Let us make your move as simple as possible</h1>
+        <p class="front-card-body">Moving to a new country can be stressful, let us do it all for you!</p>
+        <div class="button-flex">
+          <a class="waves-effect waves-light orange btn hoverable" href="contact.html">Free consultation</a>
+        </div>
       </div>
     </div>
   </section>
@@ -396,11 +397,13 @@
             <img width="36px" class="social-icon" src="img/instagram.png" alt="Instagram">
             <img width="36px" class="social-icon" src="img/twitter.png" alt="Twitter">
           </div>
-          <div class="input-background">
-            <input placeholder=" Enter your email" id="email" type="email">
-          </div>
-          <div class="subscribe-btn">
-            <button class="waves-effect waves-light orange accent-4 btn hoverable" type="submit" name="action">Subscribe
+          <h6>Subscribe to our newsletter</h6>
+          <div class="subscribe-container">
+            <div class="input-background">
+              <input class="input-field" placeholder=" Enter your email" id="email" type="email">
+            </div>
+            <button id="subscribe-btn" class="waves-effect waves-light orange accent-4 btn hoverable right"
+              type="submit" name="action"> <i class="material-icons">send</i>
             </button>
           </div>
         </div>
