@@ -190,6 +190,18 @@ input[type="email"]:not(.browser-default) {
   font-size: 1.25rem;
   margin-top: 1.75rem;
 }
+.navigation-list li a:hover,
+.navigation-list li a:focus {
+  text-decoration: underline;
+}
+.contact-list {
+  margin-top: 1.75rem;
+  font-size: 1.05rem;
+}
+#contact-email:hover,
+#contact-email:focus {
+  text-decoration: underline;
+}
 .links {
   display: -webkit-box;
   display: -ms-flexbox;

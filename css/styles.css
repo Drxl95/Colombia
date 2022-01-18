@@ -35,6 +35,10 @@ body {
   border-bottom: none !important;
 }
 
+.title {
+  margin: 10rem 0;
+}
+
 /*TOP-SECTION*/
 #top-section {
   background-size: cover;
@@ -43,6 +47,12 @@ body {
   height: 96vh;
   min-height: 100%;
   background-position: center;
+  background-image: -o-linear-gradient(
+      rgba(68, 68, 68, 0.5),
+      rgba(68, 68, 68, 0.6),
+      rgba(68, 68, 68, 0.6)
+    ),
+    url("../img/colombiaguide.jpg");
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -50,12 +60,6 @@ body {
       from(rgba(68, 68, 68, 0.5)),
       color-stop(rgba(68, 68, 68, 0.6)),
       to(rgba(68, 68, 68, 0.6))
-    ),
-    url("../img/colombiaguide.jpg");
-  background-image: -o-linear-gradient(
-      rgba(68, 68, 68, 0.5),
-      rgba(68, 68, 68, 0.6),
-      rgba(68, 68, 68, 0.6)
     ),
     url("../img/colombiaguide.jpg");
   background-image: linear-gradient(
@@ -214,9 +218,6 @@ body {
 
 /*SERVICES SECTION*/
 
-.services-title {
-  margin: 10rem 0;
-}
 .card .card-content span:hover {
   color: var(--main-color) !important;
   -webkit-transition: linear 0.5s;
@@ -227,7 +228,55 @@ body {
 /* PACKAGES BANNER */
 
 .packages-container {
-  background-color: var(--main-color);
+  background: rgb(232, 104, 6);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f47412),
+    color-stop(#f6750f),
+    color-stop(#f8760c),
+    color-stop(#fa7709),
+    color-stop(#fc7805),
+    color-stop(#fd7a03),
+    color-stop(#fd7c02),
+    color-stop(#fe7e00),
+    color-stop(#fd8200),
+    color-stop(#fd8600),
+    color-stop(#fc8900),
+    to(#fb8d00)
+  );
+  background-image: -o-linear-gradient(
+    left,
+    #f47412,
+    #f6750f,
+    #f8760c,
+    #fa7709,
+    #fc7805,
+    #fd7a03,
+    #fd7c02,
+    #fe7e00,
+    #fd8200,
+    #fd8600,
+    #fc8900,
+    #fb8d00
+  );
+  background-image: linear-gradient(
+    to right,
+    #f47412,
+    #f6750f,
+    #f8760c,
+    #fa7709,
+    #fc7805,
+    #fd7a03,
+    #fd7c02,
+    #fe7e00,
+    #fd8200,
+    #fd8600,
+    #fc8900,
+    #fb8d00
+  );
+
   height: 400px;
   margin-top: 10rem;
   display: -webkit-box;
@@ -254,12 +303,6 @@ body {
 
 /* REVIEWS SECTION */
 
-#reviews-container {
-  margin-bottom: 10rem;
-}
-.reviews-title {
-  margin: 10rem 0;
-}
 .card.horizontal {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -308,6 +351,8 @@ body {
   cursor: pointer;
 }
 .subscribe-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .input-background {
@@ -363,6 +408,18 @@ input[type="email"]:not(.browser-default) {
   font-size: 1.25rem;
   margin-top: 1.75rem;
 }
+.navigation-list li a:hover,
+.navigation-list li a:focus {
+  text-decoration: underline;
+}
+.contact-list {
+  margin-top: 1.75rem;
+  font-size: 1.05rem;
+}
+#contact-email:hover,
+#contact-email:focus {
+  text-decoration: underline;
+}
 .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,6 +432,130 @@ input[type="email"]:not(.browser-default) {
 .links a {
   color: rgb(255, 255, 255);
   margin-bottom: 0.5rem;
+}
+
+/*CONTACT SECTION*/
+
+.title.contact-title {
+  margin-bottom: 3.5rem;
+  margin-top: 0rem;
+  padding-top: 10rem;
+}
+.contact-card-title {
+  margin-bottom: 5rem;
+}
+.contact-section-container {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 10% 10rem;
+  -ms-grid-columns: 0.75fr 2.5fr;
+  grid-template-columns: 0.75fr 2.5fr;
+}
+
+/*ADDRESS SECTION*/
+
+.address-card-container {
+  background-color: #ff9137;
+  color: #ffffff;
+}
+.company-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 1.25rem;
+  background: rgb(232, 104, 6);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f47412),
+    color-stop(#f6750f),
+    color-stop(#f8760c),
+    color-stop(#fa7709),
+    color-stop(#fc7805),
+    color-stop(#fd7a03),
+    color-stop(#fd7c02),
+    color-stop(#fe7e00),
+    color-stop(#fd8200),
+    color-stop(#fd8600),
+    color-stop(#fc8900),
+    to(#fb8d00)
+  );
+  background-image: -o-linear-gradient(
+    left,
+    #f47412,
+    #f6750f,
+    #f8760c,
+    #fa7709,
+    #fc7805,
+    #fd7a03,
+    #fd7c02,
+    #fe7e00,
+    #fd8200,
+    #fd8600,
+    #fc8900,
+    #fb8d00
+  );
+  background-image: linear-gradient(
+    to right,
+    #f47412,
+    #f6750f,
+    #f8760c,
+    #fa7709,
+    #fc7805,
+    #fd7a03,
+    #fd7c02,
+    #fe7e00,
+    #fd8200,
+    #fd8600,
+    #fc8900,
+    #fb8d00
+  );
+  color: #ffffff;
+}
+.info-container-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.icon-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 2.5rem;
+}
+.icon-flex i {
+  margin-right: 1rem;
+}
+
+/*CONTACT SECTION*/
+
+.form-container {
+  padding: 0 3rem;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 /*MEDIA QUERIES*/
@@ -396,6 +577,23 @@ input[type="email"]:not(.browser-default) {
   }
   .front-card-body {
     font-size: 1.25rem;
+  }
+  .card-container {
+    margin: 0 0 10rem;
+  }
+  .contact-section-container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 3rem 0;
+    margin: 5rem 0 5rem;
+  }
+  .form-container {
+    padding: 0 5rem;
+    margin-top: 5rem;
+  }
+  .icon-flex i {
+    margin-right: 0.75rem;
+    font-size: 32px !important;
   }
 }
 
@@ -449,6 +647,9 @@ input[type="email"]:not(.browser-default) {
   .input-background {
     width: 75%;
   }
+  .form-container {
+    padding: 0 3rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -500,21 +701,24 @@ input[type="email"]:not(.browser-default) {
   .mission-statement {
     font-size: 1.25rem;
   }
-  .offer-title {
+  .title {
     font-size: 3.25rem !important;
   }
-  .services-title {
+  .title {
     font-size: 3.25rem !important;
   }
   .packages-flex-title {
     font-size: 2.25rem;
   }
-  .reviews-title {
+  .title {
     font-size: 3.25rem;
   }
   .image-background {
     width: 150px !important;
     height: 150px !important;
+  }
+  .contact-card-title {
+    font-size: 1.75rem;
   }
 }
 
@@ -525,12 +729,31 @@ input[type="email"]:not(.browser-default) {
   }
 }
 
+@media only screen and (max-width: 360px) {
+  .contact-card-title {
+    font-size: 1.75rem !important;
+  }
+  .company-info-container {
+    padding: 1rem 0 0 0;
+  }
+  .icon-flex i {
+    font-size: 28px !important;
+  }
+  .icon-flex {
+    font-size: 1rem;
+  }
+}
+
 @media only screen and (max-width: 290px) {
   .btn {
     font-size: 14px !important;
   }
   .front-card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .front-card {
@@ -541,7 +764,11 @@ input[type="email"]:not(.browser-default) {
     width: 100px !important;
     height: 100px !important;
   }
+  .icon-flex i {
+    font-size: 24px !important;
+  }
 }
+
 @media only screen and (max-width: 245px) {
   .cities-title {
     font-size: 2.25rem !important;
@@ -552,16 +779,25 @@ input[type="email"]:not(.browser-default) {
   .parallax-text-title {
     font-size: 2.25rem;
   }
-  .offer-title {
+  .title {
     font-size: 2.25rem !important;
   }
-  .services-title {
+  .title {
     font-size: 2.25rem !important;
   }
   .packages-flex-title {
     font-size: 2rem;
   }
-  .reviews-title {
+  .title {
     font-size: 2.25rem;
+  }
+  .contact-card-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-height: 330px) {
+  #top-section {
+    height: 330px;
   }
 }

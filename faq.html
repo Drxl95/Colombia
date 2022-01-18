@@ -18,7 +18,7 @@
 
   <!--NAVBAR-->
 
-  <nav class="navbar-fixed">
+  <nav class="navbar">
     <div class="nav-wrapper">
       <a href="index.html" class="brand-logo right"><img class="big-logo" src="img/logo.png"
           alt="Expat Colombia, Medellín, Colombia"></a>
@@ -28,20 +28,27 @@
     </div>
   </nav>
 
-  <ul role="menubar" class="sidenav" id="mobile-demo">
-    <li role="presentation"><a role="menuitem" href="index.html">Home</a></li>
-    <li role="presentation"><a role="menuitem" href="about.html">About Us</a></li>
-    <li role="presentation"><a role="menuitem" href="services.html">Our Services</a></li>
-    <li role="presentation"><a role="menuitem" href="faq.html">FAQ</a></li>
-    <li role="presentation"><a role="menuitem" href="contact.html">Contact Us</a></li>
-  </ul>
+  <sidenav>
+    <ul role="menubar" class="sidenav" id="mobile-demo">
+      <li role="presentation"><a role="menuitem" href="index.html">Home</a></li>
+      <li role="presentation"><a role="menuitem" href="about.html">About Us</a></li>
+      <li role="presentation"><a role="menuitem" href="services.html">Our Services</a></li>
+      <li role="presentation"><a role="menuitem" href="faq.html">FAQ</a></li>
+      <li role="presentation"><a role="menuitem" href="index.html#contact">Contact Us</a></li>
+    </ul>
+  </sidenav>
+
+  <!--ORANGE BACKGROUND-->
+
+  <div class="orange-background">
+    <h1 class="center align faq-title">Frequently Asked Questions</h1>
+  </div>
 
   <!--FAQ CONTAINER-->
-  <div class="faq-container">
-    <h1 class="faq-title center-align">Frequently Asked Questions</h1>
+
+  <section class="faq-container">
     <div class="container">
       <ul class="collapsible expandable">
-
         <li>
           <div class="collapsible-header">What is an Expat Service?</div>
           <div class="collapsible-body"><span>An expat service is a team of experts that helps an individual (an expat)
@@ -164,7 +171,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </section>
 
   <!--FOOTER SECTION-->
 
@@ -191,14 +198,28 @@
           </div>
         </div>
 
-        <div class="col l2 offset-l2 s12">
+        <div class="col l3 m6 s12">
           <h4 class="white-text">Navigate</h4>
           <ul class="navigation-list">
             <li><a class="grey-text text-lighten-3" href="#">Home</a></li>
             <li><a class="grey-text text-lighten-3" href="about.html">About</a></li>
             <li><a class="grey-text text-lighten-3" href="services.html">Services</a></li>
             <li><a class="grey-text text-lighten-3" href="faq.html">FAQ</a></li>
-            <li><a class="grey-text text-lighten-3" href="contact.html">Contact Us</a></li>
+            <li><a class="grey-text text-lighten-3" href="index.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col l3 m6 s12">
+          <h4 class="white-text">Contact</h4>
+          <ul class="contact-list">
+            <li><a id="contact-email" style="color: rgb(255, 255, 255);"
+                href="mailto: questions@countryofcol.com">questions@countryofcol.com</a>
+            </li>
+            <li>+57 118-647-0023</li>
+            <br>
+            <li>Calle Maria 63 Oficina 702</li>
+            <li>Medellín 4665684</li>
+            <li>Colombia</li>
           </ul>
         </div>
       </div>
