@@ -12,6 +12,7 @@ html {
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  background-color: whitesmoke;
 }
 .big-logo {
   width: 280px;
@@ -28,100 +29,97 @@ body {
 }
 
 /*TOP-SECTION*/
-#top-section {
-  background-size: cover;
-  position: relative;
+
+.parallax-container {
+  height: 450px !important;
+}
+.parallax-text-title {
+  color: #ffffff;
+}
+.parallax-text-subtitle {
+  margin-top: 5rem;
+  color: #ffffff;
+}
+
+/*TEXT SECTION*/
+
+.whoweare-section {
+  height: auto;
+  margin: 0rem 0;
+  background: rgba(255, 123, 0, 0.301);
+}
+.whoweare-grid {
+  padding: 0 5rem 1rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-column-gap: 3rem;
+}
+#top-card:hover,
+#top-card:focus {
+  transform: translateY(0);
+}
+.whoweare-card-container {
+  transform: translateY(-6rem);
+  max-width: 800px;
   width: 100%;
-  height: 96vh;
-  min-height: 100%;
-  background-position: center;
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(68, 68, 68, 0.5)),
-      color-stop(rgba(68, 68, 68, 0.6)),
-      to(rgba(68, 68, 68, 0.6))
-    ),
-    url("../img/colombiaguide.jpg");
-  background-image: -o-linear-gradient(
-      rgba(68, 68, 68, 0.5),
-      rgba(68, 68, 68, 0.6),
-      rgba(68, 68, 68, 0.6)
-    ),
-    url("../img/colombiaguide.jpg");
-  background-image: linear-gradient(
-      rgba(68, 68, 68, 0.5),
-      rgba(68, 68, 68, 0.6),
-      rgba(68, 68, 68, 0.6)
-    ),
-    url("../img/colombiaguide.jpg");
 }
-.front-card {
-  padding: 5rem;
-  width: 900px;
-  position: absolute;
-  bottom: 0%;
-  -webkit-animation: slideIn ease-in-out 1s;
-  animation: slideIn ease-in-out 1s;
+.whoweare-card-container:after {
+  content: "";
+  display: block;
+  margin-top: 3rem;
+  border-bottom: solid 5px var(--main-color);
+  width: 30%;
 }
-
-@-webkit-keyframes slideIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-150px);
-    transform: translateX(-150px);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+.card-text {
+  padding: 3rem;
 }
-
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-150px);
-    transform: translateX(-150px);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.front-card-title {
-  color: white;
-  font-size: 4.35rem;
-  font-weight: 900;
-  margin-bottom: 2.5rem;
-}
-.front-card-body {
-  font-size: 1.75rem;
-  color: white;
+.card-text h3 {
+  margin-top: 0rem;
   margin-bottom: 3rem;
 }
-.button-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 5rem;
+.video {
+  align-self: center;
 }
-.btn:hover,
-.btn:focus {
+
+/*TEAM SECTION*/
+
+.team-container.container {
+  margin-bottom: 10rem;
+}
+.team-title {
+  margin: 10rem 0;
+}
+.team-city {
+  margin: 7.5rem 0.75rem 1.5rem;
+}
+
+.card span {
+  -webkit-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+.card:hover,
+.card:focus {
+  -webkit-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  transform: scale(1.06);
   -webkit-transition: ease-in-out 0.25s;
   -o-transition: ease-in-out 0.25s;
   transition: ease-in-out 0.25s;
+}
+.card:hover .card-content span,
+.card:focus .card-content span {
+  color: var(--main-color) !important;
+  -webkit-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+.card:hover span,
+.card:focus span {
+  color: var(--main-color) !important;
+  -webkit-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
 }
 
 /*FOOTER*/
@@ -218,6 +216,15 @@ input[type="email"]:not(.browser-default) {
 
 /*MEDIA QUERIES*/
 
+@media only screen and (max-width: 992px) {
+  .whoweare-grid {
+    grid-template-columns: 1fr;
+  }
+  .video {
+    margin-bottom: 2rem;
+  }
+}
+
 /*subscribe button position (FOOTER)*/
 @media only screen and (max-width: 992px) {
   .input-background {
@@ -246,6 +253,15 @@ input[type="email"]:not(.browser-default) {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .whoweare-grid {
+    padding: 0 2.5rem 1rem;
+  }
+  .parallax-text-subtitle {
+    font-size: 2rem !important;
+  }
+}
+
 /*responsive (FOOTER) links*/
 @media only screen and (max-width: 425px) {
   .links {
@@ -255,6 +271,12 @@ input[type="email"]:not(.browser-default) {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .whoweare-grid {
+    padding: 0 1rem 1rem;
   }
 }
 

@@ -218,7 +218,8 @@ body {
 
 /*SERVICES SECTION*/
 
-.card .card-content span:hover {
+.card .card-content span:hover,
+.card .card-content span:focus {
   color: var(--main-color) !important;
   -webkit-transition: linear 0.5s;
   -o-transition: linear 0.5s;
@@ -459,6 +460,10 @@ input[type="email"]:not(.browser-default) {
   color: #ffffff;
 }
 .company-info-container {
+  -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,6 +591,9 @@ input[type="email"]:not(.browser-default) {
     grid-template-columns: 1fr;
     padding: 3rem 0;
     margin: 5rem 0 5rem;
+  }
+  .company-info-container {
+    box-shadow: none;
   }
   .form-container {
     padding: 0 5rem;
