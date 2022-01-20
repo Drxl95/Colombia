@@ -9,9 +9,11 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 :root {
   --main-color: rgb(255, 111, 15);
 }
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -21,6 +23,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
 }
+
 :root {
   --main-color: #ff9137;
 }
@@ -32,16 +35,20 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #f5f5f5;
 }
+
 .big-logo {
   width: 280px;
   margin-top: 0.125rem;
 }
+
 .brand-logo {
   margin-right: 3rem;
 }
+
 #mobile-logo {
   display: none;
 }
+
 .sidenav li > a {
   border-bottom: none !important;
 }
@@ -101,6 +108,7 @@ body {
   );
   height: 325px;
 }
+
 .faq-title {
   margin: 0;
   color: #ffffff;
@@ -114,6 +122,7 @@ body {
   transform: translateY(-6rem);
   margin-bottom: 5rem;
 }
+
 .collapsible-body {
   background-color: #f5f5f5;
 }
@@ -124,15 +133,18 @@ body {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+
 .social-icon {
   margin-right: 1rem;
   cursor: pointer;
 }
+
 .subscribe-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
 .input-background {
   width: 80%;
   background-color: rgb(255, 255, 255);
@@ -148,56 +160,70 @@ body {
   transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
   border-radius: 2px;
 }
+
 #subscribe-btn {
   padding: 8px 26px !important;
 }
+
 input[type="email"]:not(.browser-default) {
   height: 2.5rem !important;
   margin: 0px 0px 4px !important;
 }
+
 .input-background label {
   display: none;
 }
+
 .subscribe-btn button {
   margin-top: 1rem;
   background-color: #c05e0d !important;
 }
+
 ::-webkit-input-placeholder {
   color: #ff9137 !important;
   font-size: 1rem;
 }
+
 ::-moz-placeholder {
   color: #ff9137 !important;
   font-size: 1rem;
 }
+
 :-ms-input-placeholder {
   color: #ff9137 !important;
   font-size: 1rem;
 }
+
 ::-ms-input-placeholder {
   color: #ff9137 !important;
   font-size: 1rem;
 }
+
 ::placeholder {
   color: #ff9137 !important;
   font-size: 1rem;
 }
+
 .navigation-list {
   font-size: 1.25rem;
   margin-top: 1.75rem;
 }
+
 .navigation-list li a:hover,
 .navigation-list li a:focus {
   text-decoration: underline;
 }
+
 .contact-list {
   margin-top: 1.75rem;
   font-size: 1.05rem;
 }
+
 #contact-email:hover,
 #contact-email:focus {
   text-decoration: underline;
 }
+
 .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,6 +233,7 @@ input[type="email"]:not(.browser-default) {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 .links a {
   color: rgb(255, 255, 255);
   margin-bottom: 0.5rem;

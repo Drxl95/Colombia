@@ -9,14 +9,17 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 :root {
   --main-color: #ff9137;
 }
 
 /*NAVBAR*/
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -31,6 +34,7 @@ body {
 #mobile-logo {
   display: none;
 }
+
 .sidenav li > a {
   border-bottom: none !important;
 }
@@ -40,6 +44,7 @@ body {
 }
 
 /*TOP-SECTION*/
+
 #top-section {
   background-size: cover;
   position: relative;
@@ -69,6 +74,7 @@ body {
     ),
     url("../img/colombiaguide.jpg");
 }
+
 .front-card {
   padding: 5rem;
   width: 900px;
@@ -112,11 +118,13 @@ body {
   font-weight: 900;
   margin-bottom: 2.5rem;
 }
+
 .front-card-body {
   font-size: 1.75rem;
   color: white;
   margin-bottom: 3rem;
 }
+
 .button-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,6 +137,7 @@ body {
   align-items: center;
   gap: 5rem;
 }
+
 .btn:hover,
 .btn:focus {
   -webkit-transition: ease-in-out 0.25s;
@@ -143,20 +152,24 @@ body {
   margin-bottom: 10rem;
   text-align: center;
 }
+
 .offer-card-img {
   padding: 3rem;
 }
+
 .card span {
   -webkit-transition: linear 0.5s;
   -o-transition: linear 0.5s;
   transition: linear 0.5s;
 }
+
 .card:hover span {
   color: var(--main-color);
   -webkit-transition: linear 0.5s;
   -o-transition: linear 0.5s;
   transition: linear 0.5s;
 }
+
 .card:hover,
 .card:focus {
   -webkit-transform: scale(1.06);
@@ -175,6 +188,7 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+
 .parallax-text {
   color: rgb(255, 255, 255);
   display: -webkit-box;
@@ -190,18 +204,30 @@ body {
   flex-wrap: wrap;
   margin: 0 5rem;
 }
+
 .parallax-text-title {
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
+
+.parallax-text-title:after {
+  content: " ";
+  display: block;
+  border-bottom: 5px white solid;
+  width: 65%;
+  margin-top: 2.25rem;
+}
+
 .mission-container {
   text-align: left;
   -ms-flex-preferred-size: 700px;
   flex-basis: 700px;
 }
+
 .mission-statement {
   font-size: 2rem;
 }
+
 .mission-statement a {
   font-weight: 700;
 }
@@ -212,6 +238,7 @@ body {
   margin-top: 10rem;
   margin-bottom: 3.5rem;
 }
+
 .cities-subtitle {
   margin-bottom: 10rem;
 }
@@ -277,29 +304,41 @@ body {
     #fc8900,
     #fb8d00
   );
-
-  height: 400px;
   margin-top: 10rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
+
 .packages-flex {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
 }
+
 .packages-text {
   color: white;
   padding: 5rem;
+  align-self: flex-start;
 }
+.packages-flex-title:after {
+  content: " ";
+  display: block;
+  border-bottom: 5px white solid;
+  width: 35%;
+  margin-top: 2.25rem;
+}
+
 .packages-text a {
   margin-top: 4rem;
   color: var(--main-color);
   font-weight: 600;
+}
+.mockup {
+  width: 700px;
+  max-width: 100%;
+  padding-right: 5rem;
 }
 
 /* REVIEWS SECTION */
@@ -312,6 +351,7 @@ body {
   align-items: center !important;
   padding: 2rem 2rem;
 }
+
 .image-background {
   width: 200px !important;
   height: 200px;
@@ -319,6 +359,7 @@ body {
   background-size: cover;
   border-radius: 100% !important;
 }
+
 .card.horizontal:hover .image-background,
 .card.horizontal:focus .image-background {
   outline: 5px solid var(--main-color);
@@ -327,6 +368,7 @@ body {
   -o-transition: linear 0.25s;
   transition: linear 0.25s;
 }
+
 .card.horizontal:hover .customer-names,
 .card.horizontal:focus .customer-names {
   color: var(--main-color);
@@ -334,6 +376,7 @@ body {
   -o-transition: linear 0.5s;
   transition: linear 0.5s;
 }
+
 .card.horizontal .image-background,
 .card.horizontal .customer-names {
   -webkit-transition: linear 0.5s;
@@ -347,15 +390,18 @@ body {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+
 .social-icon {
   margin-right: 1rem;
   cursor: pointer;
 }
+
 .subscribe-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
 .input-background {
   width: 80%;
   background-color: rgb(255, 255, 255);
@@ -371,56 +417,70 @@ body {
   transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
   border-radius: 2px;
 }
+
 #subscribe-btn {
   padding: 8px 26px !important;
 }
+
 input[type="email"]:not(.browser-default) {
   height: 2.5rem !important;
   margin: 0px 0px 4px !important;
 }
+
 .input-background label {
   display: none;
 }
+
 .subscribe-btn button {
   margin-top: 1rem;
   background-color: #c05e0d !important;
 }
+
 ::-webkit-input-placeholder {
   color: #ff9137 !important;
   font-size: 1rem;
 }
+
 ::-moz-placeholder {
   color: #ff9137 !important;
   font-size: 1rem;
 }
+
 :-ms-input-placeholder {
   color: #ff9137 !important;
   font-size: 1rem;
 }
+
 ::-ms-input-placeholder {
   color: #ff9137 !important;
   font-size: 1rem;
 }
+
 ::placeholder {
   color: #ff9137 !important;
   font-size: 1rem;
 }
+
 .navigation-list {
   font-size: 1.25rem;
   margin-top: 1.75rem;
 }
+
 .navigation-list li a:hover,
 .navigation-list li a:focus {
   text-decoration: underline;
 }
+
 .contact-list {
   margin-top: 1.75rem;
   font-size: 1.05rem;
 }
+
 #contact-email:hover,
 #contact-email:focus {
   text-decoration: underline;
 }
+
 .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,6 +490,7 @@ input[type="email"]:not(.browser-default) {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 .links a {
   color: rgb(255, 255, 255);
   margin-bottom: 0.5rem;
@@ -442,9 +503,11 @@ input[type="email"]:not(.browser-default) {
   margin-top: 0rem;
   padding-top: 10rem;
 }
+
 .contact-card-title {
   margin-bottom: 5rem;
 }
+
 .contact-section-container {
   display: -ms-grid;
   display: grid;
@@ -453,12 +516,17 @@ input[type="email"]:not(.browser-default) {
   grid-template-columns: 0.75fr 2.5fr;
 }
 
+.send-btn {
+  margin-top: 35px;
+}
+
 /*ADDRESS SECTION*/
 
 .address-card-container {
   background-color: #ff9137;
   color: #ffffff;
 }
+
 .company-info-container {
   -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
     0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
@@ -526,6 +594,7 @@ input[type="email"]:not(.browser-default) {
   );
   color: #ffffff;
 }
+
 .info-container-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,6 +607,7 @@ input[type="email"]:not(.browser-default) {
   -ms-flex-align: center;
   align-items: center;
 }
+
 .icon-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,6 +620,7 @@ input[type="email"]:not(.browser-default) {
   justify-content: flex-start;
   margin-bottom: 2.5rem;
 }
+
 .icon-flex i {
   margin-right: 1rem;
 }
@@ -569,6 +640,16 @@ input[type="email"]:not(.browser-default) {
 @media only screen and (max-width: 992px) {
   .input-background {
     width: 60%;
+  }
+  .packages-flex {
+    justify-content: center;
+    align-content: center;
+  }
+  .packages-text a {
+    margin-top: 2rem;
+  }
+  .mockup {
+    padding-right: 0rem;
   }
 }
 
