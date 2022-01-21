@@ -331,6 +331,24 @@ input[type="email"]:not(.browser-default) {
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .parallax-text-title {
+    font-size: 3.5rem !important;
+  }
+  .parallax-text-subtitle {
+    font-size: 1.75rem !important;
+  }
+  .card-text h3 {
+    font-size: 2.25rem !important;
+  }
+  .team-title {
+    font-size: 3.5rem !important;
+  }
+  .team-city {
+    font-size: 2.25rem !important;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .whoweare-grid {
     padding: 0 1rem 1rem;
