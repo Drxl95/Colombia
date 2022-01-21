@@ -59,6 +59,21 @@ body {
   padding-top: 3rem;
   background-size: cover;
   background: rgb(232, 104, 6);
+  background-image: -o-linear-gradient(
+    left,
+    #f47412,
+    #f6750f,
+    #f8760c,
+    #fa7709,
+    #fc7805,
+    #fd7a03,
+    #fd7c02,
+    #fe7e00,
+    #fd8200,
+    #fd8600,
+    #fc8900,
+    #fb8d00
+  );
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -75,21 +90,6 @@ body {
     color-stop(#fd8600),
     color-stop(#fc8900),
     to(#fb8d00)
-  );
-  background-image: -o-linear-gradient(
-    left,
-    #f47412,
-    #f6750f,
-    #f8760c,
-    #fa7709,
-    #fc7805,
-    #fd7a03,
-    #fd7c02,
-    #fe7e00,
-    #fd8200,
-    #fd8600,
-    #fc8900,
-    #fb8d00
   );
   background-image: linear-gradient(
     to right,

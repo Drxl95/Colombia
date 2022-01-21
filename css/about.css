@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -61,17 +68,23 @@ body {
 
 .whoweare-grid {
   padding: 0 5rem 1rem;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 3fr 3rem 2fr;
   grid-template-columns: 3fr 2fr;
   grid-column-gap: 3rem;
 }
 
 #top-card:hover,
 #top-card:focus {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
 .whoweare-card-container {
+  -webkit-transform: translateY(-6rem);
+  -ms-transform: translateY(-6rem);
   transform: translateY(-6rem);
   max-width: 800px;
   width: 100%;
@@ -95,6 +108,8 @@ body {
 }
 
 .video {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
 }
 
@@ -157,6 +172,8 @@ body {
 }
 
 .subscribe-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -257,6 +274,7 @@ input[type="email"]:not(.browser-default) {
 
 @media only screen and (max-width: 992px) {
   .whoweare-grid {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
   .video {
