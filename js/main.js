@@ -1,13 +1,4 @@
-
-//Top of Page Button (index.html)
-
-var ua = navigator.userAgent.toLowerCase();
-if (ua.indexOf('safari') != -1) {
-  if (ua.indexOf('chrome') > -1) {
-  } else {
-    document.getElementById("btn1").style.marginTop = "-9%";
-  }
-}
+// MaterializeCSS 
 
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.sidenav');
@@ -28,6 +19,36 @@ var elem = document.querySelector('.collapsible.expandable');
 var instance = M.Collapsible.init(elem, {
   accordion: false
 });
+
+
+//INTERSECTION OBSERVER
+
+const faders = document.querySelectorAll('.slide-up, .slide-left, .slide-right');
+const appearOptions = {
+  threshold: .5
+}
+
+const appearOnScroll = new IntersectionObserver
+  (function (
+    entries,
+    appearOnScroll
+  ) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add('appear');
+        appearOnScroll.unobserve(entry.target);
+      }
+    })
+  },
+    appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+
+
 
 
 
