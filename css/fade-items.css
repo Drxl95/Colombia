@@ -2,8 +2,24 @@
 .slide-left,
 .slide-right {
   opacity: 0;
-  transition: opacity 250ms ease-in;
-  transition: transform 400ms ease-in;
+  transition: opacity 0.75s ease-in-out;
+  transition: transform 0.75s ease-in-out;
+}
+
+.appear {
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .slide-up.appear,
@@ -14,7 +30,7 @@
 }
 
 .slide-up {
-  transform: translateY(20%);
+  transform: translateY(10%);
 }
 
 .slide-right {
